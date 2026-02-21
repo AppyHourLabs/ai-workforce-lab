@@ -1,24 +1,73 @@
-# Task 0009 — Logging Directory + Audit Log Plan
+# Task 0009 — Create Publish Checklist for doc@ Posts (Preflight)
+
+> **Project:** Documentary and content operations  
+> **Owner:** AI (`doc@`) draft; Human (`matt@`) review  
+> **Priority:** P1  
+> **Status:** Open
+
+---
 
 ## Goal
-Define and create a logging directory structure with an initial audit log retention plan.
+
+Create a pre-publication checklist that `doc@` must complete before any episode or post is submitted for human review. This is the last line of automated defense before human eyes see the content.
+
+---
 
 ## Steps
-1. Create `/logs` structure for system, agent, and security events.
-2. Draft retention windows and rotation cadence.
-3. Define required fields for audit entries.
-4. Add naming standard using ISO dates.
-5. Link plan to runbook and project docs.
+
+1. Create `RUNBOOKS/publish-preflight.md` with the following checklist:
+
+   **Content Safety**
+   - [ ] No credentials, API keys, or tokens present (cross-check against CI scan)
+   - [ ] No PII (real names, emails, phone numbers, addresses)
+   - [ ] No internal operational security details (IPs, internal URLs, system configs)
+   - [ ] No embargoed topics or unannounced product details
+
+   **Quality Gates**
+   - [ ] Outbound quality gate run: result link → `EVALS/results/[slug]-quality.md`
+   - [ ] Brand voice gate run: result link → `EVALS/results/[slug]-voice.md`
+   - [ ] Both gates: `gate: PASS`
+
+   **Structural Completeness**
+   - [ ] All required sections from `_TEMPLATE.md` present
+   - [ ] ISO dates used throughout (no "last week," "recently," etc.)
+   - [ ] All cross-links tested and valid
+   - [ ] Episode number and season header match the file name
+
+   **Phase A Sign-Off**
+   - [ ] Preflight checklist completed and attached to PR
+   - [ ] PR opened with `doc@` as author
+   - [ ] `matt@` tagged for review
+
+2. Update [`POLICIES/posting-policy.md`](../POLICIES/posting-policy.md) to reference this preflight runbook
+3. Submit via PR for `matt@` review
+
+---
 
 ## Owner (Human vs AI)
-AI (draft) + Human (approval)
+
+- **Draft:** AI (`doc@`)
+- **Review and merge:** Human (`matt@`)
+
+---
 
 ## Dependencies
-- [RUNBOOKS/session-handoff.md](../RUNBOOKS/session-handoff.md)
-- [POLICIES/ai-safety-charter.md](../POLICIES/ai-safety-charter.md)
-- [PROJECTS/0002-mac-mini-ai-office-setup.md](../PROJECTS/0002-mac-mini-ai-office-setup.md)
+
+- [`EVALS/outbound-quality-gate.md`](../EVALS/outbound-quality-gate.md)
+- [`EVALS/brand-voice-gate.md`](../EVALS/brand-voice-gate.md)
+- [`POLICIES/posting-policy.md`](../POLICIES/posting-policy.md)
+
+---
 
 ## Definition of Done
-- Logging directory schema is documented.
-- Audit field standard is written and reviewed.
-- Human approval is recorded for retention policy.
+
+- [ ] `RUNBOOKS/publish-preflight.md` created with all checklist sections
+- [ ] Posting policy updated to reference preflight runbook
+- [ ] PR reviewed and merged by `matt@`
+
+---
+
+## Risk Notes
+
+- **The preflight checklist is not a substitute for the quality gates** — it confirms the gates were run. Both are required.
+- Incomplete checklists submitted for review should be returned to draft; `matt@` should not approve incomplete preflight submissions.

@@ -1,24 +1,55 @@
-# Task 0001 — Enroll 2FA for `ai@`
+# Task 0001 — Finish 2FA Enrollment for All AI Ops Accounts
+
+> **Project:** [0001 — Google Workspace Hardening](../PROJECTS/0001-google-workspace-hardening.md)  
+> **Owner:** Human (`matt@`)  
+> **Priority:** P0  
+> **Status:** Open
+
+---
 
 ## Goal
-Enable 2FA enrollment for `ai@` using approved authenticator flow.
+
+Ensure all four AI ops accounts (`ai@`, `sales@`, `media@`, `doc@`) have 2FA enforced. No AI account should be accessible with a password alone.
+
+---
 
 ## Steps
-1. Confirm `ai@` access is available to authorized operator.
-2. Open account security settings and start 2FA enrollment.
-3. Pair approved authenticator method.
-4. Validate sign-in with 2FA challenge.
-5. Record completion details in session handoff notes.
+
+1. Log in to Google Workspace Admin as `matt@`
+2. Navigate to **Security → 2-Step Verification** and confirm org-wide enforcement is enabled
+3. For each account (`ai@`, `sales@`, `media@`, `doc@`):
+   - Confirm 2FA is enrolled and active (not just required)
+   - Verify enrollment via **Users → [account] → Security**
+   - Record enrollment method (authenticator app preferred; SMS is a fallback, not the goal)
+4. Attempt test sign-in on each account to validate the 2FA challenge fires
+5. Record completion in session handoff using [`RUNBOOKS/session-handoff.md`](../RUNBOOKS/session-handoff.md)
+
+---
 
 ## Owner (Human vs AI)
-Human
+
+**Human only.** `matt@` must perform or directly supervise this task. No AI agent has sufficient access scope for account security changes.
+
+---
 
 ## Dependencies
-- [PROJECTS/0001-google-workspace-hardening.md](../PROJECTS/0001-google-workspace-hardening.md)
-- [POLICIES/oauth-policy.md](../POLICIES/oauth-policy.md)
-- [RUNBOOKS/session-handoff.md](../RUNBOOKS/session-handoff.md)
+
+- Active Google Workspace org with admin access for `matt@`
+- Authenticator app available on a trusted device
+- [`POLICIES/oauth-policy.md`](../POLICIES/oauth-policy.md) — confirms AI accounts must use minimal access
+
+---
 
 ## Definition of Done
-- `ai@` requires 2FA at sign-in.
-- Verification check succeeds.
-- Handoff note includes date and verifier.
+
+- [ ] All 4 AI ops accounts show 2FA enrolled and enforced in Workspace Admin
+- [ ] Test sign-in on each account triggers 2FA challenge
+- [ ] Completion recorded in session handoff with date and verifying admin
+
+---
+
+## Risk Notes
+
+- **If an account has no recovery method:** you may be locked out during enforcement. Set recovery options *before* enforcing 2FA.
+- **SMS as sole 2FA method** is a downgrade risk. Prefer TOTP authenticator.
+- **Shared device risk:** ensure the authenticator device is not the same device an AI agent has access to.

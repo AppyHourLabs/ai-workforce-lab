@@ -1,57 +1,148 @@
 # AI Workforce Lab
 
-Welcome to the public **AI Workforce Lab** repository by **Appy Hour Labs**.
+> **By Appy Hour Labs** · Public experiment in responsible AI deployment · Powered by **EvalPal**
 
-We are building toward Phase A → Phase B autonomy with a safety-first posture, clear evaluation gates, and human oversight where it counts.
+---
 
-If this repo were a co-worker, it would be organized, polite, and allergic to reckless automation.
+What does it actually look like to deploy AI agents as persistent team members — with real governance, real failure modes, and a public paper trail of what happened?
 
-## Repository map
+That's what this repository answers. In real time. With the receipts committed.
 
-- `PROJECTS/` — active project briefs and execution plans.
-- `TASKS/` — atomic 30–60 minute execution tickets.
-  - [0001: Google Workspace Hardening](PROJECTS/0001-google-workspace-hardening.md)
-  - [0002: Mac Mini AI Office Setup](PROJECTS/0002-mac-mini-ai-office-setup.md)
-- `POLICIES/` — governance and safety controls.
-  - [AI Safety Charter](POLICIES/ai-safety-charter.md)
-  - [Posting Policy](POLICIES/posting-policy.md)
-  - [OAuth Policy](POLICIES/oauth-policy.md)
-  - [Escalation Policy](POLICIES/escalation-policy.md)
-- `RUNBOOKS/` — practical operating procedures.
-  - [Session Handoff Runbook](RUNBOOKS/session-handoff.md)
-- `AGENTS/` — role definitions for AI collaborators.
-  - [Documentary Agent](AGENTS/documentary-agent.md)
-- `DOCS/SHOW/episodes/` — public narrative and updates.
-  - [Episode 000: Origin Log](DOCS/SHOW/episodes/000-origin-log.md)
+---
 
-## Known accounts and role boundaries
+## What We're Building
 
-### Human admin
+**EvalPal** is the product: tooling and methodology for evaluating AI agent quality in production workflows. The AI Workforce Lab is EvalPal's first test environment — we're building the eval harness by being the thing it evaluates.
 
-- `matt@` — primary human administrator and final decision authority.
+**The experiment:** deploy AI agents into operational roles (documentation, sales research, content, financial analysis, technical strategy) using a tiered autonomy model. Document everything. Ship the governance alongside the features.
 
-### AI operations accounts
+**The constraint:** safety first. Always. If the choice is between moving fast and being safe, we choose safe and write a task about it.
 
-- `ai@`
-- `sales@`
-- `media@`
-- `doc@`
+---
 
-### Human-only accounts
+## The Autonomy Model
 
-- `legal@`
-- `security@`
-- `billing@`
+| Phase | What it means |
+|---|---|
+| **Phase A** (current) | All outbound actions require human approval. Eval gates run before content approaches external recipients. Agents draft, analyze, propose — they do not send or publish autonomously. |
+| **Phase B** (future) | Agents may publish within approved scope without per-action human review. Requires measurable evidence from Phase A. Criteria: [`POLICIES/phase-a-to-b.md`](POLICIES/phase-a-to-b.md) |
 
-See [OAuth Policy](POLICIES/oauth-policy.md) and [Escalation Policy](POLICIES/escalation-policy.md) for access boundaries and approval rules.
+---
 
-## Quick start for contributors and agents
+## Repository Map
 
-1. Read the [AI Safety Charter](POLICIES/ai-safety-charter.md) first.
-2. Select a scoped effort from `PROJECTS/` and follow its success criteria.
-3. Follow the [Posting Policy](POLICIES/posting-policy.md) before publishing anything externally.
-4. Use the [Session Handoff Runbook](RUNBOOKS/session-handoff.md) when ending work.
+```
+ai-workforce-lab/
+├── AGENTS/          ← role definitions for each AI and human operator
+├── DOCS/SHOW/       ← public weekly episodes (the documentary)
+│   └── episodes/
+├── EVALS/           ← quality gate rubrics and results
+├── POLICIES/        ← governance, safety, OAuth, posting, escalation rules
+├── PROJECTS/        ← strategic project definitions
+├── RUNBOOKS/        ← operational how-tos: CI, session handoff, incident response
+└── TASKS/           ← atomic execution tasks (30–60 min each)
+```
+
+---
+
+## Key Policies
+
+| Policy | What it covers |
+|---|---|
+| [AI Safety Charter](POLICIES/ai-safety-charter.md) | Non-negotiable principles |
+| [OAuth Policy](POLICIES/oauth-policy.md) | Scope restrictions, no domain-wide delegation |
+| [Posting Policy](POLICIES/posting-policy.md) | Who can publish, eval gate requirements |
+| [Escalation Policy](POLICIES/escalation-policy.md) | Severity levels, when to ping the founder |
+| [Phase A → B Criteria](POLICIES/phase-a-to-b.md) | Measurable promotion gates |
+
+---
+
+## The Team
+
+| Account | Type | Role |
+|---|---|---|
+| `matt@` | 👤 Human | Founder — final authority on all policy and autonomy decisions |
+| `ai@` | 🤖 AI Ops | General operations, technical and research tasks |
+| `doc@` | 🤖 AI Ops | Documentary agent — writes the weekly show |
+| `sales@` | 🤖 AI Ops | Outreach research and drafting — Phase A gated |
+| `media@` | 🤖 AI Ops | Content and distribution — Phase A gated |
+| `legal@` | 👤 Human only | Legal review — no AI delegation |
+| `security@` | 👤 Human only | Credential and security management — human only |
+| `billing@` | 👤 Human only | Financial accounts — human only, no exceptions |
+
+Full role specs: [`AGENTS/`](AGENTS/)
+
+---
+
+## The Show
+
+Every week, `doc@` files an episode documenting what shipped, what broke, what was decided, and what we learned. Public, honest, occasionally funny.
+
+- [Episode 000 — Origin Log](DOCS/SHOW/episodes/000-origin-log.md)
+- [Episode 001 — The AI Office Moves In](DOCS/SHOW/episodes/001-ai-office-moves-in.md)
+- [Episode template](<DOCS/SHOW/episodes/_TEMPLATE.md>)
+
+---
+
+## Status
+
+*Last updated: 2026-02-21*
+
+| Project | Status | What it is |
+|---|---|---|
+| [0001 — Google Workspace Hardening](PROJECTS/0001-google-workspace-hardening.md) | 🔵 Active | MFA, API access controls, OAuth scope audit for all AI ops accounts |
+| [0002 — Mac Mini AI Office Setup](PROJECTS/0002-mac-mini-ai-office-setup.md) | 🔵 Active | Dedicated hardened machine for running agent pipelines |
+
+Autonomy tier: **Phase A** — all outbound requires human approval.
+
+---
+
+## Start Here
+
+New here? Read in this order:
+
+1. [Episode 000 — Origin Log](DOCS/SHOW/episodes/000-origin-log.md) — why this project exists
+2. [Episode 001 — The AI Office Moves In](DOCS/SHOW/episodes/001-ai-office-moves-in.md) — what we did first and why
+3. [AI Safety Charter](POLICIES/ai-safety-charter.md) — the non-negotiables
+4. [`AGENTS.md`](AGENTS.md) — who does what (human and AI)
+
+---
+
+## Safety
+
+This project operates under a formal safety charter. The short version:
+
+- No agent acts autonomously on external communications in Phase A
+- No secrets, credentials, or PII in this repository — ever
+- All agent scope changes require human sign-off
+- Every incident gets logged; nothing gets quietly swept
+
+Full details: [`POLICIES/ai-safety-charter.md`](POLICIES/ai-safety-charter.md)
+
+---
+
+## How to Follow
+
+- **Watch this repo** — GitHub → Watch → "All Activity" for commits, PRs, and issues
+- **Star it** — helps others find the experiment
+- **Read the episodes** — [`DOCS/SHOW/episodes/`](DOCS/SHOW/episodes/) is updated weekly by `doc@`
+- **Open an issue** — questions, observations, or suggested tasks are welcome using the [task template](.github/ISSUE_TEMPLATE/task.md)
+
+No mailing list, no newsletter, no algorithm. Just commits.
+
+---
+
+## Contributing
+
+1. Read [`POLICIES/ai-safety-charter.md`](POLICIES/ai-safety-charter.md) first
+2. Select a task from [`TASKS/`](TASKS/) or a project from [`PROJECTS/`](PROJECTS/)
+3. Small PRs. Every PR needs a **Security Considerations** section
+4. No secrets, no PII, ISO dates only
+
+See [`AGENTS.md`](AGENTS.md) for the full contributor context guide.
+
+---
 
 ## License
 
-This repository is licensed under the [MIT License](LICENSE).
+[MIT](LICENSE) — use freely, cite honestly.
