@@ -1,6 +1,6 @@
 # Project 0002 — Mac Mini AI Office Setup
 
-> **Status:** Active | **Owner:** `matt@` | **Priority:** P1
+> **Status:** Active | **Owner:** `matt@appyhourlabs.com` | **Priority:** P1
 
 ---
 
@@ -15,7 +15,7 @@ Configure the Mac Mini as a dedicated, hardened AI Office — a fixed, auditable
 - macOS `aioffice` standard user created; no admin privileges
 - FileVault enabled; firewall enabled; all remote sharing services disabled
 - Standard toolchain installed: Homebrew, Git, Node 20, Docker, Chrome, Slack
-- Isolated Chrome profiles created for `ai@`, `sales@`, `media@`, `doc@`
+- Isolated Chrome profiles created for `ai@appyhourlabs.com`, `sales@appyhourlabs.com`, `media@appyhourlabs.com`, `doc@appyhourlabs.com`
 - Local logging directory created with documented conventions
 - Agent pipelines can run and produce structured log output
 - Human-only accounts are inaccessible from the `aioffice` session
@@ -37,8 +37,8 @@ Configure the Mac Mini as a dedicated, hardened AI Office — a fixed, auditable
 ## Completion Definition
 
 - All success criteria above verified and documented
-- Session handoff note filed (ISO date, verifier: `matt@`)
-- `matt@` has approved go-live via PR sign-off
+- Session handoff note filed (ISO date, verifier: `matt@appyhourlabs.com`)
+- `matt@appyhourlabs.com` has approved go-live via PR sign-off
 - No agent pipeline runs until this project is marked complete
 
 ---

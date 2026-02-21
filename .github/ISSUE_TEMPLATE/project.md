@@ -50,4 +50,4 @@ What must be true — verifiably — to close this project?
 
 - [ ]
 - [ ]
-- [ ] `matt@` has approved via PR sign-off
+- [ ] `matt@appyhourlabs.com` has approved via PR sign-off

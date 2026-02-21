@@ -1,12 +1,12 @@
 # DOCS Index — AI Workforce Lab
 
-> Source of truth for the AI Workforce Lab. Maintained by `doc@`; final authority is `matt@`.
+> Source of truth for the AI Workforce Lab. Maintained by `doc@appyhourlabs.com`; final authority is `matt@appyhourlabs.com`.
 
 ---
 
-## How doc@ Should Use This Repo
+## How doc@appyhourlabs.com Should Use This Repo
 
-Before drafting any episode, `doc@` must review this repo as the authoritative source of record. **Do not rely on session memory alone.** Each episode should be grounded in what is actually committed:
+Before drafting any episode, `doc@appyhourlabs.com` must review this repo as the authoritative source of record. **Do not rely on session memory alone.** Each episode should be grounded in what is actually committed:
 
 - Check `PROJECTS/` for current project status and completed tasks
 - Check `TASKS/` for what was completed, in-progress, or deferred since last episode
@@ -29,7 +29,7 @@ Governance rules that apply to all agents and human operators.
 | [AI Safety Charter](../POLICIES/ai-safety-charter.md) | Non-negotiable safety principles |
 | [Posting Policy](../POLICIES/posting-policy.md) | Who may publish what, and how |
 | [OAuth Policy](../POLICIES/oauth-policy.md) | Scope restrictions, no domain-wide delegation |
-| [Escalation Policy](../POLICIES/escalation-policy.md) | Severity levels, when to stop and notify `matt@` |
+| [Escalation Policy](../POLICIES/escalation-policy.md) | Severity levels, when to stop and notify `matt@appyhourlabs.com` |
 | [Phase A → B Criteria](../POLICIES/phase-a-to-b.md) | Measurable gates for autonomy promotion |
 
 ---
@@ -51,11 +51,11 @@ Role definitions for all operators — human and AI.
 
 | Agent | File | Role |
 |---|---|---|
-| `matt@` | [founder.md](../AGENTS/founder.md) | Human super admin — final authority |
-| `ai@` | [cto-agent.md](../AGENTS/cto-agent.md) | General ops and technical tasks |
-| `doc@` | [documentary-agent.md](../AGENTS/documentary-agent.md) | Weekly episodes and public documentation |
-| `sales@` | [sdr-agent.md](../AGENTS/sdr-agent.md) | Outreach drafting — Phase A gated |
-| `media@` | [content-agent.md](../AGENTS/content-agent.md) | Content and distribution — Phase A gated |
+| `matt@appyhourlabs.com` | [founder.md](../AGENTS/founder.md) | Human super admin — final authority |
+| `ai@appyhourlabs.com` | [cto-agent.md](../AGENTS/cto-agent.md) | General ops and technical tasks |
+| `doc@appyhourlabs.com` | [documentary-agent.md](../AGENTS/documentary-agent.md) | Weekly episodes and public documentation |
+| `sales@appyhourlabs.com` | [sdr-agent.md](../AGENTS/sdr-agent.md) | Outreach drafting — Phase A gated |
+| `media@appyhourlabs.com` | [content-agent.md](../AGENTS/content-agent.md) | Content and distribution — Phase A gated |
 | Security | [security-agent.md](../AGENTS/security-agent.md) | Risk monitoring and policy compliance |
 | QA | [qa-agent.md](../AGENTS/qa-agent.md) | Eval gate execution |
 | CFO | [cfo-agent.md](../AGENTS/cfo-agent.md) | Financial analysis — advisory only |
@@ -64,7 +64,7 @@ Role definitions for all operators — human and AI.
 
 ## Episodes
 
-Weekly public documentary. Filed by `doc@`, approved by `matt@`.
+Weekly public documentary. Filed by `doc@appyhourlabs.com`, approved by `matt@appyhourlabs.com`.
 
 | Episode | Title |
 |---|---|

@@ -1,6 +1,6 @@
 # OAuth Policy
 
-> **Status:** Active | **Owner:** `matt@` | **Version:** 1.0 · 2026-02-21
+> **Status:** Active | **Owner:** `matt@appyhourlabs.com` | **Version:** 1.0 · 2026-02-21
 
 ---
 
@@ -25,8 +25,8 @@ Control OAuth and API access so that AI agents operate with the minimum required
 |---|---|
 | Committing OAuth tokens, API keys, or credentials to the repo | Immediate SEV-1 incident — treated as compromised |
 | Requesting domain-wide delegation for any account | Violates AI Safety Charter; cannot be approved |
-| Granting any AI agent access to `legal@`, `security@`, or `billing@` | Human-only accounts; no exceptions |
-| An agent approving its own scope expansion | All scope changes require `matt@` authorization |
+| Granting any AI agent access to `legal@appyhourlabs.com`, `security@appyhourlabs.com`, or `billing@appyhourlabs.com` | Human-only accounts; no exceptions |
+| An agent approving its own scope expansion | All scope changes require `matt@appyhourlabs.com` authorization |
 | Using a super-admin account on the AI Office machine | Admin credentials must not be used on the `aioffice` macOS user |
 
 ---
@@ -35,14 +35,14 @@ Control OAuth and API access so that AI agents operate with the minimum required
 
 | Account | OAuth Access Level | AI Can Access? |
 |---|---|---|
-| `matt@` | Super admin | ❌ (human only) |
-| `ai@` | Scoped to approved integrations | ✅ (within scope) |
-| `sales@` | Gmail read/send (draft); Outreach tools | ✅ (drafting only) |
-| `media@` | Social platform draft APIs | ✅ (drafting only) |
-| `doc@` | GitHub (PR open); Drive (read) | ✅ (within scope) |
-| `legal@` | Human-controlled | ❌ |
-| `security@` | Human-controlled | ❌ |
-| `billing@` | Human-controlled | ❌ |
+| `matt@appyhourlabs.com` | Super admin | ❌ (human only) |
+| `ai@appyhourlabs.com` | Scoped to approved integrations | ✅ (within scope) |
+| `sales@appyhourlabs.com` | Gmail read/send (draft); Outreach tools | ✅ (drafting only) |
+| `media@appyhourlabs.com` | Social platform draft APIs | ✅ (drafting only) |
+| `doc@appyhourlabs.com` | GitHub (PR open); Drive (read) | ✅ (within scope) |
+| `legal@appyhourlabs.com` | Human-controlled | ❌ |
+| `security@appyhourlabs.com` | Human-controlled | ❌ |
+| `billing@appyhourlabs.com` | Human-controlled | ❌ |
 
 ---
 
@@ -50,7 +50,7 @@ Control OAuth and API access so that AI agents operate with the minimum required
 
 1. Agent or human identifies a required new scope
 2. Document the request in a `TASKS/` file with business justification
-3. `matt@` reviews and approves (or denies) the scope change
+3. `matt@appyhourlabs.com` reviews and approves (or denies) the scope change
 4. Scope is granted via Workspace Admin — never by the agent itself
 5. Change is logged in session handoff notes
 

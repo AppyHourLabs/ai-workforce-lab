@@ -8,12 +8,12 @@
 
 | Metric | Threshold |
 |---|---|
-| Consecutive successful publishes by `doc@` with no human override | **≥ 20** |
+| Consecutive successful publishes by `doc@appyhourlabs.com` with no human override | **≥ 20** |
 | Publish window | Rolling 30-day period |
 | Any single override or rejection | **Resets counter to 0** |
 
 A "successful gated publish" is defined as a full pipeline run where:
-- The PR is authored by the AI agent (`doc@`)
+- The PR is authored by the AI agent (`doc@appyhourlabs.com`)
 - All automated policy gates pass (no red violations)
 - The PR is merged without modification by a human reviewer
 - No post-merge revert is filed within 48 hours

@@ -20,8 +20,8 @@ Single, concrete outcome. One sentence. If you can't state it in one sentence, s
 
 ## Owner (Human vs AI)
 
-- **Primary:** [Human (`matt@`) / AI (`ai@` / `doc@` / etc.)]
-- **Review required:** [Human (`matt@`) / None]
+- **Primary:** [Human (`matt@appyhourlabs.com`) / AI (`ai@appyhourlabs.com` / `doc@appyhourlabs.com` / etc.)]
+- **Review required:** [Human (`matt@appyhourlabs.com`) / None]
 
 ## Dependencies
 
@@ -40,7 +40,7 @@ Single, concrete outcome. One sentence. If you can't state it in one sentence, s
 What could go wrong, and what should the next person know before starting?
 
 - **If [X] happens:** do [Y]
-- Escalate to `matt@` if: [condition]
+- Escalate to `matt@appyhourlabs.com` if: [condition]
 
 ## Safety Check
 

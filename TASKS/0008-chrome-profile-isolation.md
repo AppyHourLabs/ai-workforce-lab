@@ -1,7 +1,7 @@
 # Task 0008 — Create Incident Report Template and Add to RUNBOOKS/
 
 > **Project:** Governance and runbook infrastructure  
-> **Owner:** AI (`ai@`) draft; Human (`matt@`) review  
+> **Owner:** AI (`ai@appyhourlabs.com`) draft; Human (`matt@appyhourlabs.com`) review  
 > **Priority:** P1  
 > **Status:** Open
 
@@ -29,14 +29,14 @@ Create a standard incident report template so that any agent or human can file a
    - **Status** — `open` / `contained` / `resolved`
    - **Postmortem Link** — leave blank if not yet scheduled
 2. Cross-link from [`POLICIES/escalation-policy.md`](../POLICIES/escalation-policy.md)
-3. Submit via PR for `matt@` review
+3. Submit via PR for `matt@appyhourlabs.com` review
 
 ---
 
 ## Owner (Human vs AI)
 
-- **Draft:** AI (`ai@`)
-- **Review and merge:** Human (`matt@`)
+- **Draft:** AI (`ai@appyhourlabs.com`)
+- **Review and merge:** Human (`matt@appyhourlabs.com`)
 
 ---
 
@@ -50,7 +50,7 @@ Create a standard incident report template so that any agent or human can file a
 
 - [ ] `RUNBOOKS/incident-report-template.md` exists with all required sections
 - [ ] Escalation policy updated to link to the template
-- [ ] PR reviewed and merged by `matt@`
+- [ ] PR reviewed and merged by `matt@appyhourlabs.com`
 
 ---
 

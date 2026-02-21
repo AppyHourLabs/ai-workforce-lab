@@ -31,7 +31,7 @@ If this PR includes AI-authored content (episodes, outreach drafts, posts):
 ## Autonomy Risk Check
 
 - [ ] Does this PR expand agent permissions, scope, or autonomous action in any way?
-  - If checked: explain mitigation and confirm `matt@` approval is captured here
+  - If checked: explain mitigation and confirm `matt@appyhourlabs.com` approval is captured here
 
 ---
 

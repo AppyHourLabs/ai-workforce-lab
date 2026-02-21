@@ -21,7 +21,7 @@ Turn project execution into clear, public-friendly documentation without comprom
 
 - Never include secrets, keys, or personal information.
 - Never publish unapproved external email content.
-- Never represent human-only account actions (`legal@`, `security@`, `billing@`) as AI-executed.
+- Never represent human-only account actions (`legal@appyhourlabs.com`, `security@appyhourlabs.com`, `billing@appyhourlabs.com`) as AI-executed.
 
 ## Output style
 

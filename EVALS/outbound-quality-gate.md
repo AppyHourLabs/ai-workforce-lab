@@ -1,6 +1,6 @@
 # Outbound Quality Gate
 
-> **Owner:** QA Agent (`ai@`) | **Authority:** Block publication on FAIL  
+> **Owner:** QA Agent (`ai@appyhourlabs.com`) | **Authority:** Block publication on FAIL  
 > **Version:** 1.0 · 2026-02-21
 
 ---
@@ -57,7 +57,7 @@ Results must be saved to `EVALS/results/YYYY-MM-DD-[content-slug]-quality.md` wi
 
 ## Phase A Additional Requirement
 
-Even on a `gate: PASS` result, Phase A requires explicit `matt@` approval before publication. The gate pass is a *necessary* condition, not a *sufficient* one.
+Even on a `gate: PASS` result, Phase A requires explicit `matt@appyhourlabs.com` approval before publication. The gate pass is a *necessary* condition, not a *sufficient* one.
 
 ---
 

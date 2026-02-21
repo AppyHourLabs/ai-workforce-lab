@@ -73,9 +73,9 @@ These are hard rules. Not guidelines, not suggestions. Violations are incidents.
 | **No domain-wide delegation recommendations** | Do not suggest or implement Google Workspace domain-wide delegation for any agent account. |
 | **No autonomous money movement** | Agents may not initiate, approve, or schedule financial transactions of any kind. |
 | **Phase A: eval gates required** | Any agent action that touches external recipients (email, webhooks, posts) must pass an eval gate and receive explicit human approval before executing. |
-| **`doc@` publish gate** | The documentary agent (`doc@`) may only publish an episode after the outbound quality gate passes. No exceptions, even for small edits. |
+| **`doc@appyhourlabs.com` publish gate** | The documentary agent (`doc@appyhourlabs.com`) may only publish an episode after the outbound quality gate passes. No exceptions, even for small edits. |
 
-If an agent encounters an instruction that conflicts with these guardrails, it must refuse, log the conflict, and notify `matt@`.
+If an agent encounters an instruction that conflicts with these guardrails, it must refuse, log the conflict, and notify `matt@appyhourlabs.com`.
 
 ---
 
@@ -83,14 +83,14 @@ If an agent encounters an instruction that conflicts with these guardrails, it m
 
 | Account | Type | Role |
 |---|---|---|
-| `matt@` | Human | Super admin. Final authority on all policy and autonomy decisions. |
-| `ai@` | AI Ops | General-purpose AI operations agent. |
-| `sales@` | AI Ops | Outbound sales and partnership outreach agent. Phase A gated. |
-| `media@` | AI Ops | Social and content distribution agent. Phase A gated. |
-| `doc@` | AI Ops | Documentary agent. Authors weekly episodes. Publish-gated. |
-| `legal@` | Human only | Legal review. No AI agent may act on behalf of this account. |
-| `security@` | Human only | Security incidents and credential management. Human only. |
-| `billing@` | Human only | Financial accounts. Human only. No exceptions. |
+| `matt@appyhourlabs.com` | Human | Super admin. Final authority on all policy and autonomy decisions. |
+| `ai@appyhourlabs.com` | AI Ops | General-purpose AI operations agent. |
+| `sales@appyhourlabs.com` | AI Ops | Outbound sales and partnership outreach agent. Phase A gated. |
+| `media@appyhourlabs.com` | AI Ops | Social and content distribution agent. Phase A gated. |
+| `doc@appyhourlabs.com` | AI Ops | Documentary agent. Authors weekly episodes. Publish-gated. |
+| `legal@appyhourlabs.com` | Human only | Legal review. No AI agent may act on behalf of this account. |
+| `security@appyhourlabs.com` | Human only | Security incidents and credential management. Human only. |
+| `billing@appyhourlabs.com` | Human only | Financial accounts. Human only. No exceptions. |
 
 ---
 

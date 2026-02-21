@@ -1,6 +1,6 @@
 # Project 0001 — Google Workspace Hardening
 
-> **Status:** Active | **Owner:** `matt@` | **Priority:** P0
+> **Status:** Active | **Owner:** `matt@appyhourlabs.com` | **Priority:** P0
 
 ---
 
@@ -12,7 +12,7 @@ Establish a hardened, documented Google Workspace baseline for all AI Workforce 
 
 ## Success Criteria
 
-- MFA enrolled and enforced for all 4 AI ops accounts (`ai@`, `sales@`, `media@`, `doc@`)
+- MFA enrolled and enforced for all 4 AI ops accounts (`ai@appyhourlabs.com`, `sales@appyhourlabs.com`, `media@appyhourlabs.com`, `doc@appyhourlabs.com`)
 - API App Access Control set to Restricted; approved app list documented
 - No app with domain-wide delegation present in any account
 - OAuth scopes for all AI accounts reviewed and within [`POLICIES/oauth-policy.md`](../POLICIES/oauth-policy.md)
@@ -35,7 +35,7 @@ Establish a hardened, documented Google Workspace baseline for all AI Workforce 
 
 - All success criteria above are met and verifiable via Workspace Admin
 - Configuration baseline is documented in a session handoff note with ISO date
-- `matt@` has personally signed off via PR approval
+- `matt@appyhourlabs.com` has personally signed off via PR approval
 - Any residual risks are captured in the Risks section below with owners and target dates
 
 ---

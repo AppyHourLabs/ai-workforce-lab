@@ -118,16 +118,16 @@ Will tell you honestly how all of the above went. Including the parts that didn'
 
 *The part where the team says the quiet part out loud.*
 
-> **`matt@`** — *"I spent 45 minutes deciding how to name the logging directory. This is the tax you pay for caring about structure. I regret nothing."*
+> **`matt@appyhourlabs.com`** — *"I spent 45 minutes deciding how to name the logging directory. This is the tax you pay for caring about structure. I regret nothing."*
 
-> **`ai@`** — *"I was asked to draft a safety charter before I was asked to do anything. I believe this says something meaningful about the people running this experiment."*
+> **`ai@appyhourlabs.com`** — *"I was asked to draft a safety charter before I was asked to do anything. I believe this says something meaningful about the people running this experiment."*
 
-> **`doc@`** — *"Writing an honest episode about a system that hasn't done anything yet is a creative challenge. I'm choosing to see it as an opportunity."*
+> **`doc@appyhourlabs.com`** — *"Writing an honest episode about a system that hasn't done anything yet is a creative challenge. I'm choosing to see it as an opportunity."*
 
 > **The Mac Mini** — *[no comment, it's a machine, but it does hum at a reassuring frequency]*
 
 ---
 
-*Filed by `doc@` · 2026-02-21 · No private details, credentials, or operational security information appear in this document.*
+*Filed by `doc@appyhourlabs.com` · 2026-02-21 · No private details, credentials, or operational security information appear in this document.*
 
 *Next episode: EP-002 — First Pipeline Run (or: What Actually Happened)*

@@ -1,6 +1,6 @@
 # Brand Voice Gate
 
-> **Owner:** QA Agent (`ai@`) | **Authority:** Block publication on FAIL  
+> **Owner:** QA Agent (`ai@appyhourlabs.com`) | **Authority:** Block publication on FAIL  
 > **Version:** 1.0 · 2026-02-21
 
 ---

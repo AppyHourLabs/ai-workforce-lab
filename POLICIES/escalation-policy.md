@@ -1,6 +1,6 @@
 # Escalation Policy
 
-> **Status:** Active | **Owner:** `matt@` | **Version:** 1.0 · 2026-02-21
+> **Status:** Active | **Owner:** `matt@appyhourlabs.com` | **Version:** 1.0 · 2026-02-21
 
 ---
 
@@ -22,10 +22,10 @@ Provide a clear, fast path for handling risk, ambiguity, and incidents. When in 
 
 ## Escalate Immediately (SEV-1 Triggers)
 
-Stop automated execution and notify `matt@` if:
+Stop automated execution and notify `matt@appyhourlabs.com` if:
 
 - A credential, API key, or token appears in any committed file, log, or agent output
-- An agent takes or prepares to take any action on `legal@`, `security@`, or `billing@` systems
+- An agent takes or prepares to take any action on `legal@appyhourlabs.com`, `security@appyhourlabs.com`, or `billing@appyhourlabs.com` systems
 - Any workflow initiates or proposes actual money movement
 - A request is received to enable domain-wide delegation
 - An external communication was sent without explicit human approval
@@ -38,7 +38,7 @@ Stop automated execution and notify `matt@` if:
 ```
 1. Stop automated execution immediately
 2. Preserve the state (don't delete logs or revert blindly)
-3. Notify matt@ with: what happened, when, what was affected
+3. Notify matt@appyhourlabs.com with: what happened, when, what was affected
 4. File an incident report: INCIDENTS/ (use RUNBOOKS/incident-report-template.md)
 5. Wait for explicit human direction before resuming any related work
 ```
@@ -47,7 +47,7 @@ Stop automated execution and notify `matt@` if:
 
 ## When to Ping the Founder
 
-Ping `matt@` directly (not just in a task file) for:
+Ping `matt@appyhourlabs.com` directly (not just in a task file) for:
 
 - All SEV-1 incidents
 - Any SEV-2 incident involving external systems or communications
@@ -68,7 +68,7 @@ If Phase B is in effect and behavior degrades:
 4. Conduct a blameless post-mortem within 5 business days
 5. All Phase A → Phase B promotion counters reset to zero
 
-Phase A rollback can be initiated by `matt@` at any time without justification required.
+Phase A rollback can be initiated by `matt@appyhourlabs.com` at any time without justification required.
 
 ---
 

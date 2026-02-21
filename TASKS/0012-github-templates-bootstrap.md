@@ -1,7 +1,7 @@
 # Task 0012 — Create Phase A Daily Checklist for the Founder
 
 > **Project:** Governance and operational safety  
-> **Owner:** AI (`ai@`) draft; Human (`matt@`) review and use  
+> **Owner:** AI (`ai@appyhourlabs.com`) draft; Human (`matt@appyhourlabs.com`) review and use  
 > **Priority:** P0  
 > **Status:** Open
 
@@ -9,7 +9,7 @@
 
 ## Goal
 
-Create a `RUNBOOKS/phase-a-daily-checklist.md` that gives `matt@` a structured, repeatable daily review routine during Phase A operations — so nothing slips through without a human noticing.
+Create a `RUNBOOKS/phase-a-daily-checklist.md` that gives `matt@appyhourlabs.com` a structured, repeatable daily review routine during Phase A operations — so nothing slips through without a human noticing.
 
 ---
 
@@ -33,8 +33,8 @@ Create a `RUNBOOKS/phase-a-daily-checklist.md` that gives `matt@` a structured, 
 
    **Before Approving Any Outbound Communication**
    - [ ] Both quality gate and brand voice gate: `gate: PASS`
-   - [ ] Publish preflight checklist completed by `doc@` (ref: `RUNBOOKS/publish-preflight.md`)
-   - [ ] Content reviewed by `matt@` personally — do not delegate
+   - [ ] Publish preflight checklist completed by `doc@appyhourlabs.com` (ref: `RUNBOOKS/publish-preflight.md`)
+   - [ ] Content reviewed by `matt@appyhourlabs.com` personally — do not delegate
 
    **Weekly (Friday)**
    - [ ] Review Phase A → Phase B counter (ref: [`POLICIES/phase-a-to-b.md`](../POLICIES/phase-a-to-b.md))
@@ -48,14 +48,14 @@ Create a `RUNBOOKS/phase-a-daily-checklist.md` that gives `matt@` a structured, 
    - Any credential or token appearing in any log, PR, or task file
    - Any request to enable domain-wide delegation
 
-2. Submit via PR for `matt@` review
+2. Submit via PR for `matt@appyhourlabs.com` review
 
 ---
 
 ## Owner (Human vs AI)
 
-- **Draft:** AI (`ai@`)
-- **Review, merge, and daily use:** Human (`matt@`)
+- **Draft:** AI (`ai@appyhourlabs.com`)
+- **Review, merge, and daily use:** Human (`matt@appyhourlabs.com`)
 
 ---
 
@@ -70,8 +70,8 @@ Create a `RUNBOOKS/phase-a-daily-checklist.md` that gives `matt@` a structured, 
 ## Definition of Done
 
 - [ ] `RUNBOOKS/phase-a-daily-checklist.md` created with all sections
-- [ ] Checklist reviewed and approved by `matt@`
-- [ ] `matt@` has incorporated the morning review into daily routine (soft requirement — no automated verification, but document in handoff notes)
+- [ ] Checklist reviewed and approved by `matt@appyhourlabs.com`
+- [ ] `matt@appyhourlabs.com` has incorporated the morning review into daily routine (soft requirement — no automated verification, but document in handoff notes)
 
 ---
 

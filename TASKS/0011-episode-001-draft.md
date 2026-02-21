@@ -1,7 +1,7 @@
 # Task 0011 — Add CI Workflow for Markdown Link Validation (Optional)
 
 > **Project:** CI/CD infrastructure  
-> **Owner:** AI (`ai@`) draft; Human (`matt@`) review  
+> **Owner:** AI (`ai@appyhourlabs.com`) draft; Human (`matt@appyhourlabs.com`) review  
 > **Priority:** P3  
 > **Status:** Open
 
@@ -35,8 +35,8 @@ Add an optional GitHub Actions workflow that checks all Markdown files for broke
 
 ## Owner (Human vs AI)
 
-- **Implementation:** AI (`ai@`)
-- **Review and merge:** Human (`matt@`)
+- **Implementation:** AI (`ai@appyhourlabs.com`)
+- **Review and merge:** Human (`matt@appyhourlabs.com`)
 
 ---
 
