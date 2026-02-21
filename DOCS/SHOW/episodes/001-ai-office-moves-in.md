@@ -128,5 +128,6 @@ Will tell you honestly how all of the above went. Including the parts that didn'
 
 ---
 
-*Filed by `doc@` · 2026-02-21 · No private details, credentials, or operational security information appear in this document.*  
+*Filed by `doc@` · 2026-02-21 · No private details, credentials, or operational security information appear in this document.*
+
 *Next episode: EP-002 — First Pipeline Run (or: What Actually Happened)*
