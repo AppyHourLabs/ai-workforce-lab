@@ -1,30 +1,50 @@
 ---
 name: "Atomic Task"
-about: "Track a 30–60 minute executable task"
-title: "TASK: <short task title>"
+about: "Track a 30–60 minute executable task aligned to Phase A safety"
+title: "TASK-XXXX: <short task title>"
 labels: ["task"]
 assignees: []
 ---
 
 ## Goal
-Single, concrete outcome for this task.
+
+Single, concrete outcome. One sentence. If you can't state it in one sentence, split the task.
 
 ## Steps
-1. 
-2. 
-3. 
+
+1.
+2.
+3.
+
+*Steps should be executable without ambiguity. If a step requires judgment, note who makes the call.*
 
 ## Owner (Human vs AI)
-State owner and whether human approval is required.
+
+- **Primary:** [Human (`matt@`) / AI (`ai@` / `doc@` / etc.)]
+- **Review required:** [Human (`matt@`) / None]
 
 ## Dependencies
-Link related project, policy, and runbook docs.
+
+- Related project: [PROJECTS/XXXX.md](../PROJECTS/)
+- Related policy: [POLICIES/](../POLICIES/)
+- Prior tasks that must complete first:
 
 ## Definition of Done
-Checklist of verifiable completion criteria.
+
+- [ ]
+- [ ]
+- [ ] Session handoff note updated with completion date
+
+## Risk Notes
+
+What could go wrong, and what should the next person know before starting?
+
+- **If [X] happens:** do [Y]
+- Escalate to `matt@` if: [condition]
 
 ## Safety Check
-- [ ] No secrets or personal data involved
-- [ ] No domain-wide delegation implied
+
+- [ ] No secrets or personal data involved or introduced
+- [ ] No domain-wide delegation implied or requested
 - [ ] No autonomous money movement
-- [ ] If external communication is involved, human approval is planned
+- [ ] If external communication is involved, human approval is explicitly planned
