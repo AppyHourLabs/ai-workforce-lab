@@ -84,6 +84,54 @@ Every week, `doc@` files an episode documenting what shipped, what broke, what w
 
 ---
 
+## Status
+
+*Last updated: 2026-02-21*
+
+| Project | Status | What it is |
+|---|---|---|
+| [0001 — Google Workspace Hardening](PROJECTS/0001-google-workspace-hardening.md) | 🔵 Active | MFA, API access controls, OAuth scope audit for all AI ops accounts |
+| [0002 — Mac Mini AI Office Setup](PROJECTS/0002-mac-mini-ai-office-setup.md) | 🔵 Active | Dedicated hardened machine for running agent pipelines |
+
+Autonomy tier: **Phase A** — all outbound requires human approval.
+
+---
+
+## Start Here
+
+New here? Read in this order:
+
+1. [Episode 000 — Origin Log](DOCS/SHOW/episodes/000-origin-log.md) — why this project exists
+2. [Episode 001 — The AI Office Moves In](DOCS/SHOW/episodes/001-ai-office-moves-in.md) — what we did first and why
+3. [AI Safety Charter](POLICIES/ai-safety-charter.md) — the non-negotiables
+4. [`AGENTS.md`](AGENTS.md) — who does what (human and AI)
+
+---
+
+## Safety
+
+This project operates under a formal safety charter. The short version:
+
+- No agent acts autonomously on external communications in Phase A
+- No secrets, credentials, or PII in this repository — ever
+- All agent scope changes require human sign-off
+- Every incident gets logged; nothing gets quietly swept
+
+Full details: [`POLICIES/ai-safety-charter.md`](POLICIES/ai-safety-charter.md)
+
+---
+
+## How to Follow
+
+- **Watch this repo** — GitHub → Watch → "All Activity" for commits, PRs, and issues
+- **Star it** — helps others find the experiment
+- **Read the episodes** — [`DOCS/SHOW/episodes/`](DOCS/SHOW/episodes/) is updated weekly by `doc@`
+- **Open an issue** — questions, observations, or suggested tasks are welcome using the [task template](.github/ISSUE_TEMPLATE/task.md)
+
+No mailing list, no newsletter, no algorithm. Just commits.
+
+---
+
 ## Contributing
 
 1. Read [`POLICIES/ai-safety-charter.md`](POLICIES/ai-safety-charter.md) first
