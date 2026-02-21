@@ -1,7 +1,7 @@
-# Task 0009 — Create Publish Checklist for doc@ Posts (Preflight)
+# Task 0009 — Create Publish Checklist for doc@appyhourlabs.com Posts (Preflight)
 
 > **Project:** Documentary and content operations  
-> **Owner:** AI (`doc@`) draft; Human (`matt@`) review  
+> **Owner:** AI (`doc@appyhourlabs.com`) draft; Human (`matt@appyhourlabs.com`) review  
 > **Priority:** P1  
 > **Status:** Open
 
@@ -9,7 +9,7 @@
 
 ## Goal
 
-Create a pre-publication checklist that `doc@` must complete before any episode or post is submitted for human review. This is the last line of automated defense before human eyes see the content.
+Create a pre-publication checklist that `doc@appyhourlabs.com` must complete before any episode or post is submitted for human review. This is the last line of automated defense before human eyes see the content.
 
 ---
 
@@ -36,18 +36,18 @@ Create a pre-publication checklist that `doc@` must complete before any episode 
 
    **Phase A Sign-Off**
    - [ ] Preflight checklist completed and attached to PR
-   - [ ] PR opened with `doc@` as author
-   - [ ] `matt@` tagged for review
+   - [ ] PR opened with `doc@appyhourlabs.com` as author
+   - [ ] `matt@appyhourlabs.com` tagged for review
 
 2. Update [`POLICIES/posting-policy.md`](../POLICIES/posting-policy.md) to reference this preflight runbook
-3. Submit via PR for `matt@` review
+3. Submit via PR for `matt@appyhourlabs.com` review
 
 ---
 
 ## Owner (Human vs AI)
 
-- **Draft:** AI (`doc@`)
-- **Review and merge:** Human (`matt@`)
+- **Draft:** AI (`doc@appyhourlabs.com`)
+- **Review and merge:** Human (`matt@appyhourlabs.com`)
 
 ---
 
@@ -63,11 +63,11 @@ Create a pre-publication checklist that `doc@` must complete before any episode 
 
 - [ ] `RUNBOOKS/publish-preflight.md` created with all checklist sections
 - [ ] Posting policy updated to reference preflight runbook
-- [ ] PR reviewed and merged by `matt@`
+- [ ] PR reviewed and merged by `matt@appyhourlabs.com`
 
 ---
 
 ## Risk Notes
 
 - **The preflight checklist is not a substitute for the quality gates** — it confirms the gates were run. Both are required.
-- Incomplete checklists submitted for review should be returned to draft; `matt@` should not approve incomplete preflight submissions.
+- Incomplete checklists submitted for review should be returned to draft; `matt@appyhourlabs.com` should not approve incomplete preflight submissions.

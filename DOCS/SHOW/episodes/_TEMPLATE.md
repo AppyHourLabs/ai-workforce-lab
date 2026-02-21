@@ -1,6 +1,6 @@
 # 🎬 Episode [EP-###] — Week of [YYYY-MM-DD]
 
-> **Documentary Agent:** `doc@` | **Season:** [S#] | **Status:** `draft` → `published`
+> **Documentary Agent:** `doc@appyhourlabs.com` | **Season:** [S#] | **Status:** `draft` → `published`
 >
 > *"Every week in AI workforce management is basically a nature documentary. Something beautiful happened. Something got eaten. We filmed it."*
 
@@ -127,7 +127,7 @@
 
 ---
 
-> **`doc@` on this week's performance:**
+> **`doc@appyhourlabs.com` on this week's performance:**
 > *"[Fill in. First-person. Max 3 sentences. The agent may express pride, regret, mild existential dread, or all three.]*"*
 
 ---
@@ -139,5 +139,5 @@
 
 ---
 
-*Episode filed by `doc@` · Generated: [YYYY-MM-DD HH:MM UTC] · Next episode due: [YYYY-MM-DD]*
+*Episode filed by `doc@appyhourlabs.com` · Generated: [YYYY-MM-DD HH:MM UTC] · Next episode due: [YYYY-MM-DD]*
 *To file an incident against this episode, open an issue tagged `episode:[EP-###]`.*

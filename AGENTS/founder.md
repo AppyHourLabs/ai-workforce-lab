@@ -1,6 +1,6 @@
 # Founder
 
-> **Account:** `matt@` | **Type:** Human | **Tier:** Super Admin | **Override authority:** Unconditional
+> **Account:** `matt@appyhourlabs.com` | **Type:** Human | **Tier:** Super Admin | **Override authority:** Unconditional
 
 ---
 
@@ -27,7 +27,7 @@ This file exists not to constrain the founder, but to make the governance model 
 
 ## Escalation Recipient
 
-All agents must notify `matt@` immediately when:
+All agents must notify `matt@appyhourlabs.com` immediately when:
 
 - A guardrail conflict is detected
 - A SEV-1 or SEV-2 incident occurs

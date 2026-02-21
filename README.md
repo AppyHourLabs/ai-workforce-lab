@@ -61,14 +61,14 @@ ai-workforce-lab/
 
 | Account | Type | Role |
 |---|---|---|
-| `matt@` | 👤 Human | Founder — final authority on all policy and autonomy decisions |
-| `ai@` | 🤖 AI Ops | General operations, technical and research tasks |
-| `doc@` | 🤖 AI Ops | Documentary agent — writes the weekly show |
-| `sales@` | 🤖 AI Ops | Outreach research and drafting — Phase A gated |
-| `media@` | 🤖 AI Ops | Content and distribution — Phase A gated |
-| `legal@` | 👤 Human only | Legal review — no AI delegation |
-| `security@` | 👤 Human only | Credential and security management — human only |
-| `billing@` | 👤 Human only | Financial accounts — human only, no exceptions |
+| `matt@appyhourlabs.com` | 👤 Human | Founder — final authority on all policy and autonomy decisions |
+| `ai@appyhourlabs.com` | 🤖 AI Ops | General operations, technical and research tasks |
+| `doc@appyhourlabs.com` | 🤖 AI Ops | Documentary agent — writes the weekly show |
+| `sales@appyhourlabs.com` | 🤖 AI Ops | Outreach research and drafting — Phase A gated |
+| `media@appyhourlabs.com` | 🤖 AI Ops | Content and distribution — Phase A gated |
+| `legal@appyhourlabs.com` | 👤 Human only | Legal review — no AI delegation |
+| `security@appyhourlabs.com` | 👤 Human only | Credential and security management — human only |
+| `billing@appyhourlabs.com` | 👤 Human only | Financial accounts — human only, no exceptions |
 
 Full role specs: [`AGENTS/`](AGENTS/)
 
@@ -76,7 +76,7 @@ Full role specs: [`AGENTS/`](AGENTS/)
 
 ## The Show
 
-Every week, `doc@` files an episode documenting what shipped, what broke, what was decided, and what we learned. Public, honest, occasionally funny.
+Every week, `doc@appyhourlabs.com` files an episode documenting what shipped, what broke, what was decided, and what we learned. Public, honest, occasionally funny.
 
 - [Episode 000 — Origin Log](DOCS/SHOW/episodes/000-origin-log.md)
 - [Episode 001 — The AI Office Moves In](DOCS/SHOW/episodes/001-ai-office-moves-in.md)
@@ -125,7 +125,7 @@ Full details: [`POLICIES/ai-safety-charter.md`](POLICIES/ai-safety-charter.md)
 
 - **Watch this repo** — GitHub → Watch → "All Activity" for commits, PRs, and issues
 - **Star it** — helps others find the experiment
-- **Read the episodes** — [`DOCS/SHOW/episodes/`](DOCS/SHOW/episodes/) is updated weekly by `doc@`
+- **Read the episodes** — [`DOCS/SHOW/episodes/`](DOCS/SHOW/episodes/) is updated weekly by `doc@appyhourlabs.com`
 - **Open an issue** — questions, observations, or suggested tasks are welcome using the [task template](.github/ISSUE_TEMPLATE/task.md)
 
 No mailing list, no newsletter, no algorithm. Just commits.

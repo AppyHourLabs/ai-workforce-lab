@@ -1,7 +1,7 @@
 # Task 0010 — Add CI Workflow for Secret Scanning
 
 > **Project:** CI/CD infrastructure  
-> **Owner:** AI (`ai@`) draft; Human (`matt@`) review  
+> **Owner:** AI (`ai@appyhourlabs.com`) draft; Human (`matt@appyhourlabs.com`) review  
 > **Priority:** P0  
 > **Status:** Complete — see [.github/workflows/no-secrets.yml](../.github/workflows/no-secrets.yml)
 
@@ -28,8 +28,8 @@ Add a GitHub Actions workflow that scans every PR diff for known secret patterns
 
 ## Owner (Human vs AI)
 
-- **Implementation:** AI (`ai@`)
-- **Review and merge:** Human (`matt@`)
+- **Implementation:** AI (`ai@appyhourlabs.com`)
+- **Review and merge:** Human (`matt@appyhourlabs.com`)
 
 ---
 

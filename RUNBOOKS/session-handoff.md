@@ -8,7 +8,7 @@
 
 Context dies between sessions. This runbook is the bridge. A good handoff means the next session — whether run by a human or an agent — doesn't start from scratch.
 
-A bad handoff means someone (probably `matt@`) spends 20 minutes reconstructing what happened. Fill this in.
+A bad handoff means someone (probably `matt@appyhourlabs.com`) spends 20 minutes reconstructing what happened. Fill this in.
 
 ---
 
@@ -50,7 +50,7 @@ Copy and paste this block into the relevant `PROJECTS/` or `TASKS/` file, or int
 3.
 
 ### Risks / escalations
-- [Any open risk decisions, ambiguous situations, or items that need matt@ eyes]
+- [Any open risk decisions, ambiguous situations, or items that need matt@appyhourlabs.com eyes]
 
 ### Links updated this session
 - [PROJECTS/XXXX.md](../PROJECTS/)

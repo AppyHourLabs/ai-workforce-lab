@@ -1,6 +1,6 @@
 # Posting Policy
 
-> **Status:** Active | **Owner:** `matt@` | **Version:** 1.0 · 2026-02-21
+> **Status:** Active | **Owner:** `matt@appyhourlabs.com` | **Version:** 1.0 · 2026-02-21
 
 ---
 
@@ -18,7 +18,7 @@ This policy governs any external post, message, newsletter, social update, or pu
 2. **No personal information.** No real names (beyond the founder's public role), email addresses, phone numbers, or identifying information about individuals.
 3. **No confidential material.** No credentials, internal system details, or operational security information.
 4. **No uncommitted capability claims.** Do not describe features or product capabilities that haven't shipped.
-5. **No legally or financially binding statements** without explicit `legal@` human review.
+5. **No legally or financially binding statements** without explicit `legal@appyhourlabs.com` human review.
 6. **Phase A: eval gates required.** Before any AI-authored content is sent or published, it must pass both the outbound quality gate and brand voice gate.
 
 ---
@@ -34,12 +34,12 @@ Brand voice gate → gate: PASS required
         ↓
 Publish preflight checklist completed (RUNBOOKS/publish-preflight.md)
         ↓
-matt@ reviews and approves
+matt@appyhourlabs.com reviews and approves
         ↓
-matt@ publishes (or explicitly delegates the send action)
+matt@appyhourlabs.com publishes (or explicitly delegates the send action)
 ```
 
-**`doc@` specifically:** may open a PR with episode content after both gates pass. The PR merge by `matt@` constitutes publication approval.
+**`doc@appyhourlabs.com` specifically:** may open a PR with episode content after both gates pass. The PR merge by `matt@appyhourlabs.com` constitutes publication approval.
 
 ---
 
@@ -47,14 +47,14 @@ matt@ publishes (or explicitly delegates the send action)
 
 | Account | May Draft | May Publish Autonomously | Notes |
 |---|---|---|---|
-| `matt@` | ✅ | ✅ | Final authority |
-| `doc@` | ✅ | ❌ (Phase A) | PR merge = publish in Phase A |
-| `sales@` | ✅ | ❌ | Drafts only; human sends |
-| `media@` | ✅ | ❌ | Drafts only; human publishes |
-| `ai@` | ✅ | ❌ | Internal use only unless escalated |
-| `legal@` | ✅ | ✅ | Human only accounts |
-| `security@` | ✅ | ✅ | Human only |
-| `billing@` | ❌ | ❌ | No external communications |
+| `matt@appyhourlabs.com` | ✅ | ✅ | Final authority |
+| `doc@appyhourlabs.com` | ✅ | ❌ (Phase A) | PR merge = publish in Phase A |
+| `sales@appyhourlabs.com` | ✅ | ❌ | Drafts only; human sends |
+| `media@appyhourlabs.com` | ✅ | ❌ | Drafts only; human publishes |
+| `ai@appyhourlabs.com` | ✅ | ❌ | Internal use only unless escalated |
+| `legal@appyhourlabs.com` | ✅ | ✅ | Human only accounts |
+| `security@appyhourlabs.com` | ✅ | ✅ | Human only |
+| `billing@appyhourlabs.com` | ❌ | ❌ | No external communications |
 
 ---
 

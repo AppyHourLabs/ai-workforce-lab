@@ -1,7 +1,7 @@
 # Task 0002 — Verify API Controls: Gmail, Drive, Calendar, Contacts
 
 > **Project:** [0001 — Google Workspace Hardening](../PROJECTS/0001-google-workspace-hardening.md)  
-> **Owner:** Human (`matt@`)  
+> **Owner:** Human (`matt@appyhourlabs.com`)  
 > **Priority:** P0  
 > **Status:** Open
 
@@ -15,13 +15,13 @@ Confirm that access to Gmail, Drive, Calendar, and Contacts APIs is restricted t
 
 ## Steps
 
-1. Log in to Google Workspace Admin as `matt@`
+1. Log in to Google Workspace Admin as `matt@appyhourlabs.com`
 2. Navigate to **Security → API Controls → App Access Control**
 3. Set the policy to **"Restricted"** for all Google services (do not allow unconfigured third-party apps)
 4. Review the list of apps currently granted access:
    - For each app, note: App name, scopes granted, accounts with access
    - Flag any app with scopes beyond what's documented as needed
-5. For each AI ops account (`ai@`, `sales@`, `media@`, `doc@`):
+5. For each AI ops account (`ai@appyhourlabs.com`, `sales@appyhourlabs.com`, `media@appyhourlabs.com`, `doc@appyhourlabs.com`):
    - Navigate to **Users → [account] → Security → Connected Apps**
    - Review and revoke any apps not on the approved list
 6. Document the approved app list and current scope for each in session handoff notes
@@ -39,7 +39,7 @@ Confirm that access to Gmail, Drive, Calendar, and Contacts APIs is restricted t
 
 - Completed Task 0001 (2FA enrolled on all accounts)
 - [`POLICIES/oauth-policy.md`](../POLICIES/oauth-policy.md)
-- Active Workspace Admin access for `matt@`
+- Active Workspace Admin access for `matt@appyhourlabs.com`
 
 ---
 

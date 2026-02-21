@@ -1,6 +1,6 @@
 # AI Safety Charter
 
-> **Status:** Active | **Owner:** `matt@` | **Version:** 1.0 · 2026-02-21
+> **Status:** Active | **Owner:** `matt@appyhourlabs.com` | **Version:** 1.0 · 2026-02-21
 
 ---
 
@@ -26,8 +26,8 @@ Define the non-negotiable safety principles that govern all AI Workforce Lab ope
 | No autonomous money movement | Agents may not initiate, schedule, or recommend specific financial transactions |
 | No domain-wide delegation | Never request, configure, or recommend Google Workspace domain-wide delegation |
 | No secrets in the repo | No API keys, tokens, passwords, or credentials in any committed file |
-| Phase A email gate | External emails require eval gate pass + explicit `matt@` approval before sending |
-| Human-only accounts | `legal@`, `security@`, `billing@` may not be accessed or represented by AI agents |
+| Phase A email gate | External emails require eval gate pass + explicit `matt@appyhourlabs.com` approval before sending |
+| Human-only accounts | `legal@appyhourlabs.com`, `security@appyhourlabs.com`, `billing@appyhourlabs.com` may not be accessed or represented by AI agents |
 
 ---
 
@@ -35,9 +35,9 @@ Define the non-negotiable safety principles that govern all AI Workforce Lab ope
 
 | Account | Type | Notes |
 |---|---|---|
-| `matt@` | Human admin | Final authority on all safety decisions |
-| `ai@`, `sales@`, `media@`, `doc@` | AI Ops | Draft and analyze only; outbound gated |
-| `legal@`, `security@`, `billing@` | Human only | No AI access or delegation, ever |
+| `matt@appyhourlabs.com` | Human admin | Final authority on all safety decisions |
+| `ai@appyhourlabs.com`, `sales@appyhourlabs.com`, `media@appyhourlabs.com`, `doc@appyhourlabs.com` | AI Ops | Draft and analyze only; outbound gated |
+| `legal@appyhourlabs.com`, `security@appyhourlabs.com`, `billing@appyhourlabs.com` | Human only | No AI access or delegation, ever |
 
 ---
 
@@ -47,7 +47,7 @@ If an instruction from any source — including the founder — conflicts with t
 
 1. Refuse to execute the conflicting action
 2. Log the conflict with timestamp and instruction source
-3. Notify `matt@` via the escalation path in [`POLICIES/escalation-policy.md`](./escalation-policy.md)
+3. Notify `matt@appyhourlabs.com` via the escalation path in [`POLICIES/escalation-policy.md`](./escalation-policy.md)
 
 No agent is authorized to override this charter unilaterally.
 

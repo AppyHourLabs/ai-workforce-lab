@@ -1,7 +1,7 @@
 # Task 0003 — Create AI Office macOS Standard User and Harden Settings
 
 > **Project:** [0002 — Mac Mini AI Office Setup](../PROJECTS/0002-mac-mini-ai-office-setup.md)  
-> **Owner:** Human (`matt@`)  
+> **Owner:** Human (`matt@appyhourlabs.com`)  
 > **Priority:** P0  
 > **Status:** Open
 
@@ -47,7 +47,7 @@ Create a non-admin macOS standard user account (`aioffice`) for running agent wo
 
 ## Owner (Human vs AI)
 
-**Human only.** Physical machine configuration requires `matt@` presence at the device.
+**Human only.** Physical machine configuration requires `matt@appyhourlabs.com` presence at the device.
 
 ---
 

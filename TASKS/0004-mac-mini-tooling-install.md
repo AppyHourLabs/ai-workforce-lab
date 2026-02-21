@@ -1,7 +1,7 @@
 # Task 0004 — Install Tooling on AI Office Mac Mini
 
 > **Project:** [0002 — Mac Mini AI Office Setup](../PROJECTS/0002-mac-mini-ai-office-setup.md)  
-> **Owner:** Human (`matt@`) for install; AI (`ai@`) for verification  
+> **Owner:** Human (`matt@appyhourlabs.com`) for install; AI (`ai@appyhourlabs.com`) for verification  
 > **Priority:** P1  
 > **Status:** Open
 
@@ -45,7 +45,7 @@ Install the standard AI Office toolchain: Homebrew, Git, Node 20, Docker, Chrome
 ### Slack
 16. Download Slack from slack.com/downloads/mac
 17. Install to `/Applications`
-18. Sign in as `matt@` workspace only at this stage
+18. Sign in as `matt@appyhourlabs.com` workspace only at this stage
 
 ### Verify as `aioffice` user
 19. Switch to `aioffice` user
@@ -55,8 +55,8 @@ Install the standard AI Office toolchain: Homebrew, Git, Node 20, Docker, Chrome
 
 ## Owner (Human vs AI)
 
-- **Install steps:** Human (`matt@`) — requires admin
-- **Verification step 19–20:** AI (`ai@`) may assist by running verification commands
+- **Install steps:** Human (`matt@appyhourlabs.com`) — requires admin
+- **Verification step 19–20:** AI (`ai@appyhourlabs.com`) may assist by running verification commands
 
 ---
 

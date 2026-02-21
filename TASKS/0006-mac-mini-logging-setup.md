@@ -1,7 +1,7 @@
 # Task 0006 — Create Local Logging Directory and Establish Logging Conventions
 
 > **Project:** [0002 — Mac Mini AI Office Setup](../PROJECTS/0002-mac-mini-ai-office-setup.md)  
-> **Owner:** Human setup (`matt@`); AI convention implementation (`ai@`)  
+> **Owner:** Human setup (`matt@appyhourlabs.com`); AI convention implementation (`ai@appyhourlabs.com`)  
 > **Priority:** P1  
 > **Status:** Complete — see [RUNBOOKS/logging-conventions.md](../RUNBOOKS/logging-conventions.md)
 
@@ -32,7 +32,7 @@ Create a local logging directory on the AI Office Mac Mini for agent action logs
    ```json
    {
      "timestamp": "YYYY-MM-DDTHH:MM:SSZ",
-     "agent_id": "ai@|sales@|media@|doc@",
+     "agent_id": "ai@appyhourlabs.com|sales@appyhourlabs.com|media@appyhourlabs.com|doc@appyhourlabs.com",
      "action_type": "draft|review|pipeline_run|escalation|publish",
      "target_file": "relative/path/to/file",
      "policy_gates_run": ["outbound-quality-gate", "brand-voice-gate"],
@@ -51,8 +51,8 @@ Create a local logging directory on the AI Office Mac Mini for agent action logs
 
 ## Owner (Human vs AI)
 
-- **Directory creation and permissions:** Human (`matt@`)
-- **Convention documentation:** AI (`ai@`) may draft; human reviews before merge
+- **Directory creation and permissions:** Human (`matt@appyhourlabs.com`)
+- **Convention documentation:** AI (`ai@appyhourlabs.com`) may draft; human reviews before merge
 - **Verification:** Either
 
 ---

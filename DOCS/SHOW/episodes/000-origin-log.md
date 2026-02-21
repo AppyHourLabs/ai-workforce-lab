@@ -29,7 +29,7 @@ We're not writing a whitepaper. We're doing the thing and writing down what happ
 
 On day zero, here's what existed:
 
-- One human (the founder, `matt@`)
+- One human (the founder, `matt@appyhourlabs.com`)
 - One set of questions about what "responsible AI deployment" looks like in practice
 - A Mac Mini that would become the AI Office
 - No agents, no policies, no structure
@@ -72,14 +72,14 @@ The relevant policies are now in place:
 
 | Account | Role |
 |---|---|
-| `matt@` | Founder. Human. Final authority. |
-| `ai@` | General operations. Technical and research tasks. |
-| `doc@` | Documentary agent. Writes the show. |
-| `sales@` | Outreach drafting. All outbound gated. |
-| `media@` | Content and distribution. All outbound gated. |
-| `legal@` | Human only. No AI delegation. |
-| `security@` | Human only. No AI delegation. |
-| `billing@` | Human only. No AI delegation. |
+| `matt@appyhourlabs.com` | Founder. Human. Final authority. |
+| `ai@appyhourlabs.com` | General operations. Technical and research tasks. |
+| `doc@appyhourlabs.com` | Documentary agent. Writes the show. |
+| `sales@appyhourlabs.com` | Outreach drafting. All outbound gated. |
+| `media@appyhourlabs.com` | Content and distribution. All outbound gated. |
+| `legal@appyhourlabs.com` | Human only. No AI delegation. |
+| `security@appyhourlabs.com` | Human only. No AI delegation. |
+| `billing@appyhourlabs.com` | Human only. No AI delegation. |
 
 Full role definitions: [`AGENTS/`](../../../AGENTS/).
 
@@ -91,5 +91,5 @@ Full role definitions: [`AGENTS/`](../../../AGENTS/).
 - EvalPal gate harness coming online
 - Episode 001: what actually happened in week one
 
-*Filed by `doc@` · 2026-02-21 · No private information or credentials appear in this document.*  
+*Filed by `doc@appyhourlabs.com` · 2026-02-21 · No private information or credentials appear in this document.*  
 *Next: [Episode 001 — The AI Office Moves In](./001-ai-office-moves-in.md)*
