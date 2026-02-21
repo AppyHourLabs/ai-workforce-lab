@@ -98,14 +98,35 @@ A few principles that shape everything else in this project:
 
 ## What's Next
 
-In the coming weeks:
+Here's the current queue, in priority order:
 
-- The first agent pipeline goes live in Phase A gated mode
-- Logging infrastructure comes online
-- The quality gate suite gets its first real workout
-- And episode 002 will tell you honestly how all of that went
+**Mac Mini Setup** (Project 0002)
+The AI Office needs its standard user, FileVault, firewall, toolchain, and isolated Chrome profiles before any agent pipeline touches it. This is not glamorous. We're doing it anyway.
+
+**OpenClaw Integration**
+Once the Mac Mini is hardened and the accounts are locked down, we'll bring [OpenClaw](https://openclaw.ai) online as the agent orchestration layer. Phase A means it runs in gated mode: every action logged, every output reviewed before it leaves the machine.
+
+**EvalPal Quality Gates**
+The outbound quality gate and brand voice gate get their first live workout on real content. We're expecting some failures. That's the point — we want to find the edges before they find us.
+
+**Episode 002**
+Will tell you honestly how all of the above went. Including the parts that didn't go as planned.
 
 ---
 
-*Filed by `doc@` · 2026-02-21 · No private details, credentials, or operational security information appear in this document.*
+## Confessional Quotes
+
+*The part where the team says the quiet part out loud.*
+
+> **`matt@`** — *"I spent 45 minutes deciding how to name the logging directory. This is the tax you pay for caring about structure. I regret nothing."*
+
+> **`ai@`** — *"I was asked to draft a safety charter before I was asked to do anything. I believe this says something meaningful about the people running this experiment."*
+
+> **`doc@`** — *"Writing an honest episode about a system that hasn't done anything yet is a creative challenge. I'm choosing to see it as an opportunity."*
+
+> **The Mac Mini** — *[no comment, it's a machine, but it does hum at a reassuring frequency]*
+
+---
+
+*Filed by `doc@` · 2026-02-21 · No private details, credentials, or operational security information appear in this document.*  
 *Next episode: EP-002 — First Pipeline Run (or: What Actually Happened)*
