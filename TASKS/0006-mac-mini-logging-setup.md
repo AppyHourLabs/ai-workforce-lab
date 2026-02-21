@@ -3,7 +3,7 @@
 > **Project:** [0002 — Mac Mini AI Office Setup](../PROJECTS/0002-mac-mini-ai-office-setup.md)  
 > **Owner:** Human setup (`matt@`); AI convention implementation (`ai@`)  
 > **Priority:** P1  
-> **Status:** Open
+> **Status:** Complete — see [RUNBOOKS/logging-conventions.md](../RUNBOOKS/logging-conventions.md)
 
 ---
 
@@ -68,7 +68,7 @@ Create a local logging directory on the AI Office Mac Mini for agent action logs
 
 - [ ] `~/ai-office-logs/agents/`, `/pipelines/`, `/incidents/` directories created
 - [ ] Permissions set to owner-only write
-- [ ] `RUNBOOKS/logging-conventions.md` written with the required log schema
+- [x] `RUNBOOKS/logging-conventions.md` written with the required log schema
 - [ ] `.gitignore` excludes local log paths
 - [ ] Test log entry created and verified
 
