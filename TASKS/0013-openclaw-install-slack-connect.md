@@ -130,10 +130,10 @@ Check `#ai-office` in Slack — the message should appear.
 
 ## Definition of Done
 
-- [ ] Node 22+ confirmed (`node --version`)
+- [x] Node 22+ confirmed (`node --version`)
 - [ ] OpenClaw installed (`openclaw --version`)
 - [ ] Onboarding wizard completed; daemon running
-- [ ] Slack App created with correct scopes
+- [x] Slack App created with correct scopes
 - [ ] OpenClaw connected to `#ai-office` channel
 - [ ] Test message successfully received in `#ai-office`
 - [ ] `openclaw gateway status` shows healthy
