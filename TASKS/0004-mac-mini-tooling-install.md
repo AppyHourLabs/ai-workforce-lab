@@ -3,7 +3,7 @@
 > **Project:** [0002 — Mac Mini AI Office Setup](../PROJECTS/0002-mac-mini-ai-office-setup.md)  
 > **Owner:** Human (`matt@appyhourlabs.com`) for install; AI (`ai@appyhourlabs.com`) for verification  
 > **Priority:** P1  
-> **Status:** Open
+> **Status:** Done
 
 ---
 
@@ -70,11 +70,11 @@ Install the standard AI Office toolchain: Homebrew, Git, Node 20, Docker, Chrome
 
 ## Definition of Done
 
-- [ ] All 6 tools installed and accessible
-- [ ] `git --version`, `node --version`, `docker --version` return expected versions
-- [ ] Chrome installed with no accounts signed in at the system level
-- [ ] Slack installed and workspace accessible
-- [ ] Verification passed under `aioffice` user account
+- [x] All 6 tools installed and accessible
+- [x] `git --version`, `node --version`, `docker --version` return expected versions
+- [x] Chrome installed with no accounts signed in at the system level
+- [x] Slack installed and workspace accessible
+- [x] Verification passed under `aioffice` user account
 
 ---
 

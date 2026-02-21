@@ -32,3 +32,6 @@ htmlcov/
 
 # Logs
 *.log
+
+# AI Office local logs (never commit — may contain operational data)
+ai-office-logs/

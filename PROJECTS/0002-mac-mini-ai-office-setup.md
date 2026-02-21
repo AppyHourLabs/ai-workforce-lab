@@ -27,10 +27,11 @@ Configure the Mac Mini as a dedicated, hardened AI Office — a fixed, auditable
 
 | Task | File | Status |
 |---|---|---|
-| Create `aioffice` macOS user and harden settings | [`TASKS/0003`](../TASKS/0003-mac-mini-os-hardening.md) | Open |
-| Install tooling (brew, git, node, docker, chrome, slack) | [`TASKS/0004`](../TASKS/0004-mac-mini-tooling-install.md) | Open |
-| Create Chrome profiles for AI ops accounts | [`TASKS/0005`](../TASKS/0005-mac-mini-chrome-profiles.md) | Open |
-| Create local logging directory and conventions | [`TASKS/0006`](../TASKS/0006-mac-mini-logging-setup.md) | Complete |
+| Create `aioffice` macOS user and harden settings | [`TASKS/0003`](../TASKS/0003-mac-mini-os-hardening.md) | ✅ Done |
+| Install tooling (brew, git, node, docker, chrome, slack) | [`TASKS/0004`](../TASKS/0004-mac-mini-tooling-install.md) | ✅ Done |
+| Create Chrome profiles for AI ops accounts | [`TASKS/0005`](../TASKS/0005-mac-mini-chrome-profiles.md) | ✅ Done |
+| Create local logging directory and conventions | [`TASKS/0006`](../TASKS/0006-mac-mini-logging-setup.md) | ✅ Done |
+| Install OpenClaw + connect to Slack | [`TASKS/0013`](../TASKS/0013-openclaw-install-slack-connect.md) | 🔵 Active |
 
 ---
 

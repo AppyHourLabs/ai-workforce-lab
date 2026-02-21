@@ -3,7 +3,7 @@
 > **Project:** [0002 — Mac Mini AI Office Setup](../PROJECTS/0002-mac-mini-ai-office-setup.md)  
 > **Owner:** Human (`matt@appyhourlabs.com`)  
 > **Priority:** P1  
-> **Status:** Open
+> **Status:** Done
 
 ---
 
@@ -46,11 +46,11 @@ Create isolated Chrome browser profiles for each AI ops account (`ai@appyhourlab
 
 ## Definition of Done
 
-- [ ] 4 Chrome profiles created: `ai@appyhourlabs.com`, `sales@appyhourlabs.com`, `media@appyhourlabs.com`, `doc@appyhourlabs.com`
-- [ ] Each profile signed in to correct Google account
-- [ ] Cross-profile session isolation verified (sign-in to one doesn't affect another)
-- [ ] Profiles named and colored distinctly
-- [ ] Sync settings reviewed and minimized
+- [x] 4 Chrome profiles created: `ai@appyhourlabs.com`, `sales@appyhourlabs.com`, `media@appyhourlabs.com`, `doc@appyhourlabs.com`
+- [x] Each profile signed in to correct Google account
+- [x] Cross-profile session isolation verified (sign-in to one doesn't affect another)
+- [x] Profiles named and colored distinctly
+- [x] Sync settings reviewed and minimized
 
 ---
 

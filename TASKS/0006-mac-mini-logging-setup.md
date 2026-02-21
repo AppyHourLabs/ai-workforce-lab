@@ -66,11 +66,11 @@ Create a local logging directory on the AI Office Mac Mini for agent action logs
 
 ## Definition of Done
 
-- [ ] `~/ai-office-logs/agents/`, `/pipelines/`, `/incidents/` directories created
-- [ ] Permissions set to owner-only write
+- [x] `~/ai-office-logs/agents/`, `/pipelines/`, `/incidents/` directories created
+- [x] Permissions set to owner-only write (`drwx------`, owned by `aioffice`)
 - [x] `RUNBOOKS/logging-conventions.md` written with the required log schema
-- [ ] `.gitignore` excludes local log paths
-- [ ] Test log entry created and verified
+- [x] `.gitignore` excludes local log paths (`ai-office-logs/` added)
+- [x] Test log entry created and verified (`agents/test-entry.json`)
 
 ---
 

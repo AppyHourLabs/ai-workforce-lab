@@ -34,11 +34,11 @@
 
 | Task | File | Status |
 |---|---|---|
-| Create `aioffice` macOS user + harden settings | [TASKS/0003](TASKS/0003-mac-mini-os-hardening.md) | Open |
-| Install toolchain (brew, git, node, docker, chrome, slack) | [TASKS/0004](TASKS/0004-mac-mini-tooling-install.md) | Open |
-| Create Chrome profiles for AI ops accounts | [TASKS/0005](TASKS/0005-mac-mini-chrome-profiles.md) | Open |
-| Create local logging directory + conventions | [TASKS/0006](TASKS/0006-mac-mini-logging-setup.md) | Open |
-| Install OpenClaw (not connected) | [TASKS/0010](TASKS/0010-openclaw-initial-install-not-connected.md) | Open |
+| Create `aioffice` macOS user + harden settings | [TASKS/0003](TASKS/0003-mac-mini-os-hardening.md) | ✅ Done |
+| Install toolchain (brew, git, node, docker, chrome, slack) | [TASKS/0004](TASKS/0004-mac-mini-tooling-install.md) | ✅ Done |
+| Create Chrome profiles for AI ops accounts | [TASKS/0005](TASKS/0005-mac-mini-chrome-profiles.md) | ✅ Done |
+| Create local logging directory + conventions | [TASKS/0006](TASKS/0006-mac-mini-logging-setup.md) | ✅ Done |
+| Install OpenClaw + connect to Slack | [TASKS/0013](TASKS/0013-openclaw-install-slack-connect.md) | 🔵 Active |
 
 **Step 03 Complete When:** OpenClaw is installed and connected to Slack or Discord.
 
@@ -48,10 +48,11 @@
 
 **CampClaw Artifact:** A fully configured agent with identity docs and behavior instructions.
 
-**Repo Artifacts to Create:**
-- Agent system prompt / behavior instructions (`AGENTS/`)
-- Identity document per agent role
-- Behavior instructions linked to [`POLICIES/ai-safety-charter.md`](POLICIES/ai-safety-charter.md)
+**First Agent:** Documentary Agent (`doc@appyhourlabs.com`) — lowest risk, self-documenting setup.
+
+| Task | File | Status |
+|---|---|---|
+| Configure doc agent in OpenClaw (system prompt, file access, first run) | [TASKS/0014](TASKS/0014-doc-agent-step04-configure.md) | Open |
 
 ---
 
