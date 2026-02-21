@@ -1,4 +1,32 @@
-# Human approval required for governance and planning docs in this public repository.
+# CODEOWNERS
+# Human approval required for all governance, policy, agent definitions,
+# and project documents in this public repository.
+# See AGENTS.md for the full account role model.
 
-POLICIES/* @founder
-PROJECTS/* @founder
+# Policies — any change here must be reviewed by the founder
+POLICIES/*                  @AppyHourLabs/founders
+
+# Projects — strategic work requires founder sign-off
+PROJECTS/*                  @AppyHourLabs/founders
+
+# Agent definitions — changes to agent scope require founder review
+AGENTS/*                    @AppyHourLabs/founders
+
+# Eval gates — changes to quality thresholds require founder review
+EVALS/*                     @AppyHourLabs/founders
+
+# CI/CD workflows — infrastructure changes require founder review
+.github/workflows/*         @AppyHourLabs/founders
+
+# CODEOWNERS itself — must be approved by founder
+.github/CODEOWNERS          @AppyHourLabs/founders
+
+# Runbooks — operational docs require founder review
+RUNBOOKS/*                  @AppyHourLabs/founders
+
+# Root context files
+AGENTS.md                   @AppyHourLabs/founders
+README.md                   @AppyHourLabs/founders
+
+# Episode content — doc@ authors, founder approves
+DOCS/SHOW/episodes/*        @AppyHourLabs/founders
