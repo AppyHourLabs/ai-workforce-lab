@@ -3,7 +3,7 @@
 > **Project:** [0002 — Mac Mini AI Office Setup](../PROJECTS/0002-mac-mini-ai-office-setup.md)  
 > **Owner:** Human (`matt@appyhourlabs.com`)  
 > **Priority:** P0  
-> **Status:** Open
+> **Status:** Done
 
 ---
 
@@ -60,11 +60,11 @@ Create a non-admin macOS standard user account (`aioffice`) for running agent wo
 
 ## Definition of Done
 
-- [ ] `aioffice` standard user created, no admin rights
-- [ ] FileVault enabled; recovery key stored securely (location noted in handoff)
-- [ ] Firewall enabled and configured
-- [ ] All remote sharing services disabled
-- [ ] Login as `aioffice` verified
+- [x] `aioffice` standard user created, no admin rights
+- [x] FileVault enabled; recovery key stored securely (location noted in handoff)
+- [x] Firewall enabled and configured
+- [x] All remote sharing services disabled
+- [x] Login as `aioffice` verified
 
 ---
 
