@@ -18,7 +18,7 @@
 | **06** | Deploy It | ✅ Complete | [TASK 0017](TASKS/0017-doc-agent-step06-deploy-it.md) — Daily cron schedule deployed |
 | — | **MILESTONE** | 🏁 | **FIRST AGENT DEPLOYED. NOW EXPAND.** |
 | **07** | The Work Audit | ✅ Complete | [TASK 0018](TASKS/0018-step07-work-audit.md) — Work audit: 3 agent-ready jobs identified |
-| **08** | The Second Agent | 🔵 Active | QA, Content, and Security agents deployed |
+| **08** | The Second Agent | ✅ Complete | QA, Content, and Security agents deployed |
 | **09** | Repeat | 🔒 Locked | Fleet of agents covering multiple roles |
 | **10** | The Connections | 🔒 Locked | Agents wired together, sharing context |
 | **11** | The System | 🔒 Locked | Full operation documented — monitoring & management |
@@ -134,9 +134,9 @@ Weekly check-ins at [campclaw.ai/check-in](https://campclaw.ai/check-in).
 
 | Question | This Week's Answer |
 |---|---|
-| What did you build? | Steps 00–06 complete. Doc Agent deployed on daily cron (04:00 ET). First autonomous agent milestone reached. |
-| Are you blocked? | PR review for Episode 002 (`matt@appyhourlabs.com` approval needed) |
-| Goal for next week? | Complete Step 04 (merge Episode 002); begin Step 05 (The Wiring — connect agent to tools) |
+| What did you build? | Steps 00–08 complete. 4 agents deployed (doc, QA, content, security) on staggered daily crons (04:00–05:30 ET). Content agent drafted social posts for 4 episodes. Security agent scanned PRs. |
+| Are you blocked? | X API developer setup needed for automated social posting (deferred). |
+| Goal for next week? | Verify first full 4-agent autonomous morning run. Begin Step 09 (Shared Brain) or Step 10 (The Manager). Set up X API for content agent posting. |
 
 ---
 
