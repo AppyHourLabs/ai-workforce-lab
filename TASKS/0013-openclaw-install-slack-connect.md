@@ -3,7 +3,7 @@
 > **Project:** [0002 — Mac Mini AI Office Setup](../PROJECTS/0002-mac-mini-ai-office-setup.md)  
 > **Owner:** Human (`matt@appyhourlabs.com`)  
 > **Priority:** P0  
-> **Status:** Open  
+> **Status:** ✅ Done  
 > **CampClaw Step:** 03 — The Mac Mini (final step)
 
 ---
@@ -131,12 +131,12 @@ Check `#ai-office` in Slack — the message should appear.
 ## Definition of Done
 
 - [x] Node 22+ confirmed (`node --version`)
-- [ ] OpenClaw installed (`openclaw --version`)
-- [ ] Onboarding wizard completed; daemon running
+- [x] OpenClaw installed (`openclaw --version`) — v2026.2.21-2
+- [x] Onboarding wizard completed; daemon running (LaunchAgent, pid 56352)
 - [x] Slack App created with correct scopes
-- [ ] OpenClaw connected to `#ai-office` channel
-- [ ] Test message successfully received in `#ai-office`
-- [ ] `openclaw gateway status` shows healthy
+- [x] OpenClaw connected to `#ai-office` channel
+- [x] Test message successfully received in `#ai-office` (msg ID: 1771722203.030089)
+- [x] `openclaw gateway status` shows healthy (pid 56352, RPC ok)
 
 ---
 
