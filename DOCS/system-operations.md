@@ -204,6 +204,10 @@ Hard-won lessons from building the fleet. Full details in [RUNBOOKS/new-agent-on
 | [session-handoff.md](../RUNBOOKS/session-handoff.md) | Handoff record template and pre-handoff checklist |
 | [new-agent-slack-setup.md](../RUNBOOKS/new-agent-slack-setup.md) | Slack app configuration for new agents |
 | [logging-conventions.md](../RUNBOOKS/logging-conventions.md) | Logging directory structure and file naming standards |
+| [standup.md](../RUNBOOKS/standup.md) | `fleet-status.md` schema spec — structured standup format for all agents |
+| [backlog-refinement.md](../RUNBOOKS/backlog-refinement.md) | Weekly Product Agent backlog pass — produces `TASKS/BACKLOG.md` |
+| [sprint-planning.md](../RUNBOOKS/sprint-planning.md) | Bi-weekly sprint commitment format — Product drafts, CTO validates |
+| [retro.md](../RUNBOOKS/retro.md) | Post-sprint retrospective — Security Agent files, Dev Agent appends health metrics |
 
 ---
 
