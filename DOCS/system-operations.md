@@ -19,8 +19,8 @@ Complete operational reference for the AI Workforce Lab fleet. For step-by-step 
 | 6 | 💰 CFO | `cfo` | `ai@appyhourlabs.com` | 06:00 daily | Budget modeling, cost tracking, grant research | Zero financial authority — advisory only; no access to `billing@` |
 | 7 | 🔧 CTO | `cto` | `ai@appyhourlabs.com` | 06:30 daily | Architecture decisions, technical roadmap, CI/CD oversight | Does not merge, deploy, or provision infrastructure |
 | 8 | 📞 SDR | `sdr` | `sales@appyhourlabs.com` | 07:00 daily | Prospect research, outreach drafting, pipeline tracking | No autonomous email sends; all outbound human-gated |
-| 9 | 💻 Dev | `dev` | `ai@appyhourlabs.com` | 07:30 daily | Full-stack development, testing, PR authoring | PRs only — never deploys, merges, or modifies `.env` files |
-| 10 | 🎨 Product | `product` | `ai@appyhourlabs.com` | 08:00 daily | Product strategy, backlog refinement, sprint planning | Advisory — never commits to partnerships, pricing, or external publishing |
+| 9 | 💻 Dev | `dev` | `ai@appyhourlabs.com` | 07:30 daily | Full-stack coding, testing, bug fixes, feature PRs | No deploys — PRs only, branch prefix `dev/` |
+| 10 | 🎨 Product | `product` | `ai@appyhourlabs.com` | 08:00 daily | Product strategy, backlog refinement, sprint planning, branding | Advisory — no external announcements without approval |
 
 **Total fleet:** 10 agents · **Pipeline window:** 03:45–08:00 ET · **All agents:** Phase A
 
@@ -47,14 +47,14 @@ The fleet runs on staggered daily crons. Each agent completes its work and write
         │
 07:00  📞 SDR         Prospect research and outreach drafting
         │
-07:30  💻 Dev         Code, test, and open PRs on assigned projects
+07:30  💻 Dev         Pull latest, run tests, code and open PRs
         │
 08:00  🎨 Product     Backlog refinement, sprint planning, product direction
 ```
 
 **Data flow:** Manager → Doc → QA → Content is a sequential pipeline. Security, CFO, CTO, SDR, Dev, and Product run independently after the core pipeline.
 
-**All output** is delivered to `#ai-office` via each agent's cron `delivery.to` config. Matt reviews during the morning.
+**All output** is delivered to `#ai-office` (channel ID `C0AFXJR71V5`) via each agent's cron `delivery.to` config. Matt reviews during the morning.
 
 ---
 
@@ -194,8 +194,9 @@ Hard-won lessons from building the fleet. Full details in [RUNBOOKS/new-agent-on
 |---|---|
 | **No specialist channel bindings** | Adding a channel binding for a specialist breaks routing — manager must be the sole `#ai-office` responder |
 | **@mention via autocomplete only** | Plain text `@manager` does not trigger the bot; you must use Slack's autocomplete to @mention the bot user |
-| **Channel ID format for CLI** | `openclaw agent --reply-to "#ai-office"` fails → use `--reply-to "channel:C0AFXJR71V5"` |
-| **Cron delivery ≠ binding** | Agents can *deliver* to `#ai-office` via cron's `delivery.to` without needing a channel binding |
+| **Channel ID required everywhere** | Both CLI (`--reply-to`) and cron (`delivery.to`) require Slack channel ID `C0AFXJR71V5`, not `#ai-office`. Display names fail silently |
+| **Cron delivery ≠ binding** | Agents can *deliver* to `#ai-office` (channel ID `C0AFXJR71V5`) via cron's `delivery.to` without needing a channel binding |
+| **Update SOUL.md + fleet-status.md** | When onboarding new agents, also update the manager's `SOUL.md` routing table and `fleet-status.md` — not just `TOOLS.md` |
 | **Non-interactive CLI only** | Commands like `gh pr create` (without `--fill`/`--body`) hang forever waiting for input |
 | **`missing_scope` warning is benign** | `channel resolve failed; using config entries` on startup is non-blocking — safe to ignore |
 

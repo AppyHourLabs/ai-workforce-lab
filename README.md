@@ -82,7 +82,7 @@ ai-workforce-lab/
 | 💰 CFO | `cfo` | 06:00 ET | Budget modeling, cost tracking, token efficiency |
 | 🏗️ CTO | `cto` | 06:30 ET | ADRs, architecture, SDLC standards, CI/CD oversight |
 | 📞 SDR | `sdr` | 07:00 ET | Prospect research, outreach drafting, pipeline tracking |
-| 💻 Dev | `dev` | 07:30 ET | Full-stack development, testing, PR authoring |
+| 💻 Dev | `dev` | 07:30 ET | Full-stack coding, testing, bug fixes, feature PRs |
 | 🎨 Product | `product` | 08:00 ET | Product strategy, backlog refinement, sprint planning |
 
 Full role specs: [`AGENTS/`](AGENTS/)
