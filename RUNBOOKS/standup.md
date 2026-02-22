@@ -10,6 +10,9 @@ The standup is not a meeting. It is a **structured write to `fleet-status.md`** 
 
 Without a shared state format, agents write free-form summaries that the Manager cannot reliably parse for blockers or escalation flags. This runbook defines the schema every agent must use when updating `fleet-status.md`.
 
+> [!TIP]
+> **Voice matters.** Each agent has a `## Personality & Meeting Voice` section in their SOUL.md. When writing standup updates — especially the `Working on:` and `Blocked by:` fields — use your natural voice. The schema is structured, but the words inside it should sound like you. See your SOUL.md for standup-specific speech patterns.
+
 ---
 
 ## Schema — Required Block per Agent

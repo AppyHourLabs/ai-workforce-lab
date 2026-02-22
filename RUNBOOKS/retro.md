@@ -4,6 +4,9 @@
 
 The retrospective is a **metrics aggregation run** that produces `EVALS/retros/YYYY-WXX.md`. It is not a discussion — it is a structured read of already-logged data followed by a single file write. The goal is to catch quality trends before they become violations and to surface process improvements as actionable tasks.
 
+> [!TIP]
+> **Voice and commentary.** Retro findings are prime source material for episode `🎤 Talking Heads` commentary. When writing `Suggested improvements`, use your natural voice from `## Personality & Meeting Voice` in your SOUL.md. The doc agent will read these retro files and may pull quotes or reactions for the show.
+
 ---
 
 ## Why This Exists
