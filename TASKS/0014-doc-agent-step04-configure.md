@@ -112,3 +112,9 @@ Trigger the agent with this prompt in `#ai-office`:
 - **Agent must not publish directly** — all output goes to `DOCS/SHOW/episodes/` as drafts and requires human PR approval before merge.
 - **System prompt is the contract.** If the agent drifts from the safety constraints, update `AGENTS/documentary-agent.md` and re-paste into OpenClaw.
 - **No credentials in drafts.** The safety constraint in the agent definition is enforced at the system prompt level — review every draft for accidental info leakage before merging.
+
+---
+
+## Lessons Learned
+
+- **Routing binding required.** Creating an agent in OpenClaw (`openclaw agents add`) does not automatically route messages to it. A `bindings` entry in `openclaw.json` is required — without it, all messages go to the default `main` agent. Discovered during Step 05 (Task 0016). See [`RUNBOOKS/new-agent-slack-setup.md`](../RUNBOOKS/new-agent-slack-setup.md) for the full setup checklist.

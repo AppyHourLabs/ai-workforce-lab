@@ -14,7 +14,7 @@
 | **02** | The Job Description | ✅ Complete | [`AGENTS/`](AGENTS/) — role definitions for all AI ops accounts |
 | **03** | The Setup | ✅ Complete | [PROJECT 0002](PROJECTS/0002-mac-mini-ai-office-setup.md) — Mac Mini hardened; OpenClaw installed and connected to Slack |
 | **04** | The Build | ✅ Complete | [TASK 0014](TASKS/0014-doc-agent-step04-configure.md) — Doc Agent configured; Episode 002 merged |
-| **05** | The Wiring | 🔒 Locked | Connect agent to real-world tools (Gmail, Drive, etc.) |
+| **05** | The Wiring | ✅ Complete | [TASK 0016](TASKS/0016-doc-agent-github-tool-wiring.md) — GitHub tool wired to Doc Agent |
 | **06** | Deploy It | 🔒 Locked | First autonomous agent running on a schedule |
 | — | **MILESTONE** | 🏁 | **FIRST AGENT DEPLOYED. NOW EXPAND.** |
 | **07** | The Work Audit | 🔒 Locked | Identify 3–5 additional agent-ready jobs |
@@ -53,6 +53,20 @@
 | Task | File | Status |
 |---|---|---|
 | Configure doc agent in OpenClaw (system prompt, file access, first run) | [TASKS/0014](TASKS/0014-doc-agent-step04-configure.md) | ✅ Done |
+
+---
+
+## Step 05 — The Wiring (Complete)
+
+**CampClaw Artifact:** An agent capable of interacting with the outside world (API or browser).
+
+**First Tool:** GitHub via `gh` CLI — Doc Agent can create branches, commit episode drafts, and open PRs.
+
+| Task | File | Status |
+|---|---|---|
+| Wire GitHub tool to Doc Agent (SOUL.md, TOOLS.md, routing, test) | [TASKS/0016](TASKS/0016-doc-agent-github-tool-wiring.md) | ✅ Done |
+
+**Step 05 Complete:** 2026-02-21. Doc Agent responds in `#ai-office` via Slack and has GitHub tool access.
 
 ---
 
