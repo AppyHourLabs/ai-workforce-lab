@@ -3,7 +3,7 @@
 > **Project:** AI Workforce Lab — Agent Operations  
 > **Owner:** Human (`matt@appyhourlabs.com`) setup; AI (`doc@appyhourlabs.com`) operation  
 > **Priority:** P1  
-> **Status:** Open  
+> **Status:** 🔵 In Review  
 > **CampClaw Step:** 04 — The Build  
 > **Depends on:** Task 0013 (OpenClaw installed and connected to Slack)
 
@@ -98,11 +98,11 @@ Trigger the agent with this prompt in `#ai-office`:
 
 ## Definition of Done
 
-- [ ] Documentary Agent configured in OpenClaw with correct system prompt
-- [ ] File access paths configured (read: PROJECTS, TASKS, POLICIES; write: DOCS/SHOW/episodes)
-- [ ] First prompt issued in `#ai-office`
-- [ ] Episode 002 draft produced by agent
-- [ ] Both quality gates passed
+- [x] Documentary Agent configured in OpenClaw with correct system prompt
+- [x] File access paths configured (read: PROJECTS, TASKS, POLICIES; write: DOCS/SHOW/episodes)
+- [x] First prompt issued in `#ai-office`
+- [x] Episode 002 draft produced by agent
+- [x] Both quality gates passed (outbound: 15/16, voice: 10/10)
 - [ ] PR reviewed and merged by `matt@appyhourlabs.com`
 
 ---
