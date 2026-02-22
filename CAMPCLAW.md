@@ -22,8 +22,8 @@
 | **09** | The Shared Brain | ✅ Complete | [TASK 0020](TASKS/0020-step09-shared-brain.md) — Shared memory layer wired across fleet |
 | **10** | The Manager | ✅ Complete | [TASK 0021](TASKS/0021-step10-manager-agent.md) — Manager agent delegates to specialists |
 | — | **Fleet Expansion** | ✅ Complete | TASKs [0022](TASKS/0022-cfo-agent-setup.md), [0023](TASKS/0023-cto-agent-setup.md), [0024](TASKS/0024-sdr-agent-setup.md) — CFO, CTO, SDR onboarded |
-| **11** | The System | 🔒 Locked | Full operation documented — monitoring & management |
-| **12** | The Playbook | 🔒 Locked | Personalized AI workforce playbook |
+| **11** | The System | ✅ Complete | [TASK 0025](TASKS/0025-step11-the-system.md) — [DOCS/system-operations.md](DOCS/system-operations.md) |
+| **12** | The Playbook | ✅ Complete | [TASK 0026](TASKS/0026-step12-the-playbook.md) — [DOCS/ai-workforce-playbook.md](DOCS/ai-workforce-playbook.md) |
 
 ---
 
