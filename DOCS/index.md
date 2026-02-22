@@ -56,15 +56,15 @@ Role definitions for all operators — human and AI.
 | Agent | File | Role | Schedule |
 |---|---|---|---|
 | `matt@appyhourlabs.com` | [founder.md](../AGENTS/founder.md) | Human super admin — final authority | On-call |
-| `ai@appyhourlabs.com` | [cto-agent.md](../AGENTS/cto-agent.md) | Architecture, technical direction | 06:30 ET |
-| `doc@appyhourlabs.com` | [documentary-agent.md](../AGENTS/documentary-agent.md) | Weekly episodes and public documentation | 04:00 ET |
-| `sales@appyhourlabs.com` | [sdr-agent.md](../AGENTS/sdr-agent.md) | Outreach drafting — Phase A gated | 07:00 ET |
-| `media@appyhourlabs.com` | [content-agent.md](../AGENTS/content-agent.md) | Content and distribution — Phase A gated | 05:00 ET |
-| Security | [security-agent.md](../AGENTS/security-agent.md) | Risk monitoring and policy compliance | 05:30 ET |
-| QA | [qa-agent.md](../AGENTS/qa-agent.md) | Eval gate execution, regression | 04:30 ET |
-| CFO | [cfo-agent.md](../AGENTS/cfo-agent.md) | Financial analysis — advisory only | 06:00 ET |
-| Dev | [dev-agent.md](../AGENTS/dev-agent.md) | Full-stack development on EvalPal | 07:30 ET |
-| Product | [product-agent.md](../AGENTS/product-agent.md) | Product strategy, UX, feature prioritization | 08:00 ET |
+| `ai@appyhourlabs.com` | [cto-agent.md](../AGENTS/cto-agent.md) | Architecture, technical direction | 04:15 ET |
+| `doc@appyhourlabs.com` | [documentary-agent.md](../AGENTS/documentary-agent.md) | Weekly episodes and public documentation | 07:45 ET |
+| `sales@appyhourlabs.com` | [sdr-agent.md](../AGENTS/sdr-agent.md) | Outreach drafting — Phase A gated | 05:45 ET |
+| `media@appyhourlabs.com` | [content-agent.md](../AGENTS/content-agent.md) | Content and distribution — Phase A gated | 06:45 ET |
+| Security | [security-agent.md](../AGENTS/security-agent.md) | Risk monitoring and policy compliance | 06:15 ET |
+| QA | [qa-agent.md](../AGENTS/qa-agent.md) | Eval gate execution, regression | 07:15 ET |
+| CFO | [cfo-agent.md](../AGENTS/cfo-agent.md) | Financial analysis — advisory only | 04:45 ET |
+| Dev | [dev-agent.md](../AGENTS/dev-agent.md) | Full-stack development on EvalPal | 05:15 ET |
+| Product | [product-agent.md](../AGENTS/product-agent.md) | Product strategy, UX, feature prioritization | 03:45 ET |
 
 ---
 
