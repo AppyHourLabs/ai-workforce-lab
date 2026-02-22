@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/AppyHourLabs/ai-workforce-lab/blob/main/SCHEMAS/content-schema.json",
+    "title": "Episode",
+    "description": "Schema for a single episode post as published to the AppyHourLabs.com Show page. The content-agent must validate output against this schema before opening a PR to the site repo.",
+    "type": "object",
+    "required": [
+        "id",
+        "title",
+        "date",
+        "tags",
+        "summary"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique episode identifier. kebab-case, e.g. 'episode-003'.",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "title": {
+            "type": "string",
+            "description": "Human-readable episode title.",
+            "minLength": 5,
+            "maxLength": 120
+        },
+        "date": {
+            "type": "string",
+            "description": "ISO 8601 date string (YYYY-MM-DD).",
+            "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "tags": {
+            "type": "array",
+            "description": "Topic tags. At least one required. No personal data.",
+            "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+            },
+            "minItems": 1,
+            "maxItems": 10,
+            "uniqueItems": true
+        },
+        "summary": {
+            "type": "string",
+            "description": "2–4 sentence public excerpt. Must pass outbound-quality-gate and brand-voice-gate before PR is opened.",
+            "minLength": 50,
+            "maxLength": 500
+        },
+        "body": {
+            "type": "string",
+            "description": "Optional: full markdown body for expanded view. Same policy gates apply.",
+            "maxLength": 10000
+        },
+        "episodeUrl": {
+            "type": "string",
+            "description": "Optional: URL to the episode log or relevant file in the ai-workforce-lab repo.",
+            "format": "uri",
+            "pattern": "^https://github\\.com/AppyHourLabs/"
+        }
+    }
+}
