@@ -17,8 +17,8 @@
 | **05** | The Wiring | ✅ Complete | [TASK 0016](TASKS/0016-doc-agent-github-tool-wiring.md) — GitHub tool wired to Doc Agent |
 | **06** | Deploy It | ✅ Complete | [TASK 0017](TASKS/0017-doc-agent-step06-deploy-it.md) — Daily cron schedule deployed |
 | — | **MILESTONE** | 🏁 | **FIRST AGENT DEPLOYED. NOW EXPAND.** |
-| **07** | The Work Audit | 🔒 Locked | Identify 3–5 additional agent-ready jobs |
-| **08** | The Second Agent | 🔒 Locked | Second working agent for a different job |
+| **07** | The Work Audit | ✅ Complete | [TASK 0018](TASKS/0018-step07-work-audit.md) — Work audit: 3 agent-ready jobs identified |
+| **08** | The Second Agent | 🔵 Active | QA, Content, and Security agents deployed |
 | **09** | Repeat | 🔒 Locked | Fleet of agents covering multiple roles |
 | **10** | The Connections | 🔒 Locked | Agents wired together, sharing context |
 | **11** | The System | 🔒 Locked | Full operation documented — monitoring & management |
@@ -81,6 +81,41 @@
 | Deploy doc agent on daily cron schedule | [TASKS/0017](TASKS/0017-doc-agent-step06-deploy-it.md) | ✅ Done |
 
 **Step 06 Complete:** 2026-02-21. Doc Agent runs autonomously on a daily schedule.
+
+---
+
+## Step 07 — The Work Audit (Active)
+
+**CampClaw Artifact:** A scored evaluation of all AGENTS/ roles identifying the next 3–5 agent builds.
+
+| Task | File | Status |
+|---|---|---|
+| Audit all agent roles and recommend build order | [TASKS/0018](TASKS/0018-step07-work-audit.md) | ✅ Done |
+
+**Recommended Build Order:**
+1. **QA Agent** (25/25) — eval gate runner; perfect complement to doc agent
+2. **Content Agent** (22/25) — social/blog drafts from episode content
+3. **Security Agent** (21/25) — PR policy compliance scanning
+
+See [TASK 0018](TASKS/0018-step07-work-audit.md) for full scoring and rationale.
+
+**Step 07 Complete:** 2026-02-21. Three agent-ready jobs identified and prioritized.
+
+---
+
+## Step 08 — The Second Agent (Active)
+
+**CampClaw Artifact:** Additional working agents for different jobs.
+
+**Agents Built:** QA, Content, and Security — all configured in OpenClaw with workspaces, Slack bindings, and daily cron schedules.
+
+| Agent | Schedule | Job |
+|---|---|---|
+| 🔍 QA Agent | 04:30 ET | Run quality + brand voice gates on doc-agent drafts |
+| ✍️ Content Agent | 05:00 ET | Draft social/blog content from merged episodes |
+| 🛡️ Security Agent | 05:30 ET | Scan open PRs for guardrail violations |
+
+**Step 08 Complete:** 2026-02-21. Three agents deployed in OpenClaw with staggered cron schedules.
 
 ---
 
