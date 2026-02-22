@@ -1,7 +1,7 @@
 # CampClaw Path — AI Workforce Lab
 
 > **Program:** [Claw Camp](https://campclaw.ai/my-path) · "Thirteen projects from security briefing to agent team. Each one ends with something real."
-> **Account:** AppyhourLabs · *Last synced: 2026-02-21*
+> **Account:** AppyhourLabs · *Last synced: 2026-02-22*
 
 ---
 
@@ -21,6 +21,7 @@
 | **08** | The Second Agent | ✅ Complete | QA, Content, and Security agents deployed |
 | **09** | The Shared Brain | ✅ Complete | [TASK 0020](TASKS/0020-step09-shared-brain.md) — Shared memory layer wired across fleet |
 | **10** | The Manager | ✅ Complete | [TASK 0021](TASKS/0021-step10-manager-agent.md) — Manager agent delegates to specialists |
+| — | **Fleet Expansion** | ✅ Complete | TASKs [0022](TASKS/0022-cfo-agent-setup.md), [0023](TASKS/0023-cto-agent-setup.md), [0024](TASKS/0024-sdr-agent-setup.md) — CFO, CTO, SDR onboarded |
 | **11** | The System | 🔒 Locked | Full operation documented — monitoring & management |
 | **12** | The Playbook | 🔒 Locked | Personalized AI workforce playbook |
 
@@ -160,6 +161,9 @@ See [TASK 0018](TASKS/0018-step07-work-audit.md) for full scoring and rationale.
 | 04:30 ET | 🔍 QA | Quality + brand voice gates |
 | 05:00 ET | ✍️ Content | Social/blog drafts |
 | 05:30 ET | 🛡️ Security | PR security scans |
+| 06:00 ET | 💰 CFO | Budget/cost/token efficiency |
+| 06:30 ET | 🏗️ CTO | Architecture/SDLC review |
+| 07:00 ET | 📞 SDR | Prospect/outreach check |
 
 **Step 10 Complete:** 2026-02-22. Manager agent deployed.
 
@@ -180,7 +184,7 @@ Weekly check-ins at [campclaw.ai/check-in](https://campclaw.ai/check-in).
 
 | Question | This Week's Answer |
 |---|---|
-| What did you build? | Steps 00–10 complete. 5 agents deployed (doc, QA, content, security, manager) on staggered daily crons (03:45–05:30 ET). Shared brain wired — agents share context via handoff notes. Manager agent orchestrates fleet. Morning pipeline verified working. |
+| What did you build? | Steps 00–10 complete. 8 agents deployed (manager, doc, QA, content, security, CFO, CTO, SDR) on staggered daily crons (03:45–07:00 ET). Shared brain wired — agents share context via handoff notes. Manager agent orchestrates fleet. Gateway watchdog cron monitors health every 10 min. |
 | Are you blocked? | X API developer setup needed for automated social posting (deferred). |
 | Goal for next week? | Step 11 (The System) + Step 12 (The Playbook). Social posting deferred. |
 
