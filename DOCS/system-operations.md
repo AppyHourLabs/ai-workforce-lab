@@ -19,8 +19,10 @@ Complete operational reference for the AI Workforce Lab fleet. For step-by-step 
 | 6 | 💰 CFO | `cfo` | `ai@appyhourlabs.com` | 06:00 daily | Budget modeling, cost tracking, grant research | Zero financial authority — advisory only; no access to `billing@` |
 | 7 | 🔧 CTO | `cto` | `ai@appyhourlabs.com` | 06:30 daily | Architecture decisions, technical roadmap, CI/CD oversight | Does not merge, deploy, or provision infrastructure |
 | 8 | 📞 SDR | `sdr` | `sales@appyhourlabs.com` | 07:00 daily | Prospect research, outreach drafting, pipeline tracking | No autonomous email sends; all outbound human-gated |
+| 9 | 💻 Dev | `dev` | `ai@appyhourlabs.com` | 07:30 daily | Full-stack development, testing, PR authoring | PRs only — never deploys, merges, or modifies `.env` files |
+| 10 | 🎨 Product | `product` | `ai@appyhourlabs.com` | 08:00 daily | Product strategy, backlog refinement, sprint planning | Advisory — never commits to partnerships, pricing, or external publishing |
 
-**Total fleet:** 8 agents · **Pipeline window:** 03:45–07:00 ET · **All agents:** Phase A
+**Total fleet:** 10 agents · **Pipeline window:** 03:45–08:00 ET · **All agents:** Phase A
 
 ---
 
@@ -44,9 +46,13 @@ The fleet runs on staggered daily crons. Each agent completes its work and write
 06:30  🔧 CTO         Architecture review and technical planning
         │
 07:00  📞 SDR         Prospect research and outreach drafting
+        │
+07:30  💻 Dev         Code, test, and open PRs on assigned projects
+        │
+08:00  🎨 Product     Backlog refinement, sprint planning, product direction
 ```
 
-**Data flow:** Manager → Doc → QA → Content is a sequential pipeline. Security, CFO, CTO, and SDR run independently after the core pipeline.
+**Data flow:** Manager → Doc → QA → Content is a sequential pipeline. Security, CFO, CTO, SDR, Dev, and Product run independently after the core pipeline.
 
 **All output** is delivered to `#ai-office` via each agent's cron `delivery.to` config. Matt reviews during the morning.
 
@@ -72,6 +78,7 @@ All agents share a persistent memory layer for cross-session context.
 - **Read on start:** Every cron job prompt instructs the agent to read `fleet-status.md` and relevant `handoffs/` files before doing work
 - **Write on finish:** Every agent updates `fleet-status.md` with its run status and writes handoff files for downstream agents
 - **Per-agent memory:** Each agent also has a local `memory/` directory in its workspace for private context
+- **Standup schema:** `fleet-status.md` follows the structured block format defined in [RUNBOOKS/standup.md](../RUNBOOKS/standup.md)
 
 See [RUNBOOKS/session-handoff.md](../RUNBOOKS/session-handoff.md) for the handoff record format.
 

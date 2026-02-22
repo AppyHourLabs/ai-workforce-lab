@@ -164,6 +164,8 @@ See [TASK 0018](TASKS/0018-step07-work-audit.md) for full scoring and rationale.
 | 06:00 ET | 💰 CFO | Budget/cost/token efficiency |
 | 06:30 ET | 🏗️ CTO | Architecture/SDLC review |
 | 07:00 ET | 📞 SDR | Prospect/outreach check |
+| 07:30 ET | 💻 Dev | Code, test, PR on assigned projects |
+| 08:00 ET | 🎨 Product | Backlog refinement, sprint planning |
 
 **Step 10 Complete:** 2026-02-22. Manager agent deployed.
 
@@ -184,7 +186,7 @@ Weekly check-ins at [campclaw.ai/check-in](https://campclaw.ai/check-in).
 
 | Question | This Week's Answer |
 |---|---|
-| What did you build? | Steps 00–10 complete. 8 agents deployed (manager, doc, QA, content, security, CFO, CTO, SDR) on staggered daily crons (03:45–07:00 ET). Shared brain wired — agents share context via handoff notes. Manager agent orchestrates fleet. Gateway watchdog cron monitors health every 10 min. |
+| What did you build? | Steps 00–12 complete. 10 agents deployed (manager, doc, QA, content, security, CFO, CTO, SDR, dev, product) on staggered daily crons (03:45–08:00 ET). Shared brain wired — agents share context via handoff notes. Manager agent orchestrates fleet. Gateway watchdog cron monitors health every 10 min. Agile ceremony runbooks added. |
 | Are you blocked? | X API developer setup needed for automated social posting (deferred). |
 | Goal for next week? | Step 11 (The System) + Step 12 (The Playbook). Social posting deferred. |
 

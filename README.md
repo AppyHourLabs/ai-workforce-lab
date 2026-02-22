@@ -14,9 +14,9 @@ That's what this repository answers. In real time. With the receipts committed.
 
 **EvalPal** is the product: tooling and methodology for evaluating AI agent quality in production workflows. The AI Workforce Lab is EvalPal's first test environment — we're building the eval harness by being the thing it evaluates.
 
-**The experiment:** deploy AI agents into operational roles (documentation, QA, content, security, financial analysis, technical strategy, sales outreach) using a tiered autonomy model. Document everything. Ship the governance alongside the features.
+**The experiment:** deploy AI agents into operational roles (documentation, QA, content, security, financial analysis, technical strategy, sales outreach, development, product) using a tiered autonomy model. Document everything. Ship the governance alongside the features.
 
-**Current fleet:** 8 agents running on staggered daily cron schedules (03:45–07:00 ET), coordinated by a manager agent with shared brain memory.
+**Current fleet:** 10 agents running on staggered daily cron schedules (03:45–08:00 ET), coordinated by a manager agent with shared brain memory.
 
 **The constraint:** safety first. Always. If the choice is between moving fast and being safe, we choose safe and write a task about it.
 
@@ -82,6 +82,8 @@ ai-workforce-lab/
 | 💰 CFO | `cfo` | 06:00 ET | Budget modeling, cost tracking, token efficiency |
 | 🏗️ CTO | `cto` | 06:30 ET | ADRs, architecture, SDLC standards, CI/CD oversight |
 | 📞 SDR | `sdr` | 07:00 ET | Prospect research, outreach drafting, pipeline tracking |
+| 💻 Dev | `dev` | 07:30 ET | Full-stack development, testing, PR authoring |
+| 🎨 Product | `product` | 08:00 ET | Product strategy, backlog refinement, sprint planning |
 
 Full role specs: [`AGENTS/`](AGENTS/)
 
@@ -110,7 +112,7 @@ Every week, `doc@appyhourlabs.com` files an episode documenting what shipped, wh
 
 Autonomy tier: **Phase A** — all outbound requires human approval.
 
-Fleet: **8 agents** across 5 functions (documentation, quality, content, finance, engineering, sales). CampClaw Steps 00–10 complete. Steps 11–12 in progress.
+Fleet: **10 agents** across 7 functions (documentation, quality, content, security, finance, engineering, sales, development, product). CampClaw Steps 00–12 complete.
 
 ---
 
