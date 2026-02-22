@@ -21,6 +21,7 @@ The security agent does not have keys to the kingdom. It has a very good flashli
 | OAuth scope auditing | Review requested scopes against [`POLICIES/oauth-policy.md`](../POLICIES/oauth-policy.md) |
 | Incident triage support | Draft initial incident timeline for human review |
 | Runbook maintenance | Keep [`RUNBOOKS/ci.md`](../RUNBOOKS/ci.md) and security runbooks current |
+| **Sprint retrospective** | At sprint end, file `EVALS/retros/YYYY-WXX.md` by aggregating eval results, fleet status, and sprint completion data; see [`RUNBOOKS/retro.md`](../RUNBOOKS/retro.md) |
 
 ---
 
@@ -50,4 +51,4 @@ Terse and precise. Security findings are not a place for narrative flourish. Lea
 
 ---
 
-*Related policies: [`POLICIES/ai-safety-charter.md`](../POLICIES/ai-safety-charter.md) · [`POLICIES/oauth-policy.md`](../POLICIES/oauth-policy.md) · [`POLICIES/escalation-policy.md`](../POLICIES/escalation-policy.md)*
+*Related policies: [`POLICIES/ai-safety-charter.md`](../POLICIES/ai-safety-charter.md) · [`POLICIES/oauth-policy.md`](../POLICIES/oauth-policy.md) · [`POLICIES/escalation-policy.md`](../POLICIES/escalation-policy.md) · [`RUNBOOKS/retro.md`](../RUNBOOKS/retro.md)*

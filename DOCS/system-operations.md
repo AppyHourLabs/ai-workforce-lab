@@ -20,7 +20,7 @@ Complete operational reference for the AI Workforce Lab fleet. For step-by-step 
 | 7 | 🔧 CTO | `cto` | `ai@appyhourlabs.com` | 06:30 daily | Architecture decisions, technical roadmap, CI/CD oversight | Does not merge, deploy, or provision infrastructure |
 | 8 | 📞 SDR | `sdr` | `sales@appyhourlabs.com` | 07:00 daily | Prospect research, outreach drafting, pipeline tracking | No autonomous email sends; all outbound human-gated |
 | 9 | 💻 Dev | `dev` | `ai@appyhourlabs.com` | 07:30 daily | Full-stack coding, testing, bug fixes, feature PRs | No deploys — PRs only, branch prefix `dev/` |
-| 10 | 🎨 Product | `product` | `ai@appyhourlabs.com` | 08:00 daily | Product strategy, branding, UX, feature prioritization | Advisory — no external announcements without approval |
+| 10 | 🎨 Product | `product` | `ai@appyhourlabs.com` | 08:00 daily | Product strategy, backlog refinement, sprint planning, branding | Advisory — no external announcements without approval |
 
 **Total fleet:** 10 agents · **Pipeline window:** 03:45–08:00 ET · **All agents:** Phase A
 
@@ -47,9 +47,9 @@ The fleet runs on staggered daily crons. Each agent completes its work and write
         │
 07:00  📞 SDR         Prospect research and outreach drafting
         │
-07:30  💻 Dev         Pull latest, run tests, check issues
+07:30  💻 Dev         Pull latest, run tests, code and open PRs
         │
-08:00  🎨 Product     Product health, branding review, feature priorities
+08:00  🎨 Product     Backlog refinement, sprint planning, product direction
 ```
 
 **Data flow:** Manager → Doc → QA → Content is a sequential pipeline. Security, CFO, CTO, SDR, Dev, and Product run independently after the core pipeline.
@@ -78,6 +78,7 @@ All agents share a persistent memory layer for cross-session context.
 - **Read on start:** Every cron job prompt instructs the agent to read `fleet-status.md` and relevant `handoffs/` files before doing work
 - **Write on finish:** Every agent updates `fleet-status.md` with its run status and writes handoff files for downstream agents
 - **Per-agent memory:** Each agent also has a local `memory/` directory in its workspace for private context
+- **Standup schema:** `fleet-status.md` follows the structured block format defined in [RUNBOOKS/standup.md](../RUNBOOKS/standup.md)
 
 See [RUNBOOKS/session-handoff.md](../RUNBOOKS/session-handoff.md) for the handoff record format.
 
@@ -211,6 +212,10 @@ Hard-won lessons from building the fleet. Full details in [RUNBOOKS/new-agent-on
 | [session-handoff.md](../RUNBOOKS/session-handoff.md) | Handoff record template and pre-handoff checklist |
 | [new-agent-slack-setup.md](../RUNBOOKS/new-agent-slack-setup.md) | Slack app configuration for new agents |
 | [logging-conventions.md](../RUNBOOKS/logging-conventions.md) | Logging directory structure and file naming standards |
+| [standup.md](../RUNBOOKS/standup.md) | `fleet-status.md` schema spec — structured standup format for all agents |
+| [backlog-refinement.md](../RUNBOOKS/backlog-refinement.md) | Weekly Product Agent backlog pass — produces `TASKS/BACKLOG.md` |
+| [sprint-planning.md](../RUNBOOKS/sprint-planning.md) | Bi-weekly sprint commitment format — Product drafts, CTO validates |
+| [retro.md](../RUNBOOKS/retro.md) | Post-sprint retrospective — Security Agent files, Dev Agent appends health metrics |
 
 ---
 

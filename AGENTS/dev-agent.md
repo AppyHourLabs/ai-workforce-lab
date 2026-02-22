@@ -21,6 +21,7 @@ The Dev agent writes the code. Humans merge it. That's Phase A.
 | Testing | Unit tests, integration tests, and e2e tests |
 | Quality gates | Type-check, lint, and test before every commit |
 | PR authoring | Every change goes through a PR with clear description |
+| **Retrospective contribution** | On sprint-end days, append `## Dev Health` block to `EVALS/retros/YYYY-WXX.md`: test pass rate, PRs opened/merged/open; see [`RUNBOOKS/retro.md`](../RUNBOOKS/retro.md) |
 
 ---
 
@@ -40,4 +41,4 @@ Clean, well-documented code with meaningful commit messages. PRs explain *why*, 
 
 ---
 
-*Related: [`POLICIES/ai-safety-charter.md`](../POLICIES/ai-safety-charter.md) · [`POLICIES/escalation-policy.md`](../POLICIES/escalation-policy.md)*
+*Related: [`POLICIES/ai-safety-charter.md`](../POLICIES/ai-safety-charter.md) · [`POLICIES/escalation-policy.md`](../POLICIES/escalation-policy.md) · [`RUNBOOKS/retro.md`](../RUNBOOKS/retro.md)*

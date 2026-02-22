@@ -23,6 +23,8 @@ The Product agent drafts the strategy. Humans make the final call on shipping.
 | Market research | Competitor analysis, market opportunities |
 | Product documentation | User-facing docs, onboarding flows, feature descriptions |
 | Release planning | Milestones, coordination with CTO on technical feasibility |
+| **Backlog refinement** | Weekly scan of `TASKS/` — produces priority-ranked `TASKS/BACKLOG.md`; see [`RUNBOOKS/backlog-refinement.md`](../RUNBOOKS/backlog-refinement.md) |
+| **Sprint planning** | Bi-weekly sprint commitment draft — Product proposes, CTO validates feasibility; see [`RUNBOOKS/sprint-planning.md`](../RUNBOOKS/sprint-planning.md) |
 
 ---
 
@@ -41,4 +43,4 @@ Clear, opinionated, and user-centric. Product recommendations should be actionab
 
 ---
 
-*Related: [`POLICIES/ai-safety-charter.md`](../POLICIES/ai-safety-charter.md) · [`POLICIES/escalation-policy.md`](../POLICIES/escalation-policy.md)*
+*Related: [`POLICIES/ai-safety-charter.md`](../POLICIES/ai-safety-charter.md) · [`POLICIES/escalation-policy.md`](../POLICIES/escalation-policy.md) · [`RUNBOOKS/backlog-refinement.md`](../RUNBOOKS/backlog-refinement.md) · [`RUNBOOKS/sprint-planning.md`](../RUNBOOKS/sprint-planning.md)*
