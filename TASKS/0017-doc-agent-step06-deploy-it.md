@@ -24,7 +24,7 @@ This is the final step before the **"First Agent Deployed"** milestone.
 Create a daily cron job targeting the `doc` agent:
 - **Schedule:** Daily at 04:00 AM Eastern (`0 4 * * * America/New_York`)
 - **Message:** Fast daily check-in — scan for changes, draft if warranted, return 2-3 sentence summary
-- **Delivery:** Announce summary to Slack `#ai-office` (`--announce --channel slack --to "#ai-office"`)
+- **Delivery:** Announce summary to Slack `#ai-office` — use channel ID `C0AFXJR71V5` (not display name)
 - **Session:** Isolated (each run starts clean)
 - **Timeout:** 900 seconds (increased from default after model-inference timeout)
 
@@ -91,7 +91,7 @@ Three stacked issues prevented the first autonomous morning run from delivering 
 
 The `openclaw cron add` command created jobs with `"delivery": {"mode": "announce", "channel": "slack"}` but **no `"to"` field**. OpenClaw requires an explicit destination.
 
-**Fix:** `openclaw cron edit <job-id> --announce --channel slack --to "#ai-office"` on all 4 jobs.
+**Fix:** `openclaw cron edit <job-id> --announce --channel slack --to "C0AFXJR71V5"` on all 4 jobs. Note: must use channel ID, not `#ai-office` (display names fail silently).
 
 ### 2. Device pairing required
 

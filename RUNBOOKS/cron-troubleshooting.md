@@ -37,10 +37,12 @@ cat /tmp/openclaw/openclaw-$(date +%Y-%m-%d).log | grep -i "error\|fail\|timeout
 
 **Fix:**
 ```bash
-openclaw cron edit <job-id> --announce --channel slack --to "#ai-office"
+openclaw cron edit <job-id> --announce --channel slack --to "C0AFXJR71V5"
 ```
 
-**Verify:** Check `~/.openclaw/cron/jobs.json` — each job's `delivery` block should have a `"to"` field.
+> ⚠️ **Use the Slack channel ID, not the display name.** `--to "#ai-office"` fails silently with `Slack channels require a channel id`. The `#ai-office` channel ID is `C0AFXJR71V5`.
+
+**Verify:** Check `~/.openclaw/cron/jobs.json` — each job's `delivery` block should have `"to": "C0AFXJR71V5"`.
 
 ---
 
