@@ -13,7 +13,7 @@
 | **01** | The Build Partner | ✅ Complete | Antigravity (AI coding partner) + repo as shared context |
 | **02** | The Job Description | ✅ Complete | [`AGENTS/`](AGENTS/) — role definitions for all AI ops accounts |
 | **03** | The Setup | ✅ Complete | [PROJECT 0002](PROJECTS/0002-mac-mini-ai-office-setup.md) — Mac Mini hardened; OpenClaw installed and connected to Slack |
-| **04** | The Build | 🔵 Active | [TASK 0014](TASKS/0014-doc-agent-step04-configure.md) — Doc Agent configured; Episode 002 drafted |
+| **04** | The Build | ✅ Complete | [TASK 0014](TASKS/0014-doc-agent-step04-configure.md) — Doc Agent configured; Episode 002 merged |
 | **05** | The Wiring | 🔒 Locked | Connect agent to real-world tools (Gmail, Drive, etc.) |
 | **06** | Deploy It | 🔒 Locked | First autonomous agent running on a schedule |
 | — | **MILESTONE** | 🏁 | **FIRST AGENT DEPLOYED. NOW EXPAND.** |
@@ -52,7 +52,7 @@
 
 | Task | File | Status |
 |---|---|---|
-| Configure doc agent in OpenClaw (system prompt, file access, first run) | [TASKS/0014](TASKS/0014-doc-agent-step04-configure.md) | 🔵 Active |
+| Configure doc agent in OpenClaw (system prompt, file access, first run) | [TASKS/0014](TASKS/0014-doc-agent-step04-configure.md) | ✅ Done |
 
 ---
 
