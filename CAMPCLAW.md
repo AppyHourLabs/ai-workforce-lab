@@ -15,7 +15,7 @@
 | **03** | The Setup | ✅ Complete | [PROJECT 0002](PROJECTS/0002-mac-mini-ai-office-setup.md) — Mac Mini hardened; OpenClaw installed and connected to Slack |
 | **04** | The Build | ✅ Complete | [TASK 0014](TASKS/0014-doc-agent-step04-configure.md) — Doc Agent configured; Episode 002 merged |
 | **05** | The Wiring | ✅ Complete | [TASK 0016](TASKS/0016-doc-agent-github-tool-wiring.md) — GitHub tool wired to Doc Agent |
-| **06** | Deploy It | 🔒 Locked | First autonomous agent running on a schedule |
+| **06** | Deploy It | ✅ Complete | [TASK 0017](TASKS/0017-doc-agent-step06-deploy-it.md) — Daily cron schedule deployed |
 | — | **MILESTONE** | 🏁 | **FIRST AGENT DEPLOYED. NOW EXPAND.** |
 | **07** | The Work Audit | 🔒 Locked | Identify 3–5 additional agent-ready jobs |
 | **08** | The Second Agent | 🔒 Locked | Second working agent for a different job |
@@ -70,6 +70,20 @@
 
 ---
 
+## Step 06 — Deploy It (Complete)
+
+**CampClaw Artifact:** First autonomous agent running on a schedule.
+
+**Deployment:** Doc Agent runs daily at 04:00 AM ET via OpenClaw cron. Scans the repo, drafts episodes if warranted, and posts a summary to `#ai-office`.
+
+| Task | File | Status |
+|---|---|---|
+| Deploy doc agent on daily cron schedule | [TASKS/0017](TASKS/0017-doc-agent-step06-deploy-it.md) | ✅ Done |
+
+**Step 06 Complete:** 2026-02-21. Doc Agent runs autonomously on a daily schedule.
+
+---
+
 ## Local Docs
 
 Full detail archived locally — no need to go back to the browser:
@@ -85,7 +99,7 @@ Weekly check-ins at [campclaw.ai/check-in](https://campclaw.ai/check-in).
 
 | Question | This Week's Answer |
 |---|---|
-| What did you build? | Step 03 complete (OpenClaw installed + Slack connected); Step 04 in progress (Doc Agent configured, Episode 002 drafted + quality gates passed) |
+| What did you build? | Steps 00–06 complete. Doc Agent deployed on daily cron (04:00 ET). First autonomous agent milestone reached. |
 | Are you blocked? | PR review for Episode 002 (`matt@appyhourlabs.com` approval needed) |
 | Goal for next week? | Complete Step 04 (merge Episode 002); begin Step 05 (The Wiring — connect agent to tools) |
 
