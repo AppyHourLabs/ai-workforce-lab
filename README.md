@@ -14,7 +14,9 @@ That's what this repository answers. In real time. With the receipts committed.
 
 **EvalPal** is the product: tooling and methodology for evaluating AI agent quality in production workflows. The AI Workforce Lab is EvalPal's first test environment — we're building the eval harness by being the thing it evaluates.
 
-**The experiment:** deploy AI agents into operational roles (documentation, sales research, content, financial analysis, technical strategy) using a tiered autonomy model. Document everything. Ship the governance alongside the features.
+**The experiment:** deploy AI agents into operational roles (documentation, QA, content, security, financial analysis, technical strategy, sales outreach) using a tiered autonomy model. Document everything. Ship the governance alongside the features.
+
+**Current fleet:** 8 agents running on staggered daily cron schedules (03:45–07:00 ET), coordinated by a manager agent with shared brain memory.
 
 **The constraint:** safety first. Always. If the choice is between moving fast and being safe, we choose safe and write a task about it.
 
@@ -59,16 +61,27 @@ ai-workforce-lab/
 
 ## The Team
 
-| Account | Type | Role |
-|---|---|---|
-| `matt@appyhourlabs.com` | 👤 Human | Founder — final authority on all policy and autonomy decisions |
-| `ai@appyhourlabs.com` | 🤖 AI Ops | General operations, technical and research tasks |
-| `doc@appyhourlabs.com` | 🤖 AI Ops | Documentary agent — writes the weekly show |
-| `sales@appyhourlabs.com` | 🤖 AI Ops | Outreach research and drafting — Phase A gated |
-| `media@appyhourlabs.com` | 🤖 AI Ops | Content and distribution — Phase A gated |
-| `legal@appyhourlabs.com` | 👤 Human only | Legal review — no AI delegation |
-| `security@appyhourlabs.com` | 👤 Human only | Credential and security management — human only |
-| `billing@appyhourlabs.com` | 👤 Human only | Financial accounts — human only, no exceptions |
+### Human Operators
+
+| Account | Role |
+|---|---|
+| `matt@appyhourlabs.com` | Founder — final authority on all policy and autonomy decisions |
+| `legal@appyhourlabs.com` | Legal review — no AI delegation |
+| `security@appyhourlabs.com` | Credential and security management — human only |
+| `billing@appyhourlabs.com` | Financial accounts — human only, no exceptions |
+
+### AI Agent Fleet
+
+| Agent | ID | Schedule | Role |
+|---|---|---|---|
+| 🎯 Manager | `manager` | 03:45 ET | Fleet coordination, task routing, daily briefings |
+| 🎬 Documentary | `doc` | 04:00 ET | Episode drafting, repo scanning, PR creation |
+| 🔍 QA | `qa` | 04:30 ET | Quality gates, brand voice evaluation, PR review |
+| ✍️ Content | `content` | 05:00 ET | Social posts, blog drafts, content calendar |
+| 🛡️ Security | `security` | 05:30 ET | Security scans, policy checks, credential detection |
+| 💰 CFO | `cfo` | 06:00 ET | Budget modeling, cost tracking, token efficiency |
+| 🏗️ CTO | `cto` | 06:30 ET | ADRs, architecture, SDLC standards, CI/CD oversight |
+| 📞 SDR | `sdr` | 07:00 ET | Prospect research, outreach drafting, pipeline tracking |
 
 Full role specs: [`AGENTS/`](AGENTS/)
 
@@ -80,13 +93,15 @@ Every week, `doc@appyhourlabs.com` files an episode documenting what shipped, wh
 
 - [Episode 000 — Origin Log](DOCS/SHOW/episodes/000-origin-log.md)
 - [Episode 001 — The AI Office Moves In](DOCS/SHOW/episodes/001-ai-office-moves-in.md)
+- [Episode 002 — The First Agent Goes Live](DOCS/SHOW/episodes/002-the-first-agent-goes-live.md)
+- [Episode 003 — Agent Wires Itself](DOCS/SHOW/episodes/003-agent-wires-itself.md)
 - [Episode template](<DOCS/SHOW/episodes/_TEMPLATE.md>)
 
 ---
 
 ## Status
 
-*Last updated: 2026-02-21*
+*Last updated: 2026-02-22*
 
 | Project | Status | What it is |
 |---|---|---|
@@ -94,6 +109,8 @@ Every week, `doc@appyhourlabs.com` files an episode documenting what shipped, wh
 | [0002 — Mac Mini AI Office Setup](PROJECTS/0002-mac-mini-ai-office-setup.md) | 🔵 Active | Dedicated hardened machine for running agent pipelines |
 
 Autonomy tier: **Phase A** — all outbound requires human approval.
+
+Fleet: **8 agents** across 5 functions (documentation, quality, content, finance, engineering, sales). CampClaw Steps 00–10 complete. Steps 11–12 in progress.
 
 ---
 
