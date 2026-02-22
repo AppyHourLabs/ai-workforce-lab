@@ -107,6 +107,7 @@ The agents plan to use EvalPal to measure their own performance (tasks 0053–00
 
 ## Links
 
+- [RUNBOOKS/evalpal-issue-tracking.md](../RUNBOOKS/evalpal-issue-tracking.md) — **How to file issues**
 - [EvalPal README](https://github.com/MatthewEngman/EvalPal/blob/main/README.md)
 - [EvalPal CLI](file:///Users/aioffice/EvalPal/cli/run-eval.js)
 - [EVALS/agent-eval-definitions.md](../EVALS/agent-eval-definitions.md)

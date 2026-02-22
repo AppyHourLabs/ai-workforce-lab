@@ -86,6 +86,7 @@ Operational procedures for agents and human operators.
 | [Human Escalation](../RUNBOOKS/human-escalation.md) | When and how to escalate to `matt@appyhourlabs.com` |
 | [Logging Conventions](../RUNBOOKS/logging-conventions.md) | Structured logging format for all agent actions |
 | [EvalPal Agent Evals](../RUNBOOKS/evalpal-agent-evals.md) | How to run, track, and improve agent evals via evalpal.dev |
+| [EvalPal Issue Tracking](../RUNBOOKS/evalpal-issue-tracking.md) | How agents file, track, and close EvalPal bugs via gh CLI |
 
 ---
 
