@@ -134,9 +134,9 @@ Weekly check-ins at [campclaw.ai/check-in](https://campclaw.ai/check-in).
 
 | Question | This Week's Answer |
 |---|---|
-| What did you build? | Steps 00–08 complete. 4 agents deployed (doc, QA, content, security) on staggered daily crons (04:00–05:30 ET). Content agent drafted social posts for 4 episodes. Security agent scanned PRs. |
+| What did you build? | Steps 00–08 complete. 4 agents deployed (doc, QA, content, security) on staggered daily crons (04:00–05:30 ET). Morning pipeline verified working — all agents deliver to `#ai-office`. Fixed cron delivery targets, device pairing, and doc agent timeout (17 min → 24s). |
 | Are you blocked? | X API developer setup needed for automated social posting (deferred). |
-| Goal for next week? | Verify first full 4-agent autonomous morning run. Begin Step 09 (Shared Brain) or Step 10 (The Manager). Set up X API for content agent posting. |
+| Goal for next week? | Step 09 (Shared Brain) + Step 10 (The Manager). Social posting deferred. |
 
 ---
 

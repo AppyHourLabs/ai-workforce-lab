@@ -3,7 +3,7 @@
 > **Project:** AI Workforce Lab — Agent Operations  
 > **Owner:** Human (`matt@appyhourlabs.com`) setup; AI (`doc@appyhourlabs.com`) operation  
 > **Priority:** P1  
-> **Status:** In Progress  
+> **Status:** ✅ Done  
 > **CampClaw Step:** 06 — Deploy It  
 > **Depends on:** Task 0016 (Doc Agent has GitHub tool wired)
 
@@ -22,11 +22,11 @@ This is the final step before the **"First Agent Deployed"** milestone.
 ### 1 — Add Cron Job via `openclaw cron add`
 
 Create a daily cron job targeting the `doc` agent:
-- **Schedule:** Daily at 09:00 AM Eastern
-- **Message:** Instruct the agent to scan `TASKS/` and `PROJECTS/`, draft episodes if needed, and post a summary
-- **Delivery:** Announce summary to Slack `#ai-office`
+- **Schedule:** Daily at 04:00 AM Eastern (`0 4 * * * America/New_York`)
+- **Message:** Fast daily check-in — scan for changes, draft if warranted, return 2-3 sentence summary
+- **Delivery:** Announce summary to Slack `#ai-office` (`--announce --channel slack --to "#ai-office"`)
 - **Session:** Isolated (each run starts clean)
-- **Timeout:** 120 seconds
+- **Timeout:** 900 seconds (increased from default after model-inference timeout)
 
 ### 2 — Update Agent System Prompt (SOUL.md)
 
@@ -64,13 +64,13 @@ Mark Step 06 as complete. Add Step 06 section with task link.
 
 ## Definition of Done
 
-- [ ] Cron job `doc-daily-checkin` added and visible in `openclaw cron list`
-- [ ] `SOUL.md` updated with scheduled check-in instructions
-- [ ] `HEARTBEAT.md` updated with schedule reference
-- [ ] Manual test run produces agent response
-- [ ] Slack `#ai-office` receives daily check-in summary
-- [ ] `CAMPCLAW.md` updated to reflect Step 06 completion
-- [ ] No unauthorized agent actions observed during test
+- [x] Cron job `doc-daily-checkin` added and visible in `openclaw cron list`
+- [x] `SOUL.md` updated with scheduled check-in instructions
+- [x] `HEARTBEAT.md` updated with schedule reference
+- [x] Manual test run produces agent response (24.7s run, 2026-02-22)
+- [x] Slack `#ai-office` receives daily check-in summary
+- [x] `CAMPCLAW.md` updated to reflect Step 06 completion
+- [x] No unauthorized agent actions observed during test
 
 ---
 
@@ -78,5 +78,33 @@ Mark Step 06 as complete. Add Step 06 section with task link.
 
 - **Agent still cannot merge its own PRs.** Drafts require `matt@appyhourlabs.com` approval.
 - **Isolated sessions** prevent context leak between daily runs.
-- **Timeout of 120s** limits runaway execution.
+- **Timeout of 900s** limits runaway execution. Original 120s was too short; model inference alone can take minutes on complex prompts.
 - **If OpenClaw is not running** (e.g., machine restarted), the cron job will not fire. Monitoring is deferred to Step 11.
+
+---
+
+## Lessons Learned (2026-02-22)
+
+Three stacked issues prevented the first autonomous morning run from delivering to Slack:
+
+### 1. Delivery target missing
+
+The `openclaw cron add` command created jobs with `"delivery": {"mode": "announce", "channel": "slack"}` but **no `"to"` field**. OpenClaw requires an explicit destination.
+
+**Fix:** `openclaw cron edit <job-id> --announce --channel slack --to "#ai-office"` on all 4 jobs.
+
+### 2. Device pairing required
+
+After fixing delivery targets, OpenClaw's internal subagent WebSocket connection failed with `gateway closed (1008): pairing required`. The cron subsystem connects back to the gateway as a new device that needs authorization.
+
+**Fix:** `openclaw devices list` → `openclaw devices approve <request-id>` for the pending device.
+
+### 3. Doc agent model-inference timeout
+
+The doc agent read multiple task files, then the LLM spent 17 minutes generating a response (likely composing a full episode inline). The embedded run timed out at 600s.
+
+**Fix:** Rewrote the cron prompt to instruct the agent to keep it fast, use the `write` tool for file content instead of composing inline, and return only a 2-3 sentence summary. Run time dropped from 17 min → 24.7 seconds. Timeout increased to 900s as safety net.
+
+### Diagnostic commands
+
+See `RUNBOOKS/cron-troubleshooting.md` for the full troubleshooting playbook.
