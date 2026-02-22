@@ -47,12 +47,13 @@ Stop automated execution and notify `matt@appyhourlabs.com` if:
 
 ## When to Ping the Founder
 
-Ping `matt@appyhourlabs.com` directly (not just in a task file) for:
+Tag `<@U08R1DR4LFJ>` in `#ai-office` (see [`RUNBOOKS/human-escalation.md`](../RUNBOOKS/human-escalation.md) for format) for:
 
 - All SEV-1 incidents
 - Any SEV-2 incident involving external systems or communications
 - Any situation where no existing policy covers the decision
 - Any request to deviate from or modify a guardrail
+- Any agent output that requires Matt to take action (merge, send, approve, review)
 
 For SEV-3 situations not involving the founder's direct attention, document the issue in a task file and handle in the normal daily review cycle.
 
