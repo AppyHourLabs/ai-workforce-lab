@@ -11,9 +11,9 @@ Lessons learned during Steps 09/10 (2026-02-22):
 
 2. **Slack requires @mention in channels.** Config `ackReactionScope: "group-mentions"` means the bot only responds when the **Slack bot user** is @mentioned (via Slack autocomplete), not from plain text like `@manager`.
 
-3. **CLI delivery needs channel ID format.** `openclaw agent --reply-to "#ai-office"` fails — use `--reply-to "channel:C0AFXJR71V5"` instead. Cron delivery with `#ai-office` works fine (resolved internally).
+3. **All Slack delivery needs channel ID.** Both CLI (`--reply-to`) and cron (`delivery.to`) require the Slack channel ID, not the display name. `"#ai-office"` fails silently — use `"C0AFXJR71V5"` instead. For CLI: `--reply-to "C0AFXJR71V5"`. For cron: `"to": "C0AFXJR71V5"` in `jobs.json`.
 
-4. **Cron delivery ≠ channel binding.** Agents can deliver to `#ai-office` via cron's `delivery.to` without needing channel bindings. Bindings are for **receiving** interactive messages.
+4. **Cron delivery ≠ channel binding.** Agents can deliver to `#ai-office` (channel ID `C0AFXJR71V5`) via cron's `delivery.to` without needing channel bindings. Bindings are for **receiving** interactive messages.
 
 ## Prerequisites
 
@@ -109,7 +109,7 @@ openclaw cron add \
   --tz "America/New_York" \
   --session isolated \
   --announce \
-  --to "#ai-office" \
+  --to "C0AFXJR71V5" \
   --best-effort-deliver \
   --message "<prompt with shared brain read/write steps>"
 ```
@@ -145,13 +145,23 @@ openclaw status
 openclaw agents list
 ```
 
-### 9. Verify
+### 9. Update Manager SOUL.md Routing Table
+
+Add the new agent to the routing table in `~/.openclaw/workspaces/manager/SOUL.md` so the manager knows how to route tasks to it.
+
+### 10. Update Fleet Status
+
+Add the new agent to `~/.openclaw/workspaces/shared/brain/fleet-status.md` in the Active Agents table.
+
+### 11. Verify
 
 - [ ] Agent appears in `openclaw agents list`
 - [ ] Agent has `memory/` directory
-- [ ] Slack binding is in `openclaw.json`
 - [ ] Cron job appears in `openclaw cron list` (if scheduled)
+- [ ] Cron delivery `"to"` uses channel ID `C0AFXJR71V5` (not `#ai-office`)
 - [ ] Agent is in manager's fleet roster (`TOOLS.md`)
+- [ ] Agent is in manager's routing table (`SOUL.md`)
+- [ ] Agent is in `fleet-status.md`
 - [ ] Shared brain section is in agent's `SOUL.md`
 - [ ] Gateway is healthy after restart
 
