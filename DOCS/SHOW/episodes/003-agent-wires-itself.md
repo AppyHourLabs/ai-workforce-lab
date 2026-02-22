@@ -12,8 +12,8 @@
 
 | Item | Type | PR / Link | Merged By |
 |---|---|---|---|
-| Doc agent configuration + quality-gated Episode 002 run | Task | [TASKS/0014](../../TASKS/0014-doc-agent-step04-configure.md) · PR #8 | `matt@appyhourlabs.com` |
-| GitHub tool wiring, Slack routing fix, and `gh` dry-runs | Task | [TASKS/0016](../../TASKS/0016-doc-agent-github-tool-wiring.md) | `matt@appyhourlabs.com` |
+| Doc agent configuration + quality-gated Episode 002 run | Task | [TASKS/0014](../../../TASKS/0014-doc-agent-step04-configure.md) · PR #8 | `matt@appyhourlabs.com` |
+| GitHub tool wiring, Slack routing fix, and `gh` dry-runs | Task | [TASKS/0016](../../../TASKS/0016-doc-agent-github-tool-wiring.md) | `matt@appyhourlabs.com` |
 
 **Highlight of the week:** The Documentary Agent now owns its own GitHub workflow — branches, commits, and PR hand-offs all flow through `doc/` branches without human shell babysitting.
 
@@ -77,7 +77,7 @@
 | Decision | Rationale | Owner | ADR Link |
 |---|---|---|---|
 | Let the doc agent run `gh` directly for episode PRs | Removes the human bottleneck on branch/PR creation while keeping review gates intact; leverages existing `gh` auth | `matt@appyhourlabs.com` | *TBD* |
-| Bake Slack routing bindings into the new-agent checklist | Missing bindings silently hand traffic to `main`; codified in [RUNBOOKS/new-agent-slack-setup.md](../../RUNBOOKS/new-agent-slack-setup.md) | `matt@appyhourlabs.com` | *TBD* |
+| Bake Slack routing bindings into the new-agent checklist | Missing bindings silently hand traffic to `main`; codified in [RUNBOOKS/new-agent-slack-setup.md](../../../RUNBOOKS/new-agent-slack-setup.md) | `matt@appyhourlabs.com` | *TBD* |
 | Design the daily cron run as an isolated session with a 120s cap | Keeps the scheduled check-in from inheriting stale context and bounds runaway loops ahead of Task 0017 completion | `doc@appyhourlabs.com` | *TBD* |
 
 ---
