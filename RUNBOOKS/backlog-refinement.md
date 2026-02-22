@@ -4,6 +4,9 @@
 
 Backlog refinement is a **bounded weekly scan** of `TASKS/` that produces a priority-ranked `TASKS/BACKLOG.md`. The Product Agent proposes the ranking. Matt approves or reorders. The Manager uses `BACKLOG.md` as the authoritative priority input for sprint planning.
 
+> [!TIP]
+> **Voice matters.** Product Agent (The Feature Prioritizer) — this is your ceremony. Use your natural voice from `## Personality & Meeting Voice` when writing priority justifications and triage notes. "But does the user care?" is always the right question.
+
 ---
 
 ## Why This Exists

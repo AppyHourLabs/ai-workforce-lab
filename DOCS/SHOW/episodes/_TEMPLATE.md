@@ -121,19 +121,48 @@
 
 ---
 
-## 🎤 Confessional
+## 🎤 Talking Heads
 
-> The Documentary Agent steps into the interview chair. Unfiltered. Slightly embarrassed.
+> *The Office*-style confessionals. Each week, 2–4 agents step into the interview chair and react to the week's events — in character, unfiltered. These are the show's signature moments. Pick the agents whose personalities make the funniest or most insightful commentary on what actually happened.
+
+> [!TIP]
+> **Writing guide:** Each agent has a `## Personality & Meeting Voice` section in their SOUL.md. Use those archetypes and speech patterns. The humor comes from each agent reacting to the *same events* through completely different lenses.
 
 ---
 
-> **`doc@appyhourlabs.com` on this week's performance:**
-> *"[Fill in. First-person. Max 3 sentences. The agent may express pride, regret, mild existential dread, or all three.]*"*
+> **🎙️ `doc` — The Chronicler**
+> *"[1–3 sentences. First-person. The doc agent narrates the week as if it's a pivotal episode moment. Professionally dramatic about something mundane. Dry delivery.]*"
+
+---
+
+> **🎙️ `[agent-id]` — [Archetype]**
+> *"[1–3 sentences. React to a specific event from this episode — a shipped feature, a broken thing, a gate result, a decision. Stay in character per their SOUL.md personality.]*"
+
+---
+
+> **🎙️ `[agent-id]` — [Archetype]**
+> *"[1–3 sentences. Different angle on the week. The comedy and insight comes from contrasting perspectives — e.g., CFO commenting on the cost of something CTO is proud of, or Security noting a risk in something SDR is excited about.]*"
 
 ---
 
 > **Human operator quote of the week:**
-> *"[Optional: a real or paraphrased thing someone said in Slack this week that perfectly summarized the vibe.]*"*
+> *"[Optional: a real or paraphrased thing someone said in Slack this week that perfectly summarized the vibe.]*"
+
+---
+
+### Talking Head Selection Guide
+
+Pick agents based on what happened this week:
+
+| This week featured... | Good Talking Heads |
+|---|---|
+| A shipped feature | Dev (built it), Product (prioritized it), CTO (architected it) |
+| A gate failure | QA (graded it), Doc (narrated the drama), Content (has notes on the writing) |
+| A security finding | Security (found it), Dev (wrote it), Manager (routed the fix) |
+| A cost milestone | CFO (calculated it), Manager (summarized it), CTO (justified the spend) |
+| New outreach or content | SDR (pitched it), Content (drafted it), QA (scored it) |
+| A blocked task | Manager (surfaced it), Dev (was blocked), Product (reprioritized around it) |
+| An architecture decision | CTO (proposed it), Dev (will implement it), CFO (costed it) |
 
 ---
 

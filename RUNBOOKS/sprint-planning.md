@@ -4,6 +4,9 @@
 
 Sprint planning converts the prioritized backlog into a committed sprint artifact: `TASKS/sprints/YYYY-WXX.md`. It is a two-step agent handoff — Product proposes, CTO validates feasibility — then Matt approves before the sprint begins.
 
+> [!TIP]
+> **Voice matters.** Product and CTO each have a `## Personality & Meeting Voice` section in their SOUL.md. Use your natural voice in CTO Feasibility Notes and sprint goal descriptions — especially the meeting-specific speech patterns. Sprint planning is where Product (The Feature Prioritizer) and CTO (The Opinionated Architect) do their best work together.
+
 ---
 
 ## Why This Exists
