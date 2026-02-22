@@ -34,6 +34,7 @@ Without baselines, there is no way to measure agent improvement. This task estab
 
 ## Dependencies
 
+- **Task 0052 (EvalPal Platform Readiness) must be `complete`** — confirms the eval pipeline works end-to-end
 - EvalPal production account with API key available (ask Founder if needed)
 - All P0 security tasks should ideally be complete first (but not a hard blocker)
 
