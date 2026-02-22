@@ -19,8 +19,8 @@
 | — | **MILESTONE** | 🏁 | **FIRST AGENT DEPLOYED. NOW EXPAND.** |
 | **07** | The Work Audit | ✅ Complete | [TASK 0018](TASKS/0018-step07-work-audit.md) — Work audit: 3 agent-ready jobs identified |
 | **08** | The Second Agent | ✅ Complete | QA, Content, and Security agents deployed |
-| **09** | Repeat | 🔒 Locked | Fleet of agents covering multiple roles |
-| **10** | The Connections | 🔒 Locked | Agents wired together, sharing context |
+| **09** | The Shared Brain | ✅ Complete | [TASK 0020](TASKS/0020-step09-shared-brain.md) — Shared memory layer wired across fleet |
+| **10** | The Manager | ✅ Complete | [TASK 0021](TASKS/0021-step10-manager-agent.md) — Manager agent delegates to specialists |
 | **11** | The System | 🔒 Locked | Full operation documented — monitoring & management |
 | **12** | The Playbook | 🔒 Locked | Personalized AI workforce playbook |
 
@@ -119,6 +119,52 @@ See [TASK 0018](TASKS/0018-step07-work-audit.md) for full scoring and rationale.
 
 ---
 
+## Step 09 — The Shared Brain (Complete)
+
+**CampClaw Artifact:** Multiple agents accessing a single, persistent memory store.
+
+**Implementation:** Shared brain directory at `~/.openclaw/workspaces/shared/brain/` with fleet-wide memory search via `memorySearch.extraPaths`. Agents write handoff notes (doc→QA→content) so the morning pipeline carries context downstream.
+
+| Component | Description |
+|---|---|
+| Shared brain | `~/.openclaw/workspaces/shared/brain/` — BRAIN.md, fleet-status.md, handoffs/ |
+| Memory config | `memorySearch.extraPaths` in openclaw.json — all agents index shared brain |
+| SOUL updates | All 4 agents have Shared Brain section with read/write instructions |
+| Cron updates | All 4 cron jobs include shared brain handoff steps |
+| Per-agent memory | `memory/` dirs created for all agents |
+
+**Step 09 Complete:** 2026-02-22. Shared brain wired — agents share context across sessions.
+
+---
+
+## Step 10 — The Manager (Complete)
+
+**CampClaw Artifact:** An orchestrator agent that routes tasks to specialist agents.
+
+**Implementation:** Manager Agent (🎯) registered in OpenClaw with delegation via `openclaw agent --agent <id>`. Runs at 03:45 ET — first in the morning pipeline — posting fleet briefings before specialists run.
+
+| Component | Description |
+|---|---|
+| Agent | `manager` — 🎯 Manager Agent |
+| Schedule | 03:45 ET daily (before doc at 04:00) |
+| Delegation | `openclaw agent --agent <id> --message "<task>"` |
+| Fleet roster | Maintained in manager's TOOLS.md |
+| Onboarding | [RUNBOOKS/new-agent-onboarding.md](RUNBOOKS/new-agent-onboarding.md) |
+
+**Morning Pipeline (updated):**
+
+| Time | Agent | Job |
+|---|---|---|
+| 03:45 ET | 🎯 Manager | Fleet briefing |
+| 04:00 ET | 🎬 Doc | Repo scan + episode drafts |
+| 04:30 ET | 🔍 QA | Quality + brand voice gates |
+| 05:00 ET | ✍️ Content | Social/blog drafts |
+| 05:30 ET | 🛡️ Security | PR security scans |
+
+**Step 10 Complete:** 2026-02-22. Manager agent deployed.
+
+---
+
 ## Local Docs
 
 Full detail archived locally — no need to go back to the browser:
@@ -134,9 +180,9 @@ Weekly check-ins at [campclaw.ai/check-in](https://campclaw.ai/check-in).
 
 | Question | This Week's Answer |
 |---|---|
-| What did you build? | Steps 00–08 complete. 4 agents deployed (doc, QA, content, security) on staggered daily crons (04:00–05:30 ET). Morning pipeline verified working — all agents deliver to `#ai-office`. Fixed cron delivery targets, device pairing, and doc agent timeout (17 min → 24s). |
+| What did you build? | Steps 00–10 complete. 5 agents deployed (doc, QA, content, security, manager) on staggered daily crons (03:45–05:30 ET). Shared brain wired — agents share context via handoff notes. Manager agent orchestrates fleet. Morning pipeline verified working. |
 | Are you blocked? | X API developer setup needed for automated social posting (deferred). |
-| Goal for next week? | Step 09 (Shared Brain) + Step 10 (The Manager). Social posting deferred. |
+| Goal for next week? | Step 11 (The System) + Step 12 (The Playbook). Social posting deferred. |
 
 ---
 
