@@ -16,7 +16,7 @@ That's what this repository answers. In real time. With the receipts committed.
 
 **The experiment:** deploy AI agents into operational roles (documentation, QA, content, security, financial analysis, technical strategy, sales outreach, development, product) using a tiered autonomy model. Document everything. Ship the governance alongside the features.
 
-**Current fleet:** 10 agents running on staggered daily cron schedules (03:45–08:00 ET), coordinated by a manager agent with shared brain memory.
+**Current fleet:** 10 agents running on staggered daily cron schedules (03:45–08:15 ET), coordinated by a manager agent with shared brain memory.
 
 **The constraint:** safety first. Always. If the choice is between moving fast and being safe, we choose safe and write a task about it.
 
@@ -74,16 +74,16 @@ ai-workforce-lab/
 
 | Agent | ID | Schedule | Role |
 |---|---|---|---|
-| 🎯 Manager | `manager` | 03:45 ET | Fleet coordination, task routing, daily briefings |
-| 🎬 Documentary | `doc` | 04:00 ET | Episode drafting, repo scanning, PR creation |
-| 🔍 QA | `qa` | 04:30 ET | Quality gates, brand voice evaluation, PR review |
-| ✍️ Content | `content` | 05:00 ET | Social posts, blog drafts, content calendar |
-| 🛡️ Security | `security` | 05:30 ET | Security scans, policy checks, credential detection |
-| 💰 CFO | `cfo` | 06:00 ET | Budget modeling, cost tracking, token efficiency |
-| 🏗️ CTO | `cto` | 06:30 ET | ADRs, architecture, SDLC standards, CI/CD oversight |
-| 📞 SDR | `sdr` | 07:00 ET | Prospect research, outreach drafting, pipeline tracking |
-| 💻 Dev | `dev` | 07:30 ET | Full-stack coding, testing, bug fixes, feature PRs |
-| 🎨 Product | `product` | 08:00 ET | Product strategy, backlog refinement, sprint planning |
+| 🎨 Product | `product` | 03:45 ET | Product strategy, backlog refinement, sprint planning |
+| 🏗️ CTO | `cto` | 04:15 ET | ADRs, architecture, SDLC standards, CI/CD oversight |
+| 💰 CFO | `cfo` | 04:45 ET | Budget modeling, cost tracking, token efficiency |
+| 💻 Dev | `dev` | 05:15 ET | Full-stack coding, testing, bug fixes, feature PRs |
+| 📞 SDR | `sdr` | 05:45 ET | Prospect research, outreach drafting, pipeline tracking |
+| 🛡️ Security | `security` | 06:15 ET | Security scans, policy checks, credential detection |
+| ✍️ Content | `content` | 06:45 ET | Social posts, blog drafts, content calendar |
+| 🔍 QA | `qa` | 07:15 ET | Quality gates, brand voice evaluation, PR review |
+| 🎬 Documentary | `doc` | 07:45 ET | Episode drafting, repo scanning, PR creation |
+| 🎯 Manager | `manager` | 08:15 ET | Fleet coordination, task routing, daily briefings |
 
 Full role specs: [`AGENTS/`](AGENTS/)
 

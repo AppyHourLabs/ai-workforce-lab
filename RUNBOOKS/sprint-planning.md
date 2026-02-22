@@ -20,11 +20,11 @@ Tasks exist in `TASKS/`. Priorities exist in `TASKS/BACKLOG.md`. Sprint planning
 | Step | When | Who |
 |---|---|---|
 | Draft sprint proposal | Sunday (during backlog refinement run) | Product Agent writes proposal to shared brain |
-| Validate technical feasibility | Monday 06:30 ET | CTO Agent reads proposal, annotates feasibility notes |
-| Finalize sprint commitment | Monday 08:00 ET | Product Agent reads CTO notes, produces `TASKS/sprints/YYYY-WXX.md` |
+| Validate technical feasibility | Monday 04:15 ET | CTO Agent reads proposal, annotates feasibility notes |
+| Finalize sprint commitment | Monday 03:45 ET (next day) or same-day update | Product Agent reads CTO notes, produces `TASKS/sprints/YYYY-WXX.md` |
 | Human approval | Monday morning | Matt reviews PR, merges to activate sprint |
 
-Product drafts the sprint proposal on Sunday as part of its backlog refinement pass and writes it to the shared brain. Monday morning, CTO reads the proposal at 06:30 and adds feasibility notes. Product finalizes the sprint commitment at 08:00 incorporating CTO feedback. Matt reviews and merges.
+Product drafts the sprint proposal on Sunday as part of its backlog refinement pass and writes it to the shared brain. Monday morning, CTO reads the proposal at 04:15 and adds feasibility notes. Product incorporates CTO feedback in its next run (Tuesday 03:45 or via a manager delegation). Matt reviews and merges.
 
 ---
 

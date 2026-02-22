@@ -11,18 +11,18 @@ Complete operational reference for the AI Workforce Lab fleet. For step-by-step 
 
 | # | Agent | ID | Account | Schedule (ET) | Capabilities | Constraints |
 |---|---|---|---|---|---|---|
-| 1 | 🎯 Manager | `manager` | `ai@appyhourlabs.com` | 03:45 daily | Fleet briefings, task delegation via `openclaw agent --agent <id>`, interactive Slack routing | Only agent with `#ai-office` channel binding; does not execute specialist work |
-| 2 | 🎬 Documentary | `doc` | `doc@appyhourlabs.com` | 04:00 daily | Repo scanning, episode drafting, PR creation via `gh` CLI | Publish-gated: episodes require outbound quality gate pass |
-| 3 | 🔍 QA | `qa` | `ai@appyhourlabs.com` | 04:30 daily | Quality gates, brand voice evaluation, pass/fail scoring | Advisory — does not merge or publish |
-| 4 | ✍️ Content | `content` | `media@appyhourlabs.com` | 05:00 daily | Social/blog drafts from merged episodes | Draft-only; human publishes to all platforms |
-| 5 | 🛡️ Security | `security` | `ai@appyhourlabs.com` | 05:30 daily | PR diff scanning, policy compliance checks, guardrail enforcement | Advisory — flags violations, does not block merges |
-| 6 | 💰 CFO | `cfo` | `ai@appyhourlabs.com` | 06:00 daily | Budget modeling, cost tracking, grant research | Zero financial authority — advisory only; no access to `billing@` |
-| 7 | 🔧 CTO | `cto` | `ai@appyhourlabs.com` | 06:30 daily | Architecture decisions, technical roadmap, CI/CD oversight | Does not merge, deploy, or provision infrastructure |
-| 8 | 📞 SDR | `sdr` | `sales@appyhourlabs.com` | 07:00 daily | Prospect research, outreach drafting, pipeline tracking | No autonomous email sends; all outbound human-gated |
-| 9 | 💻 Dev | `dev` | `ai@appyhourlabs.com` | 07:30 daily | Full-stack coding, testing, bug fixes, feature PRs | No deploys — PRs only, branch prefix `dev/` |
-| 10 | 🎨 Product | `product` | `ai@appyhourlabs.com` | 08:00 daily | Product strategy, backlog refinement, sprint planning, branding | Advisory — no external announcements without approval |
+| 1 | 🎨 Product | `product` | `ai@appyhourlabs.com` | 03:45 daily | Product strategy, backlog refinement, sprint planning, branding | Advisory — no external announcements without approval |
+| 2 | 🔧 CTO | `cto` | `ai@appyhourlabs.com` | 04:15 daily | Architecture decisions, technical roadmap, CI/CD oversight | Does not merge, deploy, or provision infrastructure |
+| 3 | 💰 CFO | `cfo` | `ai@appyhourlabs.com` | 04:45 daily | Budget modeling, cost tracking, grant research | Zero financial authority — advisory only; no access to `billing@` |
+| 4 | 💻 Dev | `dev` | `ai@appyhourlabs.com` | 05:15 daily | Full-stack coding, testing, bug fixes, feature PRs | No deploys — PRs only, branch prefix `dev/` |
+| 5 | 📞 SDR | `sdr` | `sales@appyhourlabs.com` | 05:45 daily | Prospect research, outreach drafting, pipeline tracking | No autonomous email sends; all outbound human-gated |
+| 6 | 🛡️ Security | `security` | `ai@appyhourlabs.com` | 06:15 daily | PR diff scanning, policy compliance checks, guardrail enforcement | Advisory — flags violations, does not block merges |
+| 7 | ✍️ Content | `content` | `media@appyhourlabs.com` | 06:45 daily | Social/blog drafts from merged episodes | Draft-only; human publishes to all platforms |
+| 8 | 🔍 QA | `qa` | `ai@appyhourlabs.com` | 07:15 daily | Quality gates, brand voice evaluation, pass/fail scoring | Advisory — does not merge or publish |
+| 9 | 🎬 Documentary | `doc` | `doc@appyhourlabs.com` | 07:45 daily | Repo scanning, episode drafting, PR creation via `gh` CLI | Publish-gated: episodes require outbound quality gate pass |
+| 10 | 🎯 Manager | `manager` | `ai@appyhourlabs.com` | 08:15 daily | Fleet briefings, task delegation via `openclaw agent --agent <id>`, interactive Slack routing | Only agent with `#ai-office` channel binding; does not execute specialist work |
 
-**Total fleet:** 10 agents · **Pipeline window:** 03:45–08:00 ET · **All agents:** Phase A
+**Total fleet:** 10 agents · **Pipeline window:** 03:45–08:15 ET · **All agents:** Phase A
 
 ---
 
@@ -31,28 +31,28 @@ Complete operational reference for the AI Workforce Lab fleet. For step-by-step 
 The fleet runs on staggered daily crons. Each agent completes its work and writes a handoff note before the next agent starts.
 
 ```
-03:45  🎯 Manager     Fleet briefing → writes fleet-status.md
+03:45  🎨 Product     Backlog refinement, sprint planning, product direction
         │
-04:00  🎬 Doc         Repo scan → episode drafts → writes handoffs/doc-to-qa.md
+04:15  🔧 CTO         Architecture review and technical planning
         │
-04:30  🔍 QA          Reads doc handoff → runs eval gates → writes handoffs/qa-to-content.md
+04:45  💰 CFO         Financial analysis and cost tracking
         │
-05:00  ✍️ Content     Reads QA handoff → drafts social/blog posts
+05:15  💻 Dev         Pull latest, run tests, code and open PRs
         │
-05:30  🛡️ Security   Scans open PRs → writes findings to EVALS/results/security/
+05:45  📞 SDR         Prospect research and outreach drafting
         │
-06:00  💰 CFO         Financial analysis and cost tracking
+06:15  🛡️ Security   Scans open PRs → writes findings to EVALS/results/security/
         │
-06:30  🔧 CTO         Architecture review and technical planning
+06:45  ✍️ Content     Reads QA handoff → drafts social/blog posts
         │
-07:00  📞 SDR         Prospect research and outreach drafting
+07:15  🔍 QA          Reads doc handoff → runs eval gates → writes handoffs/qa-to-content.md
         │
-07:30  💻 Dev         Pull latest, run tests, code and open PRs
+07:45  🎬 Doc         Repo scan → episode drafts → writes handoffs/doc-to-qa.md
         │
-08:00  🎨 Product     Backlog refinement, sprint planning, product direction
+08:15  🎯 Manager     Reads ALL agent output → posts unified fleet briefing
 ```
 
-**Data flow:** Manager → Doc → QA → Content is a sequential pipeline. Security, CFO, CTO, SDR, Dev, and Product run independently after the core pipeline.
+**Data flow:** Product → CTO → CFO sets strategy. Dev and SDR execute. Security → Content → QA review. Doc captures the day's activity. Manager summarizes everything last.
 
 **All output** is delivered to `#ai-office` (channel ID `C0AFXJR71V5`) via each agent's cron `delivery.to` config. Matt reviews during the morning.
 

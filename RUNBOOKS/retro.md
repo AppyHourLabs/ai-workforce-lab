@@ -32,13 +32,13 @@ Total context: 3–4 small markdown files. Output: 1 structured retro file.
 
 ## Process
 
-### 1. Security Agent (05:30 ET, sprint end day)
+### 1. Dev Agent (05:15 ET, sprint end day)
 
-Reads the three source files above and writes `EVALS/retros/YYYY-WXX.md` using the template below.
+Appends a `## Dev Health` block to the retro file (see template). This covers test pass rates and PR counts.
 
-### 2. Dev Agent contribution (07:30 ET, same day)
+### 2. Security Agent (06:15 ET, same day)
 
-After its run, Dev Agent **appends** a `## Dev Health` block to the retro file (see template). This covers test pass rates and PR counts — data the Security Agent doesn't have.
+Reads Dev's health block plus the three source files above and writes `EVALS/retros/YYYY-WXX.md` using the template below.
 
 ### 3. Human review
 

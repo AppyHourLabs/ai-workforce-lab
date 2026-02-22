@@ -84,7 +84,7 @@ We run agents on a staggered daily schedule, not all at once. Why:
 
 1. **Sequential dependency.** Doc must finish before QA can evaluate. QA must finish before Content can repurpose. Running them simultaneously would mean QA evaluates yesterday's draft.
 2. **Shared resource contention.** All agents share one gateway and one Slack channel. Staggering avoids output collision.
-3. **Debuggability.** When something breaks at 05:00, you know it was the Content agent, not a race condition between three agents.
+3. **Debuggability.** When something breaks at 06:45, you know it was the Content agent, not a race condition between three agents.
 
 ### Handoff Notes
 
@@ -99,7 +99,7 @@ Each agent's cron prompt explicitly tells it to read its upstream handoff and wr
 
 ### Timing
 
-We use 30-minute gaps between pipeline agents. This gives each agent time to think, write, and handle retries. We *could* tighten this, but the morning window (03:45–07:00 ET) isn't contested — there's no reason to rush.
+We use 30-minute gaps between pipeline agents. This gives each agent time to think, write, and handle retries. We *could* tighten this, but the morning window (03:45–08:15 ET) isn't contested — there's no reason to rush.
 
 ---
 

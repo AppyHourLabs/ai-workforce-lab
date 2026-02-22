@@ -17,8 +17,8 @@ With the AI Workforce Lab fleet complete (Steps 00–12), the next phase is dire
 
 | Agent | ID | Schedule | Role |
 |---|---|---|---|
-| 💻 Dev | `dev` | 07:30 ET | Full-stack development — code, test, PR |
-| 🎨 Product | `product` | 08:00 ET | Product strategy, branding, UX, feature prioritization |
+| 💻 Dev | `dev` | 05:15 ET | Full-stack development — code, test, PR |
+| 🎨 Product | `product` | 03:45 ET | Product strategy, branding, UX, feature prioritization |
 
 Both agents use a **project registry pattern** — their TOOLS.md lists active projects, so they can work on any codebase (not just EvalPal).
 
@@ -37,22 +37,22 @@ All agents updated to support multi-project assignments via `TOOLS.md` Project R
 - EvalPal repo cloned to `/Users/aioffice/EvalPal`
 - npm dependencies installed
 - `gh` CLI access to `MatthewEngman/EvalPal` verified
-- Manager fleet roster updated (10 agents, 03:45–08:00 ET)
+- Manager fleet roster updated (10 agents, 03:45–08:15 ET)
 
 ## Updated Morning Pipeline
 
 | Time | Agent | Job |
 |---|---|---|
-| 03:45 ET | 🎯 Manager | Fleet briefing |
-| 04:00 ET | 🎬 Doc | Repo scan + episode drafts |
-| 04:30 ET | 🔍 QA | Quality + brand voice gates; EvalPal test runs |
-| 05:00 ET | ✍️ Content | Social/blog drafts |
-| 05:30 ET | 🛡️ Security | PR security scans (both repos) |
-| 06:00 ET | 💰 CFO | Financial analysis |
-| 06:30 ET | 🔧 CTO | Architecture review; EvalPal technical direction |
-| 07:00 ET | 📞 SDR | Prospect research |
-| 07:30 ET | 💻 Dev | EvalPal test health, issue triage, coding |
-| 08:00 ET | 🎨 Product | Product direction, branding, feature priorities |
+| 03:45 ET | 🎨 Product | Product direction, branding, feature priorities |
+| 04:15 ET | 🔧 CTO | Architecture review; EvalPal technical direction |
+| 04:45 ET | 💰 CFO | Financial analysis |
+| 05:15 ET | 💻 Dev | EvalPal test health, issue triage, coding |
+| 05:45 ET | 📞 SDR | Prospect research |
+| 06:15 ET | 🛡️ Security | PR security scans (both repos) |
+| 06:45 ET | ✍️ Content | Social/blog drafts |
+| 07:15 ET | 🔍 QA | Quality + brand voice gates; EvalPal test runs |
+| 07:45 ET | 🎬 Doc | Repo scan + episode drafts |
+| 08:15 ET | 🎯 Manager | Unified fleet briefing |
 
 ---
 

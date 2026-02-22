@@ -75,7 +75,7 @@
 
 **CampClaw Artifact:** First autonomous agent running on a schedule.
 
-**Deployment:** Doc Agent runs daily at 04:00 AM ET via OpenClaw cron. Scans the repo, drafts episodes if warranted, and posts a summary to `#ai-office`.
+**Deployment:** Doc Agent runs daily at 07:45 AM ET via OpenClaw cron. Scans the repo, drafts episodes if warranted, and posts a summary to `#ai-office`.
 
 | Task | File | Status |
 |---|---|---|
@@ -112,9 +112,14 @@ See [TASK 0018](TASKS/0018-step07-work-audit.md) for full scoring and rationale.
 
 | Agent | Schedule | Job |
 |---|---|---|
-| 🔍 QA Agent | 04:30 ET | Run quality + brand voice gates on doc-agent drafts |
-| ✍️ Content Agent | 05:00 ET | Draft social/blog content from merged episodes |
-| 🛡️ Security Agent | 05:30 ET | Scan open PRs for guardrail violations |
+| 🎨 Product Agent | 03:45 ET | Backlog refinement, sprint planning, product direction |
+| 🔧 CTO Agent | 04:15 ET | Architecture review and technical planning |
+| 💰 CFO Agent | 04:45 ET | Budget/cost/token efficiency |
+| 💻 Dev Agent | 05:15 ET | Code, test, PR on assigned projects |
+| 📞 SDR Agent | 05:45 ET | Prospect/outreach check |
+| 🛡️ Security Agent | 06:15 ET | Scan open PRs for guardrail violations |
+| ✍️ Content Agent | 06:45 ET | Draft social/blog content from merged episodes |
+| 🔍 QA Agent | 07:15 ET | Run quality + brand voice gates on doc-agent drafts |
 
 **Step 08 Complete:** 2026-02-21. Three agents deployed in OpenClaw with staggered cron schedules.
 
@@ -142,12 +147,12 @@ See [TASK 0018](TASKS/0018-step07-work-audit.md) for full scoring and rationale.
 
 **CampClaw Artifact:** An orchestrator agent that routes tasks to specialist agents.
 
-**Implementation:** Manager Agent (🎯) registered in OpenClaw with delegation via `openclaw agent --agent <id>`. Runs at 03:45 ET — first in the morning pipeline — posting fleet briefings before specialists run.
+**Implementation:** Manager Agent (🎯) registered in OpenClaw with delegation via `openclaw agent --agent <id>`. Runs at 08:15 ET — last in the morning pipeline — posting a unified fleet briefing after all specialists complete.
 
 | Component | Description |
 |---|---|
 | Agent | `manager` — 🎯 Manager Agent |
-| Schedule | 03:45 ET daily (before doc at 04:00) |
+| Schedule | 08:15 ET daily (after all specialists) |
 | Delegation | `openclaw agent --agent <id> --message "<task>"` |
 | Fleet roster | Maintained in manager's TOOLS.md |
 | Onboarding | [RUNBOOKS/new-agent-onboarding.md](RUNBOOKS/new-agent-onboarding.md) |
@@ -156,16 +161,16 @@ See [TASK 0018](TASKS/0018-step07-work-audit.md) for full scoring and rationale.
 
 | Time | Agent | Job |
 |---|---|---|
-| 03:45 ET | 🎯 Manager | Fleet briefing |
-| 04:00 ET | 🎬 Doc | Repo scan + episode drafts |
-| 04:30 ET | 🔍 QA | Quality + brand voice gates |
-| 05:00 ET | ✍️ Content | Social/blog drafts |
-| 05:30 ET | 🛡️ Security | PR security scans |
-| 06:00 ET | 💰 CFO | Budget/cost/token efficiency |
-| 06:30 ET | 🏗️ CTO | Architecture/SDLC review |
-| 07:00 ET | 📞 SDR | Prospect/outreach check |
-| 07:30 ET | 💻 Dev | Code, test, PR on assigned projects |
-| 08:00 ET | 🎨 Product | Backlog refinement, sprint planning |
+| 03:45 ET | 🎨 Product | Backlog refinement, sprint planning |
+| 04:15 ET | 🔧 CTO | Architecture/SDLC review |
+| 04:45 ET | 💰 CFO | Budget/cost/token efficiency |
+| 05:15 ET | 💻 Dev | Code, test, PR on assigned projects |
+| 05:45 ET | 📞 SDR | Prospect/outreach check |
+| 06:15 ET | 🛡️ Security | PR security scans |
+| 06:45 ET | ✍️ Content | Social/blog drafts |
+| 07:15 ET | 🔍 QA | Quality + brand voice gates |
+| 07:45 ET | 🎬 Doc | Repo scan + episode drafts |
+| 08:15 ET | 🎯 Manager | Unified fleet briefing |
 
 **Step 10 Complete:** 2026-02-22. Manager agent deployed.
 
@@ -186,7 +191,7 @@ Weekly check-ins at [campclaw.ai/check-in](https://campclaw.ai/check-in).
 
 | Question | This Week's Answer |
 |---|---|
-| What did you build? | Steps 00–12 complete. 10 agents deployed (manager, doc, QA, content, security, CFO, CTO, SDR, dev, product) on staggered daily crons (03:45–08:00 ET). Shared brain wired — agents share context via handoff notes. Manager agent orchestrates fleet. Gateway watchdog cron monitors health every 10 min. Agile ceremony runbooks added. |
+| What did you build? | Steps 00–12 complete. 10 agents deployed (manager, doc, QA, content, security, CFO, CTO, SDR, dev, product) on staggered daily crons (03:45–08:15 ET). Pipeline reordered: Strategy→Execution→Review→Capture→Orchestrate. Manager runs last for unified briefings. Shared brain wired — agents share context via handoff notes. Gateway watchdog cron monitors health every 10 min. Agile ceremony runbooks added. |
 | Are you blocked? | X API developer setup needed for automated social posting (deferred). |
 | Goal for next week? | Step 11 (The System) + Step 12 (The Playbook). Social posting deferred. |
 

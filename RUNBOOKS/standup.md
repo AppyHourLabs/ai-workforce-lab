@@ -2,7 +2,7 @@
 
 > **Owner:** Manager Agent (`ai@appyhourlabs.com`) | **Trigger:** Start of every agent cron session | **Version:** 1.0 · 2026-02-22
 
-The standup is not a meeting. It is a **structured write to `fleet-status.md`** at the start of each agent session and a **structured read** by the Manager at 03:45 ET before briefing the fleet.
+The standup is not a meeting. It is a **structured write to `fleet-status.md`** at the start of each agent session and a **structured read** by the Manager at 08:15 ET after all agents have reported.
 
 ---
 
@@ -52,9 +52,9 @@ Each agent **appends or updates** its status block in `fleet-status.md` at the s
 
 ---
 
-## Manager's Role (03:45 ET)
+## Manager's Role (08:15 ET)
 
-The Manager reads all current blocks and posts a fleet summary to `#ai-office`:
+The Manager reads all current blocks and posts a unified fleet summary to `#ai-office`:
 
 1. Count agents by status (`running` / `blocked` / `done` / `skipped`)
 2. Surface any `Blocked by:` entries to Matt for human review
