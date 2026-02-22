@@ -85,6 +85,8 @@ Operational procedures for agents and human operators.
 | [Retro](../RUNBOOKS/retro.md) | Agile ceremony — sprint retrospective |
 | [Human Escalation](../RUNBOOKS/human-escalation.md) | When and how to escalate to `matt@appyhourlabs.com` |
 | [Logging Conventions](../RUNBOOKS/logging-conventions.md) | Structured logging format for all agent actions |
+| [EvalPal Agent Evals](../RUNBOOKS/evalpal-agent-evals.md) | How to run, track, and improve agent evals via evalpal.dev |
+| [EvalPal Issue Tracking](../RUNBOOKS/evalpal-issue-tracking.md) | How agents file, track, and close EvalPal bugs via gh CLI |
 
 ---
 
@@ -111,6 +113,18 @@ Quality gates that must pass before any AI-authored content goes external.
 | Brand Voice Gate | [brand-voice-gate.md](../EVALS/brand-voice-gate.md) | All external content |
 
 Results are filed per-item in `EVALS/results/[slug]-quality.md` and `EVALS/results/[slug]-voice.md`.
+
+### EvalPal Agent Performance Evals
+
+Systematic agent testing via [evalpal.dev](https://evalpal.dev) — dogfooding our own product.
+
+| Resource | File | Purpose |
+|---|---|---|
+| Agent Eval Definitions | [agent-eval-definitions.md](../EVALS/agent-eval-definitions.md) | 12+ eval definitions across all 10 agents |
+| Weekly Scorecard Template | [agent-scorecard-template.md](../EVALS/agent-scorecard-template.md) | Per-agent pass rates, trends, failure patterns |
+| Baselines | `EVALS/results/baselines/` | Initial scores for regression comparison |
+| Scorecards | `EVALS/results/scorecards/` | Weekly performance reports |
+| Regressions | `EVALS/results/regressions/` | Quality drop alerts and investigation notes |
 
 ---
 

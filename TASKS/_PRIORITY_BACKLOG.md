@@ -45,6 +45,10 @@ Phase A constraints apply to all tasks: no autonomous money movement, no Stripe 
 | 19 | Cost Report Correctness Audit | 0046 | CFO | #0032 budget cap | Reconcile CFO report against actual LLM invoices |
 | 20 | Spend Alerting — 80% Cap Notification | 0047 | CFO | #0032 budget cap | Early warning before hard cap is hit |
 | 21 | Architecture Decision Records — 3 Key Decisions | 0048 | CTO | #0039 provider adapter | Documents patterns for Dev agent to follow |
+| 22 | **EvalPal Platform Readiness** — Verify Eval Pipeline Works | [0052](0052-evalpal-platform-readiness.md) | CTO + Dev | None | Gates all agent self-testing; finds/fixes EvalPal bugs first |
+| 23 | **EvalPal Baseline Capture** — Agent Performance Baselines | [0053](0053-evalpal-baseline-capture.md) | QA | #0052 readiness | First measurable data points for all agent outputs via evalpal.dev |
+| 24 | **EvalPal Weekly Scorecard** — Recurring Performance Tracking | [0054](0054-evalpal-weekly-scorecard.md) | QA | #0053 baseline | Weekly trend tracking, failure pattern analysis, improvement recs |
+| 25 | **EvalPal Regression Alerts** — Automated Quality Drop Detection | [0055](0055-evalpal-regression-alerts.md) | QA | #0053 baseline | Auto-escalate when agent pass rate drops >5% from baseline |
 
 ---
 
@@ -65,16 +69,17 @@ Phase A constraints apply to all tasks: no autonomous money movement, no Stripe 
 
 | Role | P0 | P1 | P2 | Total |
 |---|---|---|---|---|
-| QA | 2 (0031, 0037) | 4 (0042–0045) | 0 | **6** |
+| QA | 2 (0031, 0037) | 7 (0042–0045, 0053–0055) | 0 | **9** |
 | Security | 4 (0028, 0030, 0034, 0035) | 2 (0040, 0041) | 0 | **6** |
 | CTO | 2 (0029, 0033) | 3 (0038, 0039, 0048) | 0 | **5** |
+| CTO + Dev | 0 | 1 (0052) | 0 | **1** |
 | CFO | 1 (0032) | 2 (0046, 0047) | 0 | **3** |
 | Documentary | 0 | 0 | 1 (0052) | **1** |
 | Content | 0 | 0 | 1 (0051) | **1** |
 | SDR | 0 | 0 | 2 (0049, 0050) | **2** |
 | Logging (CTO) | 1 (0036) | 0 | 0 | **1** |
 
-> **Note:** QA count reaches ≥ 8 when E2E (0042), onboarding (0043), dataset fuzzing (0044), and run comparison (0045) are added to regression (0037) and auth E2E (0031). Additional QA tasks may be added as P1 items 0040/0041 are refined with QA participation.
+> **Note:** QA now owns 9 tasks including 3 EvalPal integration tasks (0053–0055) for agent performance measurement via evalpal.dev. Tasks 0053–0055 have no P0 dependency and can start immediately alongside P0 work.
 
 ---
 
