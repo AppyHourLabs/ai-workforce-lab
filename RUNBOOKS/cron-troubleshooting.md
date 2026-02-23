@@ -104,6 +104,40 @@ Look for long gaps between timestamps — that's where the model was stuck gener
 
 ---
 
+### `FailoverError: No API key found for provider`
+
+**Cause:** The agent's model provider (e.g., `anthropic`, `google`) has no API key in `auth-profiles.json`. Shell environment variables (`ANTHROPIC_API_KEY`, `GOOGLE_API_KEY`) are **not** available to the gateway LaunchAgent.
+
+**Diagnosis:**
+```bash
+# Check which providers have valid auth
+openclaw models status
+
+# Look for providers with "missing" effective key
+# Providers using OpenAI may work via env vars if the ad-hoc process is running,
+# but Anthropic/Google will fail when the LaunchAgent serves requests
+```
+
+**Fix:**
+```bash
+# Edit/create the auth store with the missing provider key:
+# File: ~/.openclaw/agents/main/agent/auth-profiles.json
+# Format:
+# {
+#   "profiles": {
+#     "<provider>:manual": {
+#       "provider": "<provider>",
+#       "type": "api_key",
+#       "key": "<your-api-key>"
+#     }
+#   }
+# }
+```
+
+> ⚠️ **All agents fall back to the main agent's `auth-profiles.json`.** You only need to add the key once — it covers all agents using that provider. See [2026-02-23 RCA](../DOCS/incidents/2026-02-23-gateway-auth-outage-rca.md).
+
+---
+
 ## Hung Terminal Sessions
 
 Interactive CLI commands like `gh pr create` (without `--fill` or `--body`) will hang waiting for user input indefinitely. If you see a terminal command running for hours:

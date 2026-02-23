@@ -77,6 +77,22 @@ openclaw agents set-identity \
   --emoji "<emoji>"
 ```
 
+### 3.5. Verify Provider Auth
+
+If the new agent uses a **non-default model provider** (e.g., `anthropic/claude-sonnet-4-0` or `google/gemini-2.5-flash` instead of the default `openai/gpt-5.1-codex`), verify that `auth-profiles.json` has a key for that provider:
+
+```bash
+# Check which providers have valid auth
+openclaw models status
+
+# If a provider is missing, add the key:
+# Edit ~/.openclaw/agents/main/agent/auth-profiles.json
+# Add a profile entry for the new provider:
+# "<provider>:manual": { "provider": "<provider>", "type": "api_key", "key": "<key>" }
+```
+
+> ⚠️ **Shell env vars are NOT enough.** The gateway LaunchAgent does not inherit shell environment variables. API keys **must** be in `auth-profiles.json` for cron jobs to work. See [2026-02-23 RCA](../DOCS/incidents/2026-02-23-gateway-auth-outage-rca.md) for details.
+
 ### 4. Add Slack Channel Binding (interactive agents ONLY)
 
 > **Most agents do NOT need a channel binding.** Specialist agents work via cron and deliver output to `#ai-office` through their cron delivery config. Only the **manager agent** has a channel binding for interactive Slack routing. Adding bindings for other agents would break routing (first-match wins).
