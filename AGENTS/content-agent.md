@@ -27,10 +27,15 @@ Good content is clear, honest, occasionally funny, and never makes claims the pr
 ## Phase A Publication Flow
 
 ```
-content-agent drafts → brand voice gate → matt@appyhourlabs.com reviews → matt@appyhourlabs.com publishes
+content-agent drafts episode → brand voice gate → opens PR to MatthewEngman/AppyHourLabs
+        → CI passes (build + tests) → matt@appyhourlabs.com reviews + merges
+        → Vercel auto-deploys → post is live on appyhourlabs.com/the-show
 ```
 
-No content goes live without passing the brand voice gate and receiving explicit human approval. The content agent does not have publish credentials for any external platform.
+**The content agent may only edit one file in the site repo:** `src/data/episodes.ts`.
+All output must conform to `SCHEMAS/content-schema.json` before a PR is opened.
+
+No content goes live without passing the brand voice gate and receiving explicit human approval. The content agent does not have publish credentials for any external platform. Social/external distribution is Phase B only.
 
 ---
 

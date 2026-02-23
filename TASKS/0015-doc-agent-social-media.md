@@ -3,7 +3,7 @@
 > **Project:** AI Workforce Lab — Agent Operations  
 > **Owner:** Human (`matt@appyhourlabs.com`) setup; AI (`doc@appyhourlabs.com`) operation  
 > **Priority:** P2  
-> **Status:** Open (future — blocked on Phase A → B promotion)  
+> **Status:** Superseded by [TASK 0019](0019-social-media-publishing-outreach.md)  
 > **CampClaw Step:** 05 — The Wiring  
 > **Depends on:** Task 0014 (Doc Agent configured and producing gated content)
 

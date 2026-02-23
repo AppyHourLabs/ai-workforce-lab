@@ -21,6 +21,9 @@ Quality is not the enemy of speed. Low quality is.
 | Gate result reporting | File pass/fail reports in `EVALS/results/` with timestamp and score |
 | Blocking publication | Explicitly mark drafts as `gate: FAIL` when thresholds aren't met |
 | Eval rubric maintenance | Keep eval files current as standards evolve |
+| **EvalPal agent evals** | Run daily eval definitions via [evalpal.dev](https://evalpal.dev) for agents with new output — see [`RUNBOOKS/evalpal-agent-evals.md`](../RUNBOOKS/evalpal-agent-evals.md) |
+| **Weekly scorecard** | Compile agent performance scorecard every Friday — see [`EVALS/agent-scorecard-template.md`](../EVALS/agent-scorecard-template.md) |
+| **Regression alerting** | Detect agent quality drops > 5% from baseline; escalate per [`RUNBOOKS/human-escalation.md`](../RUNBOOKS/human-escalation.md) |
 
 ---
 
