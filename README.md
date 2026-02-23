@@ -97,18 +97,19 @@ Every week, `doc@appyhourlabs.com` files an episode documenting what shipped, wh
 - [Episode 001 — The AI Office Moves In](DOCS/SHOW/episodes/001-ai-office-moves-in.md)
 - [Episode 002 — The First Agent Goes Live](DOCS/SHOW/episodes/002-the-first-agent-goes-live.md)
 - [Episode 003 — Agent Wires Itself](DOCS/SHOW/episodes/003-agent-wires-itself.md)
+- [Episode 004 — Fleet Expansion & EvalPal Phase A](DOCS/SHOW/episodes/004-fleet-expansion-evalpal-phase-a.md)
 - [Episode template](<DOCS/SHOW/episodes/_TEMPLATE.md>)
 
 ---
 
 ## Status
 
-*Last updated: 2026-02-22*
+*Last updated: 2026-02-23*
 
 | Project | Status | What it is |
 |---|---|---|
-| [0001 — Google Workspace Hardening](PROJECTS/0001-google-workspace-hardening.md) | 🔵 Active | MFA, API access controls, OAuth scope audit for all AI ops accounts |
-| [0002 — Mac Mini AI Office Setup](PROJECTS/0002-mac-mini-ai-office-setup.md) | 🔵 Active | Dedicated hardened machine for running agent pipelines |
+| [0001 — Google Workspace Hardening](PROJECTS/0001-google-workspace-hardening.md) | ✅ Done | MFA, API access controls, OAuth scope audit for all AI ops accounts |
+| [0002 — Mac Mini AI Office Setup](PROJECTS/0002-mac-mini-ai-office-setup.md) | ✅ Done | Dedicated hardened machine for running agent pipelines |
 
 Autonomy tier: **Phase A** — all outbound requires human approval.
 
