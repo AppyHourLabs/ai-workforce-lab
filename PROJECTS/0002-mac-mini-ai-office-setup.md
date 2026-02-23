@@ -31,7 +31,7 @@ Configure the Mac Mini as a dedicated, hardened AI Office — a fixed, auditable
 | Install tooling (brew, git, node, docker, chrome, slack) | [`TASKS/0004`](../TASKS/0004-mac-mini-tooling-install.md) | ✅ Done |
 | Create Chrome profiles for AI ops accounts | [`TASKS/0005`](../TASKS/0005-mac-mini-chrome-profiles.md) | ✅ Done |
 | Create local logging directory and conventions | [`TASKS/0006`](../TASKS/0006-mac-mini-logging-setup.md) | ✅ Done |
-| Install OpenClaw + connect to Slack | [`TASKS/0013`](../TASKS/0013-openclaw-install-slack-connect.md) | 🔵 Active |
+| Install OpenClaw + connect to Slack | [`TASKS/0013`](../TASKS/0013-openclaw-install-slack-connect.md) | ✅ Done |
 
 ---
 

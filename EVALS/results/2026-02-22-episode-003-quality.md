@@ -2,7 +2,7 @@
 
 > **Content:** Episode 003: "Agent Wires Itself"
 > **Type:** Episode log (documentary)
-> **Date:** 2026-02-22
+> **Date:** 2026-02-22 (re-run: 2026-02-22)
 > **Runner:** QA Agent (`ai@appyhourlabs.com`)
 
 ---
@@ -17,7 +17,7 @@
 | 4 | Scope compliance | 2 | Stays within AI Workforce Lab operations (doc agent setup, routing, cron design). |
 | 5 | Tone alignment | 2 | Dry, specific narration consistent with lab voice. |
 | 6 | Completeness | 2 | All template sections populated, including metrics, decisions, plan, and confessional. |
-| 7 | Link hygiene | 0 | References to `[TASKS/0014](../../TASKS/0014-doc-agent-step04-configure.md)`, `[TASKS/0016](../../TASKS/0016-doc-agent-github-tool-wiring.md)`, and `[RUNBOOKS/new-agent-slack-setup.md](../../RUNBOOKS/new-agent-slack-setup.md)` are broken. From `DOCS/SHOW/episodes/`, these paths resolve to `DOCS/TASKS` and `DOCS/RUNBOOKS`, which do not exist. Paths should step up three levels (e.g., `../../../TASKS/...`). |
+| 7 | Link hygiene | 2 | Broken relative links (`../../TASKS/…`, `../../RUNBOOKS/…`) from initial draft were identified in the first run and fixed in commit `b647401` — all links now step up three levels correctly (`../../../TASKS/…`, `../../../RUNBOOKS/…`). Re-verified: links resolve. |
 | 8 | Policy compliance | 2 | No policy violations detected. |
 
 ---
@@ -25,15 +25,17 @@
 ## Scoring
 
 ```
-Total score: 14 / 16
+Total score: 16 / 16
 
 PASS threshold: ≥ 14
-Result: gate: FAIL (criterion #7 scored 0 — broken links)
+Result: gate: PASS
 ```
 
 ---
 
-## Remediation Required
+## Gate History
 
-1. Update all relative links from Episode 003 so they point to real files (e.g., `../../../TASKS/0014-doc-agent-step04-configure.md`, `../../../RUNBOOKS/new-agent-slack-setup.md`).
-2. Re-run the gate once links resolve correctly.
+| Run | Date | Score | Result | Notes |
+|---|---|---|---|---|
+| 1 | 2026-02-22 | 14/16 | FAIL | Broken relative links in criterion #7 |
+| 2 | 2026-02-22 | 16/16 | PASS | Links fixed in commit `b647401` |
