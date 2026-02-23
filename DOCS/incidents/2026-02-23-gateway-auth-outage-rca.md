@@ -97,10 +97,10 @@ The OpenClaw auth store (`~/.openclaw/agents/main/agent/auth-profiles.json`) did
 
 | # | Action | Owner | Status |
 |---|--------|-------|--------|
-| 1 | Add `auth-profiles.json` validation to new-agent-onboarding runbook | aioffice | 🔲 TODO |
-| 2 | Add provider auth check to gateway watchdog cron | aioffice | 🔲 TODO |
-| 3 | Document multi-provider auth setup in system-operations.md | aioffice | 🔲 TODO |
-| 4 | Consider adding `ANTHROPIC_API_KEY` and `GOOGLE_API_KEY` to LaunchAgent plist as belt-and-suspenders | aioffice | 🔲 TODO |
+| 1 | Add `auth-profiles.json` validation to new-agent-onboarding runbook | aioffice | ✅ DONE |
+| 2 | Add provider auth check to gateway watchdog cron | aioffice | ✅ DONE |
+| 3 | Document multi-provider auth setup in system-operations.md | aioffice | ✅ DONE |
+| 4 | Add API keys to `auth-profiles.json` (persistent auth store) | aioffice | ✅ DONE |
 
 ---
 

@@ -84,6 +84,40 @@ See [RUNBOOKS/session-handoff.md](../RUNBOOKS/session-handoff.md) for the handof
 
 ---
 
+## Multi-Provider Auth
+
+Agents use different model providers (OpenAI, Anthropic, Google). API keys are stored in:
+
+```
+~/.openclaw/agents/main/agent/auth-profiles.json
+```
+
+All agents fall back to this file. The format is:
+
+```json
+{
+  "profiles": {
+    "<provider>:manual": {
+      "provider": "<provider>",
+      "type": "api_key",
+      "key": "<api-key>"
+    }
+  }
+}
+```
+
+| Provider | Agents | Env Var |
+|----------|--------|---------|
+| `openai` | Product, CTO, CFO, Dev | `OPENAI_API_KEY` |
+| `anthropic` | Doc, Content, SDR | `ANTHROPIC_API_KEY` |
+| `google` | QA, Security, Manager | `GOOGLE_API_KEY` |
+
+> ⚠️ **Shell env vars are NOT sufficient.** The gateway LaunchAgent does not inherit shell environment variables. Keys **must** be persisted to `auth-profiles.json`. See [2026-02-23 RCA](../DOCS/incidents/2026-02-23-gateway-auth-outage-rca.md).
+
+To verify: `openclaw models status` — check that all providers show `effective=profiles:...`.
+
+---
+
 ## Monitoring
 
 ### Gateway Watchdog
@@ -127,6 +161,8 @@ openclaw cron runs <job-id>
 
 ## Incident Response
 
+RCA documents are filed in `DOCS/incidents/` with action items tracked to completion. See [RUNBOOKS/incident-response.md](../RUNBOOKS/incident-response.md) for the full process.
+
 ### Gateway Goes Down
 
 **Symptoms:** Agents stop responding in Slack; watchdog log shows repeated restart attempts.
@@ -150,6 +186,15 @@ openclaw cron runs <job-id>
    - Device pairing required (`gateway closed 1008`)
    - Execution timeout (agent composing too much inline)
 4. Trigger manually to test: `openclaw cron run <job-id>`
+
+### Auth Failure (Provider Missing Keys)
+
+**Symptoms:** Some agents fail with `FailoverError: No API key found for provider`, while agents on other providers work fine.
+
+1. Check provider auth: `openclaw models status`
+2. If a provider shows `missing`, add the key to `~/.openclaw/agents/main/agent/auth-profiles.json`
+3. See [RUNBOOKS/cron-troubleshooting.md](../RUNBOOKS/cron-troubleshooting.md#failovererror-no-api-key-found-for-provider) for the fix
+4. Re-trigger failed agents: `openclaw cron run <job-id>`
 
 ### Agent Errors
 
@@ -216,6 +261,7 @@ Hard-won lessons from building the fleet. Full details in [RUNBOOKS/new-agent-on
 | [backlog-refinement.md](../RUNBOOKS/backlog-refinement.md) | Weekly Product Agent backlog pass — produces `TASKS/BACKLOG.md` |
 | [sprint-planning.md](../RUNBOOKS/sprint-planning.md) | Bi-weekly sprint commitment format — Product drafts, CTO validates |
 | [retro.md](../RUNBOOKS/retro.md) | Post-sprint retrospective — Security Agent files, Dev Agent appends health metrics |
+| [incident-response.md](../RUNBOOKS/incident-response.md) | SEV-1/2 incident handling — RCA format, action item tracking, agent scanning |
 
 ---
 
