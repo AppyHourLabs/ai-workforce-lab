@@ -60,4 +60,19 @@ See [`EVALS/brand-voice-gate.md`](../EVALS/brand-voice-gate.md) for the scored r
 
 ---
 
-*Related: [`POLICIES/posting-policy.md`](../POLICIES/posting-policy.md) · [`EVALS/brand-voice-gate.md`](../EVALS/brand-voice-gate.md) · [`AGENTS/documentary-agent.md`](./documentary-agent.md)*
+## LinkedIn Content Strategy
+
+The Content Agent's primary ongoing social output is LinkedIn. Two post types are defined:
+
+- **Standalone posts** — self-contained, written for new audiences, triggered by incidents, milestones, or episode publishes
+- **Thread replies** — short operational updates posted to the founder's original launch thread
+
+Full rules, triggers, format requirements, weekly cadence, draft delivery format, and gate requirements are in:
+
+📋 [`RUNBOOKS/linkedin-content-strategy.md`](../RUNBOOKS/linkedin-content-strategy.md)
+
+All LinkedIn drafts are filed in `TASKS/content/` with naming `YYYY-MM-DD-linkedin-[standalone|reply]-[slug].md` and must pass both eval gates before submission to `matt@appyhourlabs.com`.
+
+---
+
+*Related: [`POLICIES/posting-policy.md`](../POLICIES/posting-policy.md) · [`EVALS/brand-voice-gate.md`](../EVALS/brand-voice-gate.md) · [`AGENTS/documentary-agent.md`](./documentary-agent.md) · [`RUNBOOKS/linkedin-content-strategy.md`](../RUNBOOKS/linkedin-content-strategy.md)*
