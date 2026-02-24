@@ -44,6 +44,8 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 3 | Episode 001 — AI Office Moves In | `TASKS/content/2026-02-21-episode-001-ai-office-moves-in-drafts.md` | `draft: pending-review` |
 | 4 | Episode 002 — First Agent Goes Live | `TASKS/content/2026-02-21-episode-002-the-first-agent-goes-live-drafts.md` | `draft: pending-review` |
 | 5 | Episode 003 — Agent Wires Itself | `TASKS/content/2026-02-21-episode-003-agent-wires-itself-drafts.md` | `draft: pending-review` |
+| 6 | Episode 004 — Fleet Expansion & EvalPal Phase A (Post A) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
+| 7 | Episode 004 — Fleet Expansion & EvalPal Phase A (Post B) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
 
 ---
 

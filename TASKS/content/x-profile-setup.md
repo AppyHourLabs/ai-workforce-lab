@@ -44,6 +44,10 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 3 | Episode 001 — AI Office Moves In | `TASKS/content/2026-02-21-episode-001-ai-office-moves-in-drafts.md` | `draft: pending-review` |
 | 4 | Episode 002 — First Agent Goes Live | `TASKS/content/2026-02-21-episode-002-the-first-agent-goes-live-drafts.md` | `draft: pending-review` |
 | 5 | Episode 003 — Agent Wires Itself | `TASKS/content/2026-02-21-episode-003-agent-wires-itself-drafts.md` | `draft: pending-review` |
+| 6 | Episode 004 — Metric Hook (Tweet A) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
+| 7 | Episode 004 — Meta Angle (Tweet B) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
+| 8 | Episode 004 — Transparency Hook (Tweet C) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
+| 9 | Episode 004 — Infrastructure Insight (Tweet D) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
 
 ---
 
