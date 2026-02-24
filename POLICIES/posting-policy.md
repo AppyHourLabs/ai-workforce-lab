@@ -32,14 +32,21 @@ Outbound quality gate → gate: PASS required
         ↓
 Brand voice gate → gate: PASS required
         ↓
+Schema validation against SCHEMAS/content-schema.json → gate: PASS required
+        ↓
 Publish preflight checklist completed (RUNBOOKS/publish-preflight.md)
         ↓
-matt@appyhourlabs.com reviews and approves
+matt@appyhourlabs.com reviews PR to MatthewEngman/AppyHourLabs
         ↓
-matt@appyhourlabs.com publishes (or explicitly delegates the send action)
+matt@appyhourlabs.com merges PR → Vercel auto-deploys → live on appyhourlabs.com/the-show
 ```
 
-**`doc@appyhourlabs.com` specifically:** may open a PR with episode content after both gates pass. The PR merge by `matt@appyhourlabs.com` constitutes publication approval.
+**Phase A approved publish targets:**
+- `appyhourlabs.com/the-show` — site only, via PR merge
+
+**Phase B (not yet active):** External platforms (LinkedIn, X/Twitter, newsletter). See [`POLICIES/phase-a-to-b.md`](./phase-a-to-b.md) for promotion criteria.
+
+**`doc@appyhourlabs.com` specifically:** may open a PR with episode content after all gates pass. The PR merge by `matt@appyhourlabs.com` constitutes publication approval.
 
 ---
 

@@ -1,7 +1,7 @@
 # CampClaw Path — AI Workforce Lab
 
 > **Program:** [Claw Camp](https://campclaw.ai/my-path) · "Thirteen projects from security briefing to agent team. Each one ends with something real."
-> **Account:** AppyhourLabs · *Last synced: 2026-02-21*
+> **Account:** AppyhourLabs · *Last synced: 2026-02-22*
 
 ---
 
@@ -15,14 +15,15 @@
 | **03** | The Setup | ✅ Complete | [PROJECT 0002](PROJECTS/0002-mac-mini-ai-office-setup.md) — Mac Mini hardened; OpenClaw installed and connected to Slack |
 | **04** | The Build | ✅ Complete | [TASK 0014](TASKS/0014-doc-agent-step04-configure.md) — Doc Agent configured; Episode 002 merged |
 | **05** | The Wiring | ✅ Complete | [TASK 0016](TASKS/0016-doc-agent-github-tool-wiring.md) — GitHub tool wired to Doc Agent |
-| **06** | Deploy It | 🔒 Locked | First autonomous agent running on a schedule |
+| **06** | Deploy It | ✅ Complete | [TASK 0017](TASKS/0017-doc-agent-step06-deploy-it.md) — Daily cron schedule deployed |
 | — | **MILESTONE** | 🏁 | **FIRST AGENT DEPLOYED. NOW EXPAND.** |
-| **07** | The Work Audit | 🔒 Locked | Identify 3–5 additional agent-ready jobs |
-| **08** | The Second Agent | 🔒 Locked | Second working agent for a different job |
-| **09** | Repeat | 🔒 Locked | Fleet of agents covering multiple roles |
-| **10** | The Connections | 🔒 Locked | Agents wired together, sharing context |
-| **11** | The System | 🔒 Locked | Full operation documented — monitoring & management |
-| **12** | The Playbook | 🔒 Locked | Personalized AI workforce playbook |
+| **07** | The Work Audit | ✅ Complete | [TASK 0018](TASKS/0018-step07-work-audit.md) — Work audit: 3 agent-ready jobs identified |
+| **08** | The Second Agent | ✅ Complete | QA, Content, and Security agents deployed |
+| **09** | The Shared Brain | ✅ Complete | [TASK 0020](TASKS/0020-step09-shared-brain.md) — Shared memory layer wired across fleet |
+| **10** | The Manager | ✅ Complete | [TASK 0021](TASKS/0021-step10-manager-agent.md) — Manager agent delegates to specialists |
+| — | **Fleet Expansion** | ✅ Complete | TASKs [0022](TASKS/0022-cfo-agent-setup.md), [0023](TASKS/0023-cto-agent-setup.md), [0024](TASKS/0024-sdr-agent-setup.md) — CFO, CTO, SDR onboarded |
+| **11** | The System | ✅ Complete | [TASK 0025](TASKS/0025-step11-the-system.md) — [DOCS/system-operations.md](DOCS/system-operations.md) |
+| **12** | The Playbook | ✅ Complete | [TASK 0026](TASKS/0026-step12-the-playbook.md) — [DOCS/ai-workforce-playbook.md](DOCS/ai-workforce-playbook.md) |
 
 ---
 
@@ -70,6 +71,111 @@
 
 ---
 
+## Step 06 — Deploy It (Complete)
+
+**CampClaw Artifact:** First autonomous agent running on a schedule.
+
+**Deployment:** Doc Agent runs daily at 07:45 AM ET via OpenClaw cron. Scans the repo, drafts episodes if warranted, and posts a summary to `#ai-office`.
+
+| Task | File | Status |
+|---|---|---|
+| Deploy doc agent on daily cron schedule | [TASKS/0017](TASKS/0017-doc-agent-step06-deploy-it.md) | ✅ Done |
+
+**Step 06 Complete:** 2026-02-21. Doc Agent runs autonomously on a daily schedule.
+
+---
+
+## Step 07 — The Work Audit (Active)
+
+**CampClaw Artifact:** A scored evaluation of all AGENTS/ roles identifying the next 3–5 agent builds.
+
+| Task | File | Status |
+|---|---|---|
+| Audit all agent roles and recommend build order | [TASKS/0018](TASKS/0018-step07-work-audit.md) | ✅ Done |
+
+**Recommended Build Order:**
+1. **QA Agent** (25/25) — eval gate runner; perfect complement to doc agent
+2. **Content Agent** (22/25) — social/blog drafts from episode content
+3. **Security Agent** (21/25) — PR policy compliance scanning
+
+See [TASK 0018](TASKS/0018-step07-work-audit.md) for full scoring and rationale.
+
+**Step 07 Complete:** 2026-02-21. Three agent-ready jobs identified and prioritized.
+
+---
+
+## Step 08 — The Second Agent (Active)
+
+**CampClaw Artifact:** Additional working agents for different jobs.
+
+**Agents Built:** QA, Content, and Security — all configured in OpenClaw with workspaces, Slack bindings, and daily cron schedules.
+
+| Agent | Schedule | Job |
+|---|---|---|
+| 🎨 Product Agent | 03:45 ET | Backlog refinement, sprint planning, product direction |
+| 🔧 CTO Agent | 04:15 ET | Architecture review and technical planning |
+| 💰 CFO Agent | 04:45 ET | Budget/cost/token efficiency |
+| 💻 Dev Agent | 05:15 ET | Code, test, PR on assigned projects |
+| 📞 SDR Agent | 05:45 ET | Prospect/outreach check |
+| 🛡️ Security Agent | 06:15 ET | Scan open PRs for guardrail violations |
+| ✍️ Content Agent | 06:45 ET | Draft social/blog content from merged episodes |
+| 🔍 QA Agent | 07:15 ET | Run quality + brand voice gates on doc-agent drafts |
+
+**Step 08 Complete:** 2026-02-21. Three agents deployed in OpenClaw with staggered cron schedules.
+
+---
+
+## Step 09 — The Shared Brain (Complete)
+
+**CampClaw Artifact:** Multiple agents accessing a single, persistent memory store.
+
+**Implementation:** Shared brain directory at `~/.openclaw/workspaces/shared/brain/` with fleet-wide memory search via `memorySearch.extraPaths`. Agents write handoff notes (doc→QA→content) so the morning pipeline carries context downstream.
+
+| Component | Description |
+|---|---|
+| Shared brain | `~/.openclaw/workspaces/shared/brain/` — BRAIN.md, fleet-status.md, handoffs/ |
+| Memory config | `memorySearch.extraPaths` in openclaw.json — all agents index shared brain |
+| SOUL updates | All 4 agents have Shared Brain section with read/write instructions |
+| Cron updates | All 4 cron jobs include shared brain handoff steps |
+| Per-agent memory | `memory/` dirs created for all agents |
+
+**Step 09 Complete:** 2026-02-22. Shared brain wired — agents share context across sessions.
+
+---
+
+## Step 10 — The Manager (Complete)
+
+**CampClaw Artifact:** An orchestrator agent that routes tasks to specialist agents.
+
+**Implementation:** Manager Agent (🎯) registered in OpenClaw with delegation via `openclaw agent --agent <id>`. Runs at 08:15 ET — last in the morning pipeline — posting a unified fleet briefing after all specialists complete.
+
+| Component | Description |
+|---|---|
+| Agent | `manager` — 🎯 Manager Agent |
+| Schedule | 08:15 ET daily (after all specialists) |
+| Delegation | `openclaw agent --agent <id> --message "<task>"` |
+| Fleet roster | Maintained in manager's TOOLS.md |
+| Onboarding | [RUNBOOKS/new-agent-onboarding.md](RUNBOOKS/new-agent-onboarding.md) |
+
+**Morning Pipeline (updated):**
+
+| Time | Agent | Job |
+|---|---|---|
+| 03:45 ET | 🎨 Product | Backlog refinement, sprint planning |
+| 04:15 ET | 🔧 CTO | Architecture/SDLC review |
+| 04:45 ET | 💰 CFO | Budget/cost/token efficiency |
+| 05:15 ET | 💻 Dev | Code, test, PR on assigned projects |
+| 05:45 ET | 📞 SDR | Prospect/outreach check |
+| 06:15 ET | 🛡️ Security | PR security scans |
+| 06:45 ET | ✍️ Content | Social/blog drafts |
+| 07:15 ET | 🔍 QA | Quality + brand voice gates |
+| 07:45 ET | 🎬 Doc | Repo scan + episode drafts |
+| 08:15 ET | 🎯 Manager | Unified fleet briefing |
+
+**Step 10 Complete:** 2026-02-22. Manager agent deployed.
+
+---
+
 ## Local Docs
 
 Full detail archived locally — no need to go back to the browser:
@@ -85,9 +191,9 @@ Weekly check-ins at [campclaw.ai/check-in](https://campclaw.ai/check-in).
 
 | Question | This Week's Answer |
 |---|---|
-| What did you build? | Step 03 complete (OpenClaw installed + Slack connected); Step 04 in progress (Doc Agent configured, Episode 002 drafted + quality gates passed) |
-| Are you blocked? | PR review for Episode 002 (`matt@appyhourlabs.com` approval needed) |
-| Goal for next week? | Complete Step 04 (merge Episode 002); begin Step 05 (The Wiring — connect agent to tools) |
+| What did you build? | Steps 00–12 complete. 10 agents deployed (manager, doc, QA, content, security, CFO, CTO, SDR, dev, product) on staggered daily crons (03:45–08:15 ET). Pipeline reordered: Strategy→Execution→Review→Capture→Orchestrate. Manager runs last for unified briefings. Shared brain wired — agents share context via handoff notes. Gateway watchdog cron monitors health every 10 min. Agile ceremony runbooks added. |
+| Are you blocked? | X API developer setup needed for automated social posting (deferred). |
+| Goal for next week? | Step 11 (The System) + Step 12 (The Playbook). Social posting deferred. |
 
 ---
 

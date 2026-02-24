@@ -28,12 +28,14 @@ ai-workforce-lab/
 ├── AGENTS/                    ← agent identity files and capability declarations
 ├── POLICIES/                  ← governance rules, autonomy thresholds, violation definitions
 ├── EVALS/                     ← evaluation harnesses, rubrics, and results
+│   └── retros/                ← bi-weekly retrospective files (Security Agent)
 ├── RUNBOOKS/                  ← operational how-tos for humans and agents
 ├── DOCS/
 │   └── SHOW/
 │       └── episodes/          ← weekly public documentary episodes
 │           └── _TEMPLATE.md   ← use this when filing a new episode
 └── TASKS/                     ← actionable task files assigned to agents or humans
+    └── sprints/               ← bi-weekly sprint commitment files (Product Agent)
 ```
 
 ---
