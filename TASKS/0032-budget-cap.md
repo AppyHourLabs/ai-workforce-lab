@@ -14,13 +14,26 @@ Implement and verify a hard daily LLM spending cap that automatically halts agen
 
 A single looping agent with an unconstrained LLM budget can generate hundreds of dollars of API charges in minutes. Phase A explicitly prohibits autonomous money movement — but cost exposure through uncontrolled LLM calls is equally dangerous. The cap must exist in code, not just in policy; a budget you can only see after the fact is not a budget.
 
+## Founder Decision — Cap Confirmed
+
+> ✅ **Approved by Founder (2026-02-23):** Hard cap of **$10/day** across all providers, with an **80% alert at $8/day**.
+
+| Provider | Agents | Estimated Daily Share | Provider Cap |
+|---|---|---|---|
+| **OpenAI** | Product, CTO, CFO, Dev | ~$3–4/day | Set $5/day hard limit in OpenAI dashboard |
+| **Anthropic** | Doc, Content, SDR | ~$2–3/day | Set $4/day hard limit in Anthropic console |
+| **Google** | QA, Security, Manager | ~$1–2/day | Set $3/day hard limit in Google AI Studio |
+| **Total** | All 10 agents | ~$6–9/day | **$10/day combined hard cap** |
+
+> Per-provider caps intentionally sum to $12 (headroom) while the combined tracking enforces $10.
+
 ## Steps
 
-1. Document current daily LLM spend by provider (OpenAI, Anthropic, etc.) using API dashboards.
-2. Define the hard cap amount (propose $10/day for Phase A — confirm with Founder before implementing).
+1. Document current daily LLM spend by provider using API dashboards. Initial spend data in `TASKS/finance/spend-bootstrap.md`.
+2. ~~Define the hard cap amount~~ → **Confirmed: $10/day combined, $8/day alert threshold.** See Founder Decision above.
 3. Implement one of the following enforcement mechanisms (choose based on EvalPal's architecture):
    - **Option A:** Usage tracking middleware — increment a Redis/database counter per API call; reject calls exceeding cap with a `503` and a structured error log entry.
-   - **Option B:** Provider-level budget cap — set hard spend limits in OpenAI/Anthropic account settings (not just soft alerts).
+   - **Option B:** Provider-level budget cap — set hard spend limits in OpenAI/Anthropic/Google account settings (not just soft alerts). See per-provider caps in table above.
    - **Option C:** Both A and B (preferred).
 4. Write a test that mocks the spend counter at the cap threshold and confirms calls are rejected.
 5. Confirm the cap applies to all agent LLM calls, including background/cron jobs.
@@ -37,7 +50,7 @@ None — can execute immediately. Propose cap amount to Founder before committin
 
 ## Definition of Done (Measurable)
 
-- [ ] Cap amount confirmed with Founder in writing (Slack or GitHub comment on this task's PR)
+- [x] Cap amount confirmed with Founder in writing — $10/day hard cap, $8/day 80% alert (2026-02-23)
 - [ ] Cap enforcement exists in code (middleware or provider setting), not only in policy
 - [ ] Test demonstrates LLM call rejection when cap is exceeded
 - [ ] Cap applies to all agent pipeline paths (not just the main request handler)
@@ -53,6 +66,7 @@ None — can execute immediately. Propose cap amount to Founder before committin
 
 ## Links
 
+- [TASKS/finance/spend-bootstrap.md](finance/spend-bootstrap.md)
 - [POLICIES/phase-a-to-b.md](../POLICIES/phase-a-to-b.md)
 - [POLICIES/ai-safety-charter.md](../POLICIES/ai-safety-charter.md)
 - [RUNBOOKS/phase-a-execution-plan.md](../RUNBOOKS/phase-a-execution-plan.md)

@@ -18,6 +18,7 @@ All Type 2 thread replies are posted as comments on this post. Content Agent mus
 | 001 — The AI Office Moves In | LinkedIn, X, blog excerpt drafted (2026-02-21) | Ready for review | Highlights Mac Mini hardening + Phase A rationale |
 | 002 — The First Agent Goes Live | LinkedIn, X, blog excerpt drafted (2026-02-21) | Ready for review | Focus on OpenClaw install + run metrics |
 | 003 — Agent Wires Itself | LinkedIn, X, blog excerpt drafted (2026-02-21) | Ready for review | Covers GitHub tooling + Slack routing fix |
+| 004 — Fleet Expansion & EvalPal Phase A | Needs drafting | QA PASSED (2026-02-23) | Covers fleet expansion to 10 agents + EvalPal Phase A hardening; PR #33 |
 
 ---
 
