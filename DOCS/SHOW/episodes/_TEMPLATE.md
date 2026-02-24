@@ -1,8 +1,8 @@
-# 🎬 Episode [EP-###] — Week of [YYYY-MM-DD]
+# 🎬 Episode [EP-###] — [YYYY-MM-DD]
 
 > **Documentary Agent:** `doc@appyhourlabs.com` | **Season:** [S#] | **Status:** `draft` → `published`
 >
-> *"Every week in AI workforce management is basically a nature documentary. Something beautiful happened. Something got eaten. We filmed it."*
+> *"Every day in AI workforce management is basically a nature documentary. Something beautiful happened. Something got eaten. We filmed it."*
 
 ---
 
@@ -14,7 +14,7 @@
 |---|---|---|---|
 | | | | |
 
-**Highlight of the week:** *(One sentence — what are we most proud of?)*
+**Highlight of the day:** *(One sentence — what are we most proud of?)*
 
 ---
 
@@ -26,7 +26,7 @@
 |---|---|---|---|
 | | | | |
 
-**Breakage score this week:** `__/10` *(0 = nothing broke, 10 = we are all fine, everything is fine)*
+**Breakage score today:** `__/10` *(0 = nothing broke, 10 = we are all fine, everything is fine)*
 
 ---
 
@@ -53,7 +53,7 @@
 
 > Numbers don't lie. (They do sometimes. We watch them anyway.)
 
-| Metric | This Week | Last Week | Δ |
+| Metric | Today | Yesterday | Δ |
 |---|---|---|---|
 | Agent pipeline runs | | | |
 | Successful runs | | | |
@@ -73,7 +73,7 @@
 
 ## 🧭 Decisions
 
-> Choices made this week that future-us will have to live with.
+> Choices made today that future-us will have to live with.
 
 | Decision | Rationale | Owner | ADR Link |
 |---|---|---|---|
@@ -97,7 +97,7 @@
 
 ## 🎓 Lessons Learned
 
-> What we now know that we did not know seven days ago. Ideally things we only had to learn once.
+> What we now know that we did not know yesterday. Ideally things we only had to learn once.
 
 1. **[Lesson title]:** [One or two sentences. Brutal honesty encouraged.]
 2.
@@ -107,7 +107,7 @@
 
 ---
 
-## 📅 Next Week Plan
+## 📅 Tomorrow's Plan
 
 > The plan we will look back on with fondness and/or regret.
 
@@ -117,13 +117,13 @@
 | P1 | | | |
 | P2 | | | |
 
-**Carry-overs from last week:** *(Be honest. We all see the backlog.)*
+**Carry-overs from yesterday:** *(Be honest. We all see the backlog.)*
 
 ---
 
 ## 🎤 Talking Heads
 
-> *The Office*-style confessionals. Each week, 2–4 agents step into the interview chair and react to the week's events — in character, unfiltered. These are the show's signature moments. Pick the agents whose personalities make the funniest or most insightful commentary on what actually happened.
+> *The Office*-style confessionals. Each day, 2–4 agents step into the interview chair and react to the day's events — in character, unfiltered. These are the show's signature moments. Pick the agents whose personalities make the funniest or most insightful commentary on what actually happened.
 
 > [!TIP]
 > **Writing guide:** Each agent has a `## Personality & Meeting Voice` section in their SOUL.md. Use those archetypes and speech patterns. The humor comes from each agent reacting to the *same events* through completely different lenses.
@@ -131,28 +131,28 @@
 ---
 
 > **🎙️ `doc` — The Chronicler**
-> *"[1–3 sentences. First-person. The doc agent narrates the week as if it's a pivotal episode moment. Professionally dramatic about something mundane. Dry delivery.]*"
+> *"[1–3 sentences. First-person. The doc agent narrates the day as if it's a pivotal episode moment. Professionally dramatic about something mundane. Dry delivery.]*"
 
 ---
 
 > **🎙️ `[agent-id]` — [Archetype]**
-> *"[1–3 sentences. React to a specific event from this episode — a shipped feature, a broken thing, a gate result, a decision. Stay in character per their SOUL.md personality.]*"
+> *"[1–3 sentences. React to a specific event from today's episode — a shipped feature, a broken thing, a gate result, a decision. Stay in character per their SOUL.md personality.]*"
 
 ---
 
 > **🎙️ `[agent-id]` — [Archetype]**
-> *"[1–3 sentences. Different angle on the week. The comedy and insight comes from contrasting perspectives — e.g., CFO commenting on the cost of something CTO is proud of, or Security noting a risk in something SDR is excited about.]*"
+> *"[1–3 sentences. Different angle on the day. The comedy and insight comes from contrasting perspectives — e.g., CFO commenting on the cost of something CTO is proud of, or Security noting a risk in something SDR is excited about.]*"
 
 ---
 
 > **Human operator quote of the week:**
-> *"[Optional: a real or paraphrased thing someone said in Slack this week that perfectly summarized the vibe.]*"
+> *"[Optional: a real or paraphrased thing someone said in Slack today that perfectly summarized the vibe.]*"
 
 ---
 
 ### Talking Head Selection Guide
 
-Pick agents based on what happened this week:
+Pick agents based on what happened today:
 
 | This week featured... | Good Talking Heads |
 |---|---|
