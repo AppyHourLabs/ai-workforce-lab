@@ -38,6 +38,26 @@ A self-contained LinkedIn post that can be understood without any prior context.
 - No exclamation points in serious incident posts
 - Numbers and timestamps > vague descriptors ("a few hours" → "~3 hours")
 
+**Narrative style (for episode and incident posts):**
+
+The strongest standalone posts follow a first-person narrative structure — not editorial analysis, but a walk through what actually happened from the founder's perspective. The canonical example is the Day 1 post (`brain/81f0f870.../linkedin-day1-post.md`).
+
+Pattern:
+1. **Open in the moment** — start with a specific action, decision, or discovery. Not a thesis statement.
+2. **Walk the sequence** — what happened, mechanically and in order. Name the exact failure mode or the exact decision and why.
+3. **Name what was surprising** — the thing you didn't expect, or the thing that forced a rethink.
+4. **One clean takeaway** — one lesson, stated plainly. Not a list. Not "key learnings."
+5. **Close flat** — state where things stand now. No rallying cry.
+
+What this looks like vs. what to avoid:
+| ✅ Do | ❌ Don't |
+|---|---|
+| "Yesterday I approved a $10/day hard cap..." | "Cost control is critical for AI teams..." |
+| "That file didn't exist." | "We identified a configuration gap..." |
+| "I'll probably be quoting it for a while." | "This represents a key milestone..." |
+| First-person throughout | Third-person or passive voice |
+| The decision *moment* | The policy in the abstract |
+
 ---
 
 ### Type 2: Thread Reply
@@ -116,6 +136,18 @@ Examples:
 ## Draft
 
 [post body here]
+
+---
+
+## Previous Post Comment
+
+> **Purpose:** Drop this as a comment on the prior day's standalone post to keep it active in the algorithm and link readers to this new post.
+> **Post this after:** The new standalone post is live and you have its URL.
+
+[1–2 sentence teaser. Reference the prior post's story, name what's new, include the link placeholder.]
+
+Example format:
+> Day 2 update: [one-line bridge from yesterday to today]. Wrote it up here: [URL]
 
 ---
 

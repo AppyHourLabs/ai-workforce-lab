@@ -1,6 +1,7 @@
 # Content Calendar — Updated 2026-02-23
 
 > **LinkedIn Strategy Runbook:** [`RUNBOOKS/linkedin-content-strategy.md`](../../RUNBOOKS/linkedin-content-strategy.md)
+> **Post History:** [`TASKS/content/post-history.md`](./post-history.md)
 
 ## LinkedIn Anchor Thread
 
