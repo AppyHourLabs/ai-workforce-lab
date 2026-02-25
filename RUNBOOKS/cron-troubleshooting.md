@@ -161,6 +161,24 @@ gh pr create --repo AppyHourLabs/ai-workforce-lab \
 gh pr create
 ```
 
+### `gh-safe` wrapper (automated prevention)
+
+A wrapper script at `scripts/gh-safe.sh` intercepts `gh pr create` calls and auto-adds `--fill` if neither `--body` nor `--fill` is provided. It's symlinked to `~/.local/bin/gh` and prepended to `$PATH` via `~/.zprofile`, so it shadows the real `gh` binary for all shell sessions — including agent cron runs.
+
+```bash
+# Verify the wrapper is active
+which gh
+# Should return: /Users/aioffice/.local/bin/gh
+
+# Test it
+gh pr create --repo AppyHourLabs/ai-workforce-lab --head test-branch
+# Should print: "gh-safe: WARNING — 'gh pr create' called without --body or --fill."
+# And auto-add --fill
+```
+
+All agent SOUL.md files also include a safety constraint against running interactive CLI commands.
+
+
 ---
 
 ## Useful Diagnostic Paths
