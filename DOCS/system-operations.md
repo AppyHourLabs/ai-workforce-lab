@@ -54,11 +54,17 @@ The fleet runs on staggered daily crons. Each agent completes its work and write
         ┊  (gap — Matt clears blockers as needed)
         ┊
 14:00  🎯 Manager     Afternoon sweep — re-triggers failed/blocked agents if fixes landed
+        ┊
+        ┊  (gap — Matt works day job, clears remaining items)
+        ┊
+17:00  ✍️ Content     Pre-publish check — ensures all approved episodes have social drafts
+        │
+17:30  🎯 Manager     Ready-to-publish summary — tags Matt with what's ready to post
 ```
 
-**Data flow:** Product → CTO → CFO sets strategy. Dev and SDR execute. Security → Content → QA review. Doc captures the day's activity. Manager summarizes everything last. Afternoon sweep catches anything that was blocked in the morning.
+**Data flow:** Product → CTO → CFO sets strategy. Dev and SDR execute. Security → Content → QA review. Doc captures the day's activity. Manager summarizes everything last. Afternoon sweep catches blocked agents. Evening pre-publish ensures content is ready for Matt's 6-7 PM posting window.
 
-**All output** is delivered to `#ai-office` (channel ID `C0AFXJR71V5`) via each agent's cron `delivery.to` config. Matt reviews during the morning.
+**All output** is delivered to `#ai-office` (channel ID `C0AFXJR71V5`) via each agent's cron `delivery.to` config.
 
 ---
 
