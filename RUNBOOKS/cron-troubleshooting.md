@@ -194,6 +194,28 @@ All agent SOUL.md files also include a safety constraint against running interac
 
 ---
 
+## Re-running After Fixes
+
+When you clear a blocker (merge a PR, fix a config, resolve an error), use `scripts/rerun.sh` to re-trigger agents without waiting for the next morning window:
+
+```bash
+# Re-run agent + all downstream agents in pipeline order
+scripts/rerun.sh dev
+
+# Re-run just one agent, no cascade
+scripts/rerun.sh qa --only
+
+# Re-run only agents whose last run errored
+scripts/rerun.sh --failed
+
+# Re-run entire pipeline
+scripts/rerun.sh all
+```
+
+The afternoon manager sweep (14:00 ET) also auto-catches failed/blocked agents. See `system-operations.md` for details.
+
+---
+
 ## Manual Job Trigger
 
 ```bash

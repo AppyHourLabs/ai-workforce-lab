@@ -1,6 +1,6 @@
 # System Operations — AI Workforce Lab
 
-> **Owner:** `matt@appyhourlabs.com` | **Last updated:** 2026-02-22
+> **Owner:** `matt@appyhourlabs.com` | **Last updated:** 2026-02-25
 > **Autonomy tier:** Phase A — all outbound requires human approval
 
 Complete operational reference for the AI Workforce Lab fleet. For step-by-step procedures, see the linked runbooks — this document is the map, not the territory.
@@ -50,11 +50,37 @@ The fleet runs on staggered daily crons. Each agent completes its work and write
 07:45  🎬 Doc         Repo scan → episode drafts → writes handoffs/doc-to-qa.md
         │
 08:15  🎯 Manager     Reads ALL agent output → posts unified fleet briefing
+        ┊
+        ┊  (gap — Matt clears blockers as needed)
+        ┊
+14:00  🎯 Manager     Afternoon sweep — re-triggers failed/blocked agents if fixes landed
 ```
 
-**Data flow:** Product → CTO → CFO sets strategy. Dev and SDR execute. Security → Content → QA review. Doc captures the day's activity. Manager summarizes everything last.
+**Data flow:** Product → CTO → CFO sets strategy. Dev and SDR execute. Security → Content → QA review. Doc captures the day's activity. Manager summarizes everything last. Afternoon sweep catches anything that was blocked in the morning.
 
 **All output** is delivered to `#ai-office` (channel ID `C0AFXJR71V5`) via each agent's cron `delivery.to` config. Matt reviews during the morning.
+
+---
+
+## Ad-Hoc Re-runs
+
+When you clear a blocker between scheduled runs, use `scripts/rerun.sh` to re-trigger agents immediately:
+
+```bash
+# Re-run a single agent + all downstream in pipeline order
+scripts/rerun.sh dev
+
+# Re-run just one agent, no cascade
+scripts/rerun.sh qa --only
+
+# Re-run entire pipeline
+scripts/rerun.sh all
+
+# Re-run only agents whose last run errored
+scripts/rerun.sh --failed
+```
+
+The afternoon manager sweep at **14:00 ET** also catches failed/blocked agents automatically. If the manager finds agents that errored and the blocker looks resolved, it re-triggers them via delegation.
 
 ---
 
