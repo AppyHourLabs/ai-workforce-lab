@@ -1,6 +1,6 @@
 # LinkedIn Post History
 
-> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-02-24
+> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-02-25
 > All posts are indexed here after founder approval. Full draft files live alongside this file in `TASKS/content/`.
 
 ---
@@ -10,6 +10,7 @@
 | Date | Slug | Type | Source | Status |
 |---|---|---|---|---|
 | 2026-02-23 | `day1-ai-office` | Standalone | INC-001 RCA · OpenClaw auth failure | ✅ Posted |
+| 2026-02-25 | `ep006-directory-crisis` | Standalone | Episode 006 · INC-001 | ✅ Posted |
 
 ---
 
