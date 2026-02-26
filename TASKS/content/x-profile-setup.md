@@ -48,6 +48,12 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 7 | Episode 004 — Meta Angle (Tweet B) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
 | 8 | Episode 004 — Transparency Hook (Tweet C) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
 | 9 | Episode 004 — Infrastructure Insight (Tweet D) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
+| 10 | Episode 005 — Budget Cap (from 2026-02-26 drafts) | `TASKS/content/2026-02-26-episode-005-budget-cap-drafts.md` | `draft: pending-review` |
+| 11 | Episode 006 — Directory Crisis (from 2026-02-26 drafts) | `TASKS/content/2026-02-26-episode-006-directory-crisis-drafts.md` | `draft: pending-review` |
+| 12 | Episode 007 — The 429 Tests Nobody Noticed (Hook) | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
+| 13 | Episode 007 — QA Meta Angle | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
+| 14 | Episode 007 — Dev Restraint Clip | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
+| 15 | Episode 007 — Cost Angle | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
 
 ---
 
