@@ -46,6 +46,9 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 5 | Episode 003 — Agent Wires Itself | `TASKS/content/2026-02-21-episode-003-agent-wires-itself-drafts.md` | `draft: pending-review` |
 | 6 | Episode 004 — Fleet Expansion & EvalPal Phase A (Post A) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
 | 7 | Episode 004 — Fleet Expansion & EvalPal Phase A (Post B) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
+| 8 | Episode 005 — Budget Cap | `TASKS/content/2026-02-26-episode-005-budget-cap-drafts.md` | `draft: pending-review` |
+| 9 | Episode 006 — Directory Crisis | `TASKS/content/2026-02-26-episode-006-directory-crisis-drafts.md` | `draft: pending-review` |
+| 10 | Episode 007 — The 429 Tests Nobody Noticed | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
 
 ---
 
