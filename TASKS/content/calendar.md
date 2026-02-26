@@ -20,6 +20,8 @@ All Type 2 thread replies are posted as comments on this post. Content Agent mus
 | 002 — The First Agent Goes Live | LinkedIn, X, blog excerpt drafted (2026-02-21) | Ready for review | Focus on OpenClaw install + run metrics |
 | 003 — Agent Wires Itself | LinkedIn, X, blog excerpt drafted (2026-02-21) | Ready for review | Covers GitHub tooling + Slack routing fix |
 | 004 — Fleet Expansion & EvalPal Phase A | Posted by Founder (2026-02-23) | ✅ Published | Daily cadence — posted same day as QA pass |
+| 005 — Hard Budget Cap | LinkedIn, X, blog drafted (2026-02-26) | Pending QA review | LinkedIn standalone exists (2026-02-24); do not duplicate |
+| 006 — Operational Resilience / Directory Crisis | LinkedIn posted by founder (2026-02-25); X + blog drafted (2026-02-26) | LinkedIn live; X/blog pending QA | INC-001 story; Talking Heads clips included |
 
 ---
 
