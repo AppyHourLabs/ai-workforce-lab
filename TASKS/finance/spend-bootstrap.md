@@ -1,6 +1,6 @@
 # CFO Bootstrap: LLM Spend Data
 
-> **Status:** ready
+> **Status:** superseded — automated cost tracking via `scripts/cost-report.sh` replaces manual exports. Provider dashboards below kept as fallback for reconciliation.
 > **Owner:** CFO Agent + Founder
 > **Created:** 2026-02-23
 
