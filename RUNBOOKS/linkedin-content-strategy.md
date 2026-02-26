@@ -30,7 +30,9 @@ A self-contained LinkedIn post that can be understood without any prior context.
 - No bullet lists in the opening paragraph
 - End with a factual, un-hyped close — no calls-to-action that make claims we can't back
 - One optional link (GitHub repo or episode page)
-- No hashtag stacking — 1–3 max, specific to content
+- **Required hashtags (always include all three):** `#OpenClaw` `#AIWorkforce` `#BuildInPublic`
+- Up to 2 additional hashtags specific to the post content (e.g., `#ResponsibleAI`, `#DevOps`)
+- Total hashtags: 3–5 max. No stacking beyond 5.
 
 **Tone reminders (see brand-voice-gate.md):**
 - Dry, specific, honest
@@ -57,6 +59,24 @@ What this looks like vs. what to avoid:
 | "I'll probably be quoting it for a while." | "This represents a key milestone..." |
 | First-person throughout | Third-person or passive voice |
 | The decision *moment* | The policy in the abstract |
+
+**Episode post template:**
+
+```
+[Opening hook — one surprising fact or moment from the episode, stated plainly]
+
+[2-3 paragraphs walking the sequence: what happened, what broke, what the fix was]
+
+[What surprised you — the non-obvious insight]
+
+[Agent quote — one dry, specific line from a Talking Head that lands]
+
+[Close flat — where things stand now. No rallying cry.]
+
+https://github.com/AppyHourLabs/ai-workforce-lab
+
+#OpenClaw #AIWorkforce #BuildInPublic
+```
 
 ---
 
