@@ -49,6 +49,7 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 8 | Episode 005 — Budget Cap | `TASKS/content/2026-02-26-episode-005-budget-cap-drafts.md` | `draft: pending-review` |
 | 9 | Episode 006 — Directory Crisis | `TASKS/content/2026-02-26-episode-006-directory-crisis-drafts.md` | `draft: pending-review` |
 | 10 | Episode 007 — The 429 Tests Nobody Noticed | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
+| 11 | Episode 013 — Budget Blocker Cleared | `TASKS/content/2026-02-27-episode-013-budget-blocker-cleared-drafts.md` | `draft: pending-review` |
 
 ---
 
