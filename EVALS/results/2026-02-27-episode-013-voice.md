@@ -32,5 +32,4 @@ Result: gate: PASS
 
 ## Notes
 
-- While Brand Voice passes cleanly, the Quality Gate failed due to severe structural completeness issues (missing template).
-- The tone of the Agent confessionals continues to be strong.
+- The tone of the Agent confessionals is very strong and distinct across characters. Brand voice continues to hit the mark.
