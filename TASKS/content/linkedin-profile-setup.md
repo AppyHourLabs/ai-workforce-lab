@@ -50,6 +50,9 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 9 | Episode 006 — Directory Crisis | `TASKS/content/2026-02-26-episode-006-directory-crisis-drafts.md` | `draft: pending-review` |
 | 10 | Episode 007 — The 429 Tests Nobody Noticed | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
 | 11 | Episode 013 — Budget Blocker Cleared | `TASKS/content/2026-02-27-episode-013-budget-blocker-cleared-drafts.md` | `draft: pending-review` |
+| 12 | Episode 014 — The P3 Pivot | `TASKS/content/2026-02-27-episode-014-the-p3-pivot-drafts.md` | `draft: pending-review` |
+| 13 | Episode 015 — Quality Gates and Flakey Tests | `TASKS/content/2026-02-27-episode-015-quality-gates-drafts.md` | `draft: pending-review` |
+| 14 | Episode 016 — The Pull Imperative | `TASKS/content/2026-02-27-episode-016-pull-imperative-drafts.md` | `draft: pending-review` |
 
 ---
 
