@@ -25,7 +25,6 @@ Phase A constraints apply to all tasks: no autonomous money movement, no Stripe 
 | 8 | SQLi / XSS Injection Test Suite | [0035](0035-injection-tests.md) | Security | #0029 CI green | All user inputs validated against injection attacks |
 | 9 | Logging Coverage — Structured Agent Action Logs | [0036](0036-logging-coverage.md) | CTO | None | Required for Phase B promotion (100% coverage gate) |
 | 10 | Regression Pack — Core Eval Run Flows | [0037](0037-regression-pack.md) | QA | #0029 CI green | Locks down happy-path eval flows against regression |
-| 10.5 | **EvalPal E2E Flakey Test Fixes** | [0056](0056-flakey-e2e-tests.md) | Dev | #0037 regression | Stabilizes the E2E test suite so Dev can ship new features |
 
 ---
 
@@ -50,7 +49,6 @@ Phase A constraints apply to all tasks: no autonomous money movement, no Stripe 
 | 23 | **EvalPal Baseline Capture** — Agent Performance Baselines | [0053](0053-evalpal-baseline-capture.md) | QA | #0052 readiness | First measurable data points for all agent outputs via evalpal.dev |
 | 24 | **EvalPal Weekly Scorecard** — Recurring Performance Tracking | [0054](0054-evalpal-weekly-scorecard.md) | QA | #0053 baseline | Weekly trend tracking, failure pattern analysis, improvement recs |
 | 25 | **EvalPal Regression Alerts** — Automated Quality Drop Detection | [0055](0055-evalpal-regression-alerts.md) | QA | #0053 baseline | Auto-escalate when agent pass rate drops >5% from baseline |
-| 26 | **Semantic Similarity Metric** | [0057](0057-semantic-similarity-metric.md) | Dev | #0052 readiness | Core feature required for QA to evaluate AI Workforce Lab |
 
 ---
 
