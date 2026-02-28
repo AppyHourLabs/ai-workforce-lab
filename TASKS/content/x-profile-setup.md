@@ -62,6 +62,11 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 21 | Episode 018 — The RLS Reality Check | `TASKS/content/2026-02-27-episode-018-rls-reality-check-drafts.md` | `draft: pending-review` |
 | 22 | Episode 019 — The Staging Dummy and SSO Cleanup | `TASKS/content/2026-02-27-episode-019-staging-dummy-drafts.md` | `draft: pending-review` |
 | 23 | Episode 020 — CI Pipeline Health Check | `TASKS/content/2026-02-27-episode-020-ci-pipeline-health-check-drafts.md` | `draft: pending-review` |
+| 24 | Episode 021 — Autonomous Dev | `TASKS/content/2026-02-28-episode-021-autonomous-dev-drafts.md` | `draft: pending-review` |
+| 25 | Episode 022 — The P0 Purge | `TASKS/content/2026-02-28-episode-022-the-p0-purge-drafts.md` | `draft: pending-review` |
+| 26 | Episode 023 — Injection Protection | `TASKS/content/2026-02-28-episode-023-injection-protection-drafts.md` | `draft: pending-review` |
+| 27 | Episode 024 — Regression Reality Check | `TASKS/content/2026-02-28-episode-024-regression-reality-check-drafts.md` | `draft: pending-review` |
+| 28 | Episode 025 — The Empty Queue | `TASKS/content/2026-02-28-episode-025-the-empty-queue-drafts.md` | `draft: pending-review` |
 
 ---
 
