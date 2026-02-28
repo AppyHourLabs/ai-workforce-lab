@@ -138,6 +138,44 @@ openclaw models status
 
 ---
 
+### `write failed: Path escapes workspace root`
+
+**Cause:** OpenClaw's `write` tool is sandboxed to the agent's own workspace root (e.g., `~/.openclaw/workspaces/qa`). Any attempt to write to a path outside that root — including the shared brain at `~/.openclaw/workspaces/shared/brain/` — fails with this error. Affects any agent writing handoff files or updating `fleet-status.md`.
+
+**Symptoms:**
+- `qa-daily-gate` or `doc-daily-checkin` last run shows `status: error` with this message
+- `fleet-status.md` or `handoffs/*.md` not updated after a run
+- Downstream agents (content, manager) have stale/empty handoff data
+
+**Affected paths:**
+- `~/.openclaw/workspaces/shared/brain/fleet-status.md`
+- `~/.openclaw/workspaces/shared/brain/handoffs/*.md`
+
+**Fix:** The cron job `message` payload must instruct agents to use `exec` (not the `write` tool) for these paths. The `IMPORTANT — SHARED BRAIN WRITES` block in each affected job's message does this. If you add a new agent that needs to write to the shared brain, include this instruction in its cron prompt:
+
+```
+IMPORTANT — SHARED BRAIN WRITES: The write tool will fail for
+/Users/aioffice/.openclaw/workspaces/shared/brain/ paths (error: Path escapes
+workspace root). Use exec to run shell or python3 commands instead of the write
+tool. If a shared brain write fails, log it and continue — do NOT abort the run.
+```
+
+**Verify fix is present:**
+```bash
+python3 -c "
+import json
+with open('/Users/aioffice/.openclaw/cron/jobs.json') as f:
+    jobs = json.load(f)
+for job in jobs['jobs']:
+    msg = job['payload'].get('message', '')
+    if 'shared/brain' in msg and 'IMPORTANT' not in msg:
+        print('MISSING fix in:', job.get('id'), job.get('name'))
+print('Check complete.')
+"
+```
+
+---
+
 ## Hung Terminal Sessions
 
 Interactive CLI commands like `gh pr create` (without `--fill` or `--body`) will hang waiting for user input indefinitely. If you see a terminal command running for hours:

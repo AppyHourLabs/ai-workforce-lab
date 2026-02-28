@@ -35,6 +35,12 @@ htmlcov/
 *.p12
 *.pfx
 
+# YouTube / OAuth local artifacts (never commit)
+scripts/youtube_client_secret.json
+scripts/youtube_token.json
+**/*_client_secret.json
+**/*token*.json
+
 # macOS
 .DS_Store
 

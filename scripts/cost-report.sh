@@ -186,3 +186,14 @@ EOF
 
 echo "✅ Report written to $OUTPUT_FILE"
 echo "   Total: \$$(printf "%.2f" "$TOTAL_COST") / \$$(printf "%.2f" "$BUDGET_CAP") (${UTILIZATION}%)"
+
+# ---------- git commit and push ----------
+pushd "$REPO_DIR" > /dev/null
+if [[ -n "$(git status --porcelain "$OUTPUT_FILE" 2>/dev/null)" ]]; then
+  git add "$OUTPUT_FILE"
+  git commit -m "chore(finance): daily cost report ${TARGET_DATE} [auto]"
+  git push && echo "✅ Committed and pushed $OUTPUT_FILE" || echo "⚠️  git push failed — report saved locally, will push next run"
+else
+  echo "   No changes to commit (report already current)."
+fi
+popd > /dev/null
