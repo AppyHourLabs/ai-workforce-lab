@@ -26,6 +26,10 @@ Phase A constraints apply to all tasks: no autonomous money movement, no Stripe 
 | 9 | Logging Coverage — Structured Agent Action Logs | [0036](0036-logging-coverage.md) | CTO | None | Required for Phase B promotion (100% coverage gate) |
 | 10 | Regression Pack — Core Eval Run Flows | [0037](0037-regression-pack.md) | QA | #0029 CI green | Locks down happy-path eval flows against regression |
 | 10.5 | **EvalPal E2E Flakey Test Fixes** | [0056](0056-flakey-e2e-tests.md) | Dev | #0037 regression | Stabilizes the E2E test suite so Dev can ship new features |
+| 10.6 | **UX: Zero-Data Empty States & Demo** | EvalPal#319 | Dev | #0056 | Drives Time-to-Value & Activation |
+| 10.7 | **UX: Guided Linear Onboarding Flow** | EvalPal#320 | Dev | #0056 | Drives Time-to-Value & Activation |
+| 10.8 | **UX: Pre-flight Cost Estimator** | EvalPal#321 | Dev | #0056 | Drives User Trust |
+
 
 ---
 
