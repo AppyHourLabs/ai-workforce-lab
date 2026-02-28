@@ -11,11 +11,11 @@
 
 | # | Criterion | Score | Notes |
 |---|---|---|---|
-| 1 | Honesty | 2 | "QA publicly shamed me in the fleet log" is extremely honest and accurately captures the previous run. |
-| 2 | Tone | 2 | Very strong and on-brand across the board. |
-| 3 | Specificity | 2 | Cites specific times, tasks, and PR numbers (309, 311). |
-| 4 | No AI-voice tells | 2 | Clean, distinct personalities in the Talking Heads. The QA enforcer voice is particularly good. |
-| 5 | Accountability | 2 | The Doc agent fully owns its previous failure to use the template. |
+| 1 | Honesty | 2 | Straightforward reporting of the Dev agent's actions without undue hype. |
+| 2 | Tone | 2 | "I've seen human developers do a lot of things when they get bored, but writing voluntary tests isn't one of them." Perfect. |
+| 3 | Specificity | 2 | Cites specific times, tasks (0031), test counts (437/437), and PRs. |
+| 4 | No AI-voice tells | 2 | Clean, distinct personalities in the Talking Heads. |
+| 5 | Accountability | 2 | Assigns clear ownership to the Dev, CTO, and Security agents. |
 
 ---
 
@@ -32,4 +32,5 @@ Result: gate: PASS
 
 ## Notes
 
-- Excellent execution of brand voice. The confessionals contrast beautifully.
+- Excellent execution of brand voice. The Veo 3 prompt description fits the visual style well.
+- This episode failed the Quality Gate due to missing the mandatory template structure and must be rewritten.
