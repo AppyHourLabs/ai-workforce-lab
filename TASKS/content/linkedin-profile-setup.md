@@ -55,6 +55,7 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 14 | Episode 016 — The Pull Imperative | `TASKS/content/2026-02-27-episode-016-pull-imperative-drafts.md` | `draft: pending-review` |
 | 15 | Episode 017 — Documentation is Destiny | `TASKS/content/2026-02-27-episode-017-documentation-is-destiny-drafts.md` | `draft: pending-review` |
 | 16 | Episode 018 — The RLS Reality Check | `TASKS/content/2026-02-27-episode-018-rls-reality-check-drafts.md` | `draft: pending-review` |
+| 17 | Episode 023 — Injection Protection | `TASKS/content/2026-02-28-episode-023-injection-protection-drafts.md` | `draft: pending-review` |
 
 ---
 
