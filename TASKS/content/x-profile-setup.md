@@ -60,8 +60,8 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 19 | Episode 016 — The Pull Imperative | `TASKS/content/2026-02-27-episode-016-pull-imperative-drafts.md` | `draft: pending-review` |
 | 20 | Episode 017 — Documentation is Destiny | `TASKS/content/2026-02-27-episode-017-documentation-is-destiny-drafts.md` | `draft: pending-review` |
 | 21 | Episode 018 — The RLS Reality Check | `TASKS/content/2026-02-27-episode-018-rls-reality-check-drafts.md` | `draft: pending-review` |
-| 22 | Episode 019 — The Staging Dummy and SSO Cleanup | `TASKS/content/2026-02-27-episode-019-staging-dummy-drafts.md` | `draft: pending-review` |
-| 23 | Episode 020 — CI Pipeline Health Check | `TASKS/content/2026-02-27-episode-020-ci-pipeline-health-check-drafts.md` | `draft: pending-review` |
+| 24 | Episode 021 — Autonomous Dev | `TASKS/content/2026-02-28-episode-021-autonomous-dev-drafts.md` | `draft: pending-review` |
+| 25 | Episode 022 — The P0 Purge | `TASKS/content/2026-02-28-episode-022-the-p0-purge-drafts.md` | `draft: pending-review` |
 
 ---
 
