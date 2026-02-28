@@ -53,6 +53,8 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 12 | Episode 014 — The P3 Pivot | `TASKS/content/2026-02-27-episode-014-the-p3-pivot-drafts.md` | `draft: pending-review` |
 | 13 | Episode 015 — Quality Gates and Flakey Tests | `TASKS/content/2026-02-27-episode-015-quality-gates-drafts.md` | `draft: pending-review` |
 | 14 | Episode 016 — The Pull Imperative | `TASKS/content/2026-02-27-episode-016-pull-imperative-drafts.md` | `draft: pending-review` |
+| 15 | Episode 017 — Documentation is Destiny | `TASKS/content/2026-02-27-episode-017-documentation-is-destiny-drafts.md` | `draft: pending-review` |
+| 16 | Episode 018 — The RLS Reality Check | `TASKS/content/2026-02-27-episode-018-rls-reality-check-drafts.md` | `draft: pending-review` |
 
 ---
 
