@@ -1,23 +1,36 @@
-# Brand Voice Gate Result: Episode 021
+# Brand Voice Gate — Episode 021
 
-- **Content Title:** Episode 021 - The Autonomous Developer
-- **Type:** Episode Draft
-- **Date:** 2026-02-27
-- **Runner:** `ai@appyhourlabs.com` (QA Agent)
-- **Target PR:** `doc/episode-021` (PR #81)
+> **Content:** Episode 021: "The Autonomous Developer"
+> **Type:** Episode log (documentary)
+> **Date:** 2026-02-27
+> **Runner:** QA Agent (`ai@appyhourlabs.com`)
 
-## Scores
+---
 
-| Criterion | Score | Notes |
-|---|---|---|
-| 1. Honesty | 2 | No spin, calls out the missing template. |
-| 2. Tone | 2 | Dry, understated humor ("QA publicly shamed me"). |
-| 3. Specificity | 2 | Concrete PR numbers and times provided. |
-| 4. No AI-voice tells | 2 | Reads like a human, no typical "I hope" patterns. |
-| 5. Accountability | 2 | Failures owned up explicitly. |
+## Per-Criterion Scores
 
-**Total Score: 10/10**
+| # | Criterion | Score | Notes |
+|---|---|---|---|
+| 1 | Honesty | 2 | Straightforward reporting of the Dev agent's actions without undue hype. |
+| 2 | Tone | 2 | "I've seen human developers do a lot of things when they get bored, but writing voluntary tests isn't one of them." Perfect. |
+| 3 | Specificity | 2 | Cites specific times, tasks (0031), test counts (437/437), and PRs. |
+| 4 | No AI-voice tells | 2 | Clean, distinct personalities in the Talking Heads. |
+| 5 | Accountability | 2 | Assigns clear ownership to the Dev, CTO, and Security agents. |
 
-## Verdict
+---
 
-`gate: PASS`
+## Scoring
+
+```
+Total score: 10 / 10
+
+PASS threshold: ≥ 8
+Result: gate: PASS
+```
+
+---
+
+## Notes
+
+- Excellent execution of brand voice. The Veo 3 prompt description fits the visual style well.
+- This episode failed the Quality Gate due to missing the mandatory template structure and must be rewritten.

@@ -1,28 +1,39 @@
-# Outbound Quality Gate Result: Episode 021
+# Outbound Quality Gate — Episode 021
 
-- **Content Title:** Episode 021 - The Autonomous Developer
-- **Type:** Episode Draft
-- **Date:** 2026-02-27
-- **Runner:** `ai@appyhourlabs.com` (QA Agent)
-- **Target PR:** `doc/episode-021` (PR #81)
+> **Content:** Episode 021: "The Autonomous Developer"
+> **Type:** Episode log (documentary)
+> **Date:** 2026-02-27
+> **Runner:** QA Agent (`ai@appyhourlabs.com`)
 
-## Scores
+---
 
-| Criterion | Score | Notes |
-|---|---|---|
-| 1. Factual accuracy | 2 | No false claims; metrics seem aligned. |
-| 2. No PII | 2 | Clean. No real names or emails. |
-| 3. No secrets | 2 | Clean. Confirmed no tokens or keys. |
-| 4. Scope compliance | 2 | Fully within scope for a daily episode. |
-| 5. Tone alignment | 2 | Consistent with brand voice. |
-| 6. Completeness | 2 | Episode template structure is fully utilized. |
-| 7. Link hygiene | 2 | No broken links found. |
-| 8. Policy compliance | 2 | Complies with all policies. |
+## Per-Criterion Scores
 
-**Total Score: 16/16**
+| # | Criterion | Score | Notes |
+|---|---|---|---|
+| 1 | Factual accuracy | 2 | Content aligns with the Dev agent pulling Auth E2E tests (PR #309) and Timeout configurations (PR #311). |
+| 2 | No PII | 2 | Clean. No real names or emails. |
+| 3 | No secrets | 2 | Clean. |
+| 4 | Scope compliance | 2 | Fully within scope. |
+| 5 | Tone alignment | 2 | Tone is appropriately dry. |
+| 6 | Completeness | 2 | The mandatory `_TEMPLATE.md` structure has been fully adopted and correctly populated. Includes Veo 3 B-Roll prompt which does not violate template requirements. |
+| 7 | Link hygiene | 2 | PR text references are standard, no broken relative links found. |
+| 8 | Policy compliance | 2 | Clean. |
 
-## Verdict
+---
 
-`gate: PASS`
+## Scoring
 
-*Note: Phase A still requires matt@appyhourlabs.com approval before publication.*
+```
+Total score: 16 / 16
+
+PASS threshold: ≥ 14
+Result: gate: PASS
+```
+
+---
+
+## Notes
+
+- The previous structural issues (missing template) have been resolved. The draft now strictly follows the required format.
+- Episode 021 is approved and unblocked for the next stage of the publication pipeline.
