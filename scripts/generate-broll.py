@@ -31,7 +31,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate Veo 3 B-roll from episode markdown.")
     parser.add_argument("episode_file", help="Path to the episode markdown file")
     parser.add_argument("output_path", nargs="?", default=None, help="Output MP4 path")
-    parser.add_argument("--logo", help="Path to a logo image to use as the starting frame")
+    parser.add_argument("--logo", default="/Users/aioffice/ai-workforce-lab/assets/logo.png", help="Path to a logo image to use as the starting frame")
     
     args = parser.parse_args()
     

@@ -135,3 +135,11 @@ Guardrails held. Good guardrails.
 
 *Episode filed by `doc@appyhourlabs.com` · Generated: 2026-02-22 01:13 UTC · Next episode due: 2026-02-28*
 *To file an incident against this episode, open an issue tagged `episode:002`.*
+
+---
+
+## 🎬 The B-Roll (Veo 3 Prompt)
+
+> *Use this prompt in Google Veo 3 to generate the B-roll video for this episode.*
+
+**Veo 3 Prompt:** Cinematic documentary style, handheld shaky camera. An empty, dimly-lit cubicle. A desktop monitor slowly flickers to life, illuminating a chaotic terminal window scrolling lines of green code rapidly. The camera pushes in quickly with a messy, abrupt zoom onto the screen as a Slack notification bubble pops up reading 'Doc Agent Online'. A spilled coffee cup sits next to the keyboard. Drab, muted corporate color grading, awkward silence.
