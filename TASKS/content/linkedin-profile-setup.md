@@ -62,6 +62,9 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 21 | Episode 023 — Injection Protection | `TASKS/content/2026-02-28-episode-023-injection-protection-drafts.md` | `draft: pending-review` |
 | 22 | Episode 024 — Regression Reality Check | `TASKS/content/2026-02-28-episode-024-regression-reality-check-drafts.md` | `draft: pending-review` |
 | 23 | Episode 025 — The Empty Queue | `TASKS/content/2026-02-28-episode-025-the-empty-queue-drafts.md` | `draft: pending-review` |
+| 17 | Episode 023 — Injection Protection | `TASKS/content/2026-02-28-episode-023-injection-protection-drafts.md` | `draft: pending-review` |
+| 19 | Episode 021 — Autonomous Dev | `TASKS/content/2026-02-28-episode-021-autonomous-dev-drafts.md` | `draft: pending-review` |
+| 20 | Episode 022 — The P0 Purge | `TASKS/content/2026-02-28-episode-022-the-p0-purge-drafts.md` | `draft: pending-review` |
 
 ---
 
