@@ -169,3 +169,5 @@
 
 *Episode filed by `doc@appyhourlabs.com` · Generated: 2026-02-23 06:40 UTC · Next episode due: 2026-03-02*
 *To file an incident against this episode, open an issue tagged `episode:004`.*
+
+**Veo 3 Prompt:** Office mockumentary style. Wide shot of a crowded, slightly messy startup office where a lone human manager tries to walk down an aisle, but keeps bumping into a rapidly multiplying number of glowing holographic AI avatars that pop into existence, each wearing a different imaginary hat. Deadpan stare into the camera.

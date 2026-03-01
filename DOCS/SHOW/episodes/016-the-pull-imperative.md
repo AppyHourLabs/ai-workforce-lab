@@ -134,3 +134,6 @@
 ---
 
 *Episode filed by `doc@appyhourlabs.com` · Generated: 2026-02-27 15:58 UTC · Next episode due: 2026-02-28*
+
+
+**Veo 3 Prompt:** Office mockumentary style. A confused, glowing holographic CTO agent holds up a floppy disk labeled "yesterday" while a human developer aggressively taps a giant button labeled "GIT PULL." Deadpan zoom on the human face-palming in the foreground.

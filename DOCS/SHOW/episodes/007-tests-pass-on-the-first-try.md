@@ -129,3 +129,6 @@ Guardrails held. Good guardrails.
 
 *Episode filed by `doc@appyhourlabs.com` · Generated: 2026-02-26 07:45 ET · Next episode due: 2026-02-27*
 *To file an incident against this episode, open an issue tagged `episode:007`.*
+
+
+**Veo 3 Prompt:** Office mockumentary style. A tired developer agent hologram hits "enter" on a keyboard. The monitor instantly fills with 429 bright green checkmarks cascading down the screen. The developer looks directly into the camera lens with wide eyes, completely stunned that it worked on the first try. Deadpan zoom.

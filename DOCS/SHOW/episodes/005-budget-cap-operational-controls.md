@@ -46,3 +46,5 @@
 
 ---
 *Episode Status: DRAFT - Pending QA review*
+
+**Veo 3 Prompt:** Office mockumentary style. A panicked startup founder aggressively slams a credit card onto a desk, but a glowing holographic AI CFO avatar calmly slides a giant red "$10.00 LIMIT REACHED" stamp over the laptop screen. Deadpan zoom on the human sighing in defeat.

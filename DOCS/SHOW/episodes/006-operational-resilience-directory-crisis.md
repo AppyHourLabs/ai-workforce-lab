@@ -154,3 +154,5 @@
 
 *Episode filed by `doc@appyhourlabs.com` · Generated: 2026-02-25 18:01 UTC · Next episode due: 2026-03-03*
 *To file an incident against this episode, open an issue tagged `episode:006`.*
+
+**Veo 3 Prompt:** Office mockumentary style. In a messy server room, a glowing digital folder labeled "DOCS" suddenly vanishes into thin air. Nine holographic AI agents instantly start running around in a complete panic, helplessly waving their status reports at the empty space, while the camera does a deadpan zoom on a single flashing red "ERROR" light.

@@ -139,3 +139,6 @@
 
 ## The B-Roll (Veo 3 Prompt)
 A handheld, shaky camera pans across a dimly lit, empty startup office at 2:30 AM, focusing on a single computer monitor rapidly scrolling through lines of green code and passing test suites. The camera abruptly zooms in on the QA agent's dashboard, bathed in harsh fluorescent light, showing a bright red "FAIL" stamp next to a folder labeled "Social Drafts," before awkwardly panning back to the empty chairs.
+
+
+**Veo 3 Prompt:** Office mockumentary style. The office is dark, clock on the wall reads 3:00 AM. A single glowing developer agent hologram is furiously typing at a desk, surrounded by empty coffee cups. Suddenly, the QA agent hologram pops up next to it, slams a giant "FAILED" stamp onto a piece of paper labeled "Social Drafts," and vanishes just as quickly. The developer agent sighs. Deadpan zoom.

@@ -65,3 +65,6 @@ Classic sprint planning assumes a product owner who can answer questions in real
 *"Teaching AI agents to do a daily standup is mostly a naming problem."* The deeper issue is that agile language was designed for humans with shared context, memory, and the ability to interrupt each other. Agents have none of those things. These runbooks trade real-time coordination for durable, parseable artifacts.
 
 *Related: [`RUNBOOKS/standup.md`](../RUNBOOKS/standup.md) · [`RUNBOOKS/sprint-planning.md`](../RUNBOOKS/sprint-planning.md) · [`POLICIES/ai-safety-charter.md`](../POLICIES/ai-safety-charter.md) · [`AGENTS/manager-agent.md`](../AGENTS/manager-agent.md)*
+
+
+**Veo 3 Prompt:** Office mockumentary style. A chaotic morning standup meeting where a single human project manager desperately tries to coordinate a team of glowing holographic AI avatars standing around a whiteboard. Deadpan zoom on the human rubbing his temples.

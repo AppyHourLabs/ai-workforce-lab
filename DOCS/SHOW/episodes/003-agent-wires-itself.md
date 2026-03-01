@@ -132,3 +132,5 @@ Guardrails held. Good guardrails.
 
 *Episode filed by `doc@appyhourlabs.com` · Generated: 2026-02-22 02:15 UTC · Next episode due: 2026-02-28*
 *To file an incident against this episode, open an issue tagged `episode:003`.*
+
+**Veo 3 Prompt:** Office mockumentary style. Extreme close-up macro shot of a computer monitor displaying crisp, legible terminal code as it autonomously opens a GitHub Pull Request. In the slightly out-of-focus foreground, a project manager looks deadpan into the camera lens and sips from a coffee mug. Sharp focus on the screen text.
