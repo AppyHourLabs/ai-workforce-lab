@@ -1,0 +1,50 @@
+name: Trigger QA Agent Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  issue_comment:
+    types: [created]
+
+jobs:
+  trigger_qa_agent:
+    # Only run on PRs, or if it's a comment on a PR asking the agent to re-review
+    if: github.event.pull_request || (github.event.issue.pull_request && contains(github.event.comment.body, '@qa-agent'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Formulate Webhook Payload
+        id: payload
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number || github.event.issue.number }}"
+          ACTION_TYPE="${{ github.event.action }}"
+          
+          if [ "${{ github.event_name }}" = "issue_comment" ]; then
+            MESSAGE="The user left a comment on PR #$PR_NUMBER requesting a re-review: '${{ github.event.comment.body }}'. Please fetch the latest PR state, read the comments, and provide a QA review or code fix if necessary."
+          else
+            MESSAGE="PR #$PR_NUMBER was just $ACTION_TYPE. Please perform a standard QA review, run relevant tests if possible, and leave feedback on the PR."
+          fi
+          
+          echo "message=$MESSAGE" >> $GITHUB_OUTPUT
+          
+      - name: Dispatch OpenClaw Webhook
+        env:
+          OPENCLAW_WEBHOOK_URL: ${{ secrets.OPENCLAW_WEBHOOK_URL }}
+          OPENCLAW_WEBHOOK_TOKEN: ${{ secrets.OPENCLAW_WEBHOOK_TOKEN }}
+        run: |
+          if [ -z "$OPENCLAW_WEBHOOK_URL" ] || [ -z "$OPENCLAW_WEBHOOK_TOKEN" ]; then
+            echo "Secrets not configured. Skipping webhook dispatch."
+            exit 0
+          fi
+          
+          curl -X POST "$OPENCLAW_WEBHOOK_URL/hooks/agent" \
+            -H "Authorization: Bearer $OPENCLAW_WEBHOOK_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "{
+              \"agentId\": \"qa\",
+              \"name\": \"GitHub QA Trigger\",
+              \"message\": \"${{ steps.payload.outputs.message }}\",
+              \"wakeMode\": \"now\",
+              \"deliver\": true,
+              \"channel\": \"slack\",
+              \"to\": \"C0AFXJR71V5\"
+            }"
