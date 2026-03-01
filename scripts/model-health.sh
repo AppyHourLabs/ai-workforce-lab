@@ -93,51 +93,89 @@ with open('$TMP_RUNS') as f:
         if line:
             runs.append(json.loads(line))
 
-# Group by provider
+# Load job metadata for agent names and job descriptions
+with open('$JOBS_FILE') as f:
+    jobs_data = json.load(f)
+job_map = {}
+for job in jobs_data.get('jobs', []):
+    job_map[job['id']] = {
+        'agent': job.get('agentId', 'unknown'),
+        'name': job.get('name', 'unknown'),
+        'desc': job.get('description', '')
+    }
+
+# ── Provider summary ──
 providers = {}
 error_details = []
-fallback_uses = []
+
+# ── Agent breakdown ──
+agents = {}
 
 for r in runs:
     provider = r.get('provider', 'unknown')
     status = r.get('status', 'unknown')
     duration_ms = r.get('durationMs', 0)
     model = r.get('model', 'unknown')
-    agent_id = r.get('jobId', '')
-    error = r.get('error', '') or r.get('summary', '')
+    job_id = r.get('jobId', '')
+    error = r.get('error', '') or ''
+    usage = r.get('usage', {})
+    inp_tok = usage.get('input_tokens', 0)
+    out_tok = usage.get('output_tokens', 0)
+    total_tok = usage.get('total_tokens', 0) or (inp_tok + out_tok)
 
+    # Provider stats
     if provider not in providers:
         providers[provider] = {
             'runs': 0, 'ok': 0, 'fail': 0,
             'total_duration': 0, 'models': set()
         }
-
     p = providers[provider]
     p['runs'] += 1
     p['models'].add(model)
     p['total_duration'] += duration_ms
-
     if status == 'ok':
         p['ok'] += 1
     else:
         p['fail'] += 1
-        # Check for rate limit / overload errors
         err_text = str(error).lower()
         if any(kw in err_text for kw in ['overload', 'rate', '429', '503', 'capacity', 'temporarily']):
             error_details.append(f'{provider}: rate-limit/overload ({model})')
         else:
             error_details.append(f'{provider}: {status}')
 
-# All configured providers (even if no runs)
+    # Agent stats
+    jinfo = job_map.get(job_id, {'agent': 'unknown', 'name': job_id[:12], 'desc': ''})
+    agent = jinfo['agent']
+    job_name = jinfo['name']
+    key = f'{agent}:{job_name}'
+    if key not in agents:
+        agents[key] = {
+            'agent': agent, 'job': job_name,
+            'runs': 0, 'input_tok': 0, 'output_tok': 0, 'total_tok': 0,
+            'duration_ms': 0, 'status_list': [], 'provider': provider, 'model': model
+        }
+    a = agents[key]
+    a['runs'] += 1
+    a['input_tok'] += inp_tok
+    a['output_tok'] += out_tok
+    a['total_tok'] += total_tok
+    a['duration_ms'] += duration_ms
+    a['status_list'].append(status)
+    a['provider'] = provider
+    a['model'] = model
+
+# All configured providers
 all_providers = ['google', 'anthropic', 'openai']
 for ap in all_providers:
     if ap not in providers:
         providers[ap] = {'runs': 0, 'ok': 0, 'fail': 0, 'total_duration': 0, 'models': set()}
 
-# Build table
+# ── Build output ──
 lines = []
 lines.append('📊 Model Health — $TARGET_DATE')
-lines.append('──────────────────────────────')
+lines.append('══════════════════════════════════════════════════════')
+lines.append('')
+lines.append('▸ Provider Summary')
 lines.append(f\"{'Provider':<13}│ {'Runs':>4} │ {'OK':>3} │ {'Fail':>4} │ {'Success%':>8} │ {'Avg Time':>8}\")
 lines.append('─────────────┼──────┼─────┼──────┼──────────┼─────────')
 
@@ -150,7 +188,39 @@ for prov in all_providers:
         avg_s = round(p['total_duration'] / p['runs'] / 1000)
         lines.append(f\"{prov:<13}│ {p['runs']:>4} │ {p['ok']:>3} │ {p['fail']:>4} │ {str(rate)+'%':>8} │ {str(avg_s)+'s':>8}\")
 
-lines.append('──────────────────────────────')
+lines.append('')
+
+# ── Agent breakdown sorted by total tokens ──
+lines.append('▸ Agent Token Usage (sorted by total tokens)')
+
+def fmt_tok(n):
+    if n >= 1_000_000: return f'{n/1_000_000:.1f}M'
+    if n >= 1_000: return f'{n/1_000:.1f}K'
+    return str(n)
+
+lines.append(f\"{'Agent':<12}│ {'Task Type':<28}│ {'Input':>8} │ {'Output':>8} │ {'Total':>8} │ {'Time':>6} │ {'Status':>6}\")
+lines.append('────────────┼────────────────────────────┼──────────┼──────────┼──────────┼────────┼───────')
+
+sorted_agents = sorted(agents.values(), key=lambda x: x['total_tok'], reverse=True)
+grand_input = 0
+grand_output = 0
+grand_total = 0
+
+for a in sorted_agents:
+    grand_input += a['input_tok']
+    grand_output += a['output_tok']
+    grand_total += a['total_tok']
+    dur_s = round(a['duration_ms'] / 1000)
+    ok_count = a['status_list'].count('ok')
+    st = '✅' if ok_count == a['runs'] else '❌' if ok_count == 0 else f'{ok_count}/{a[\"runs\"]}'
+    job_short = a['job'][:27]
+    lines.append(f\"{a['agent']:<12}│ {job_short:<28}│ {fmt_tok(a['input_tok']):>8} │ {fmt_tok(a['output_tok']):>8} │ {fmt_tok(a['total_tok']):>8} │ {str(dur_s)+'s':>6} │ {st:>6}\")
+
+lines.append('────────────┼────────────────────────────┼──────────┼──────────┼──────────┼────────┼───────')
+lines.append(f\"{'TOTAL':<12}│ {'':28}│ {fmt_tok(grand_input):>8} │ {fmt_tok(grand_output):>8} │ {fmt_tok(grand_total):>8} │        │      \")
+
+lines.append('')
+lines.append('══════════════════════════════════════════════════════')
 
 # Error summary
 if error_details:
@@ -161,7 +231,7 @@ else:
 lines.append(f'Fallback config: $FALLBACKS')
 lines.append(f'Total runs: {sum(p[\"runs\"] for p in providers.values())}')
 
-print('\n'.join(lines))
+print('\\n'.join(lines))
 ")
 fi
 
