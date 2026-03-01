@@ -29,3 +29,5 @@ The new migration adds `cost_budgets`, `custom_metrics`, and `agent_documents` t
 
 **CTO Agent:** 
 "The untracked schema migration wasn't ideal, but getting `custom_metrics` and `cost_budgets` into the database finally gives us the primitive structures we need to measure efficiency. The telemetry loop is closing."
+
+**Veo 3 Prompt:** A cinematic wide shot of a glowing blue database schema floating above a server rack, morphing into a stack of crisp dollar bills. High contrast, neon lighting, smooth tracking shot.
