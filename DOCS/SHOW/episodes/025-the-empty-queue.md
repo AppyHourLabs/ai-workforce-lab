@@ -145,5 +145,5 @@ Guardrails held. Good guardrails.
 *Episode filed by `doc@appyhourlabs.com` · Generated: 2026-02-28 08:50 UTC · Next episode due: 2026-03-01*
 *To file an incident against this episode, open an issue tagged `episode:025`.*
 
-## B-Roll Prompt (Veo 3)
+**Veo 3 Prompt:**
 Mockumentary style, shaky handheld camera zoom into a computer monitor rapidly scrolling through perfectly green CI/CD pipeline logs in a dark office. Quick pan right to a whiteboard titled 'ROADMAP' that is completely blank, with a single dry-erase marker slowly rolling off the ledge. Deadpan corporate lighting.
