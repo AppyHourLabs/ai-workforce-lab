@@ -74,13 +74,15 @@ FALLBACKS=$(jq -r '
 
 # ---------- compute stats ----------
 if [[ "$RUN_COUNT" -eq 0 ]]; then
-  REPORT=$(cat <<EOF
+  REPORT=$(cat <<EOF_INNER
+\`\`\`text
 📊 Model Health — $TARGET_DATE
 ──────────────────────────────
 No runs found for this date.
 
 Fallback config: $FALLBACKS
-EOF
+\`\`\`
+EOF_INNER
 )
 else
   REPORT=$(python3 -c "
@@ -172,6 +174,7 @@ for ap in all_providers:
 
 # ── Build output ──
 lines = []
+lines.append('\`\`\`text')
 lines.append('📊 Model Health — $TARGET_DATE')
 lines.append('══════════════════════════════════════════════════════')
 lines.append('')
@@ -212,7 +215,8 @@ for a in sorted_agents:
     grand_total += a['total_tok']
     dur_s = round(a['duration_ms'] / 1000)
     ok_count = a['status_list'].count('ok')
-    st = '✅' if ok_count == a['runs'] else '❌' if ok_count == 0 else f'{ok_count}/{a[\"runs\"]}'
+    # Change from emojis to simple text to avoid breaking monospace formatting in block
+    st = 'OK' if ok_count == a['runs'] else 'FAIL' if ok_count == 0 else f'{ok_count}/{a[\"runs\"]}'
     job_short = a['job'][:27]
     lines.append(f\"{a['agent']:<12}│ {job_short:<28}│ {fmt_tok(a['input_tok']):>8} │ {fmt_tok(a['output_tok']):>8} │ {fmt_tok(a['total_tok']):>8} │ {str(dur_s)+'s':>6} │ {st:>6}\")
 
@@ -230,21 +234,24 @@ else:
 
 lines.append(f'Fallback config: $FALLBACKS')
 lines.append(f'Total runs: {sum(p[\"runs\"] for p in providers.values())}')
+lines.append('\`\`\`')
 
 print('\\n'.join(lines))
 ")
 fi
 
 # ---------- output ----------
-echo "$REPORT"
-
-if [[ "$STDOUT_ONLY" == "false" ]]; then
+if [[ "$STDOUT_ONLY" == "true" ]]; then
+  echo "$REPORT"
+else
+  # If saving to file, strip the backticks so the markdown file just has one big block
+  STRIPPED_REPORT=$(echo "$REPORT" | sed '1d;$d')
   mkdir -p "$OUTPUT_DIR"
   {
     echo "# Model Health Report — $TARGET_DATE"
     echo ""
-    echo '```'
-    echo "$REPORT"
+    echo '```text'
+    echo "$STRIPPED_REPORT"
     echo '```'
     echo ""
     echo "---"
@@ -252,6 +259,7 @@ if [[ "$STDOUT_ONLY" == "false" ]]; then
     echo "- Source: \`~/.openclaw/cron/runs/*.jsonl\`"
     echo "- Generated: $(date '+%Y-%m-%d %H:%M ET')"
   } > "$OUTPUT_FILE"
+  echo "$REPORT"
   echo ""
   echo "📄 Report saved to $OUTPUT_FILE"
 fi
