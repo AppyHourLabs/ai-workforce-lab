@@ -1,0 +1,47 @@
+name: Phase B Promotion Tracker
+
+on:
+  schedule:
+    # Daily at 15:00 UTC (11:00 ET) — after all morning agents complete
+    - cron: '0 15 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  track-gates:
+    name: Compute Phase B Gate Metrics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure log file exists
+        run: |
+          mkdir -p LOGS/checksums
+          touch LOGS/agent-runs.jsonl
+
+      - name: Compute gate metrics
+        run: bash scripts/phase-b-gates.sh > /tmp/gates.json
+
+      - name: Display metrics
+        run: cat /tmp/gates.json
+
+      - name: Generate dashboard
+        run: bash scripts/generate-dashboard.sh /tmp/gates.json
+
+      - name: Run checksum
+        run: bash scripts/checksum-logs.sh
+
+      - name: Commit updates
+        run: |
+          git config user.name "Phase B Tracker"
+          git config user.email "ai@appyhourlabs.com"
+          git add LOGS/phase-b-dashboard.md LOGS/checksums/ LOGS/agent-runs.jsonl
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update Phase B dashboard $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi

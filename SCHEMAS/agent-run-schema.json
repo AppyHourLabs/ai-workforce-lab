@@ -1,0 +1,91 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Agent Run Log Entry",
+    "description": "Structured log entry for Phase B Gate 5 compliance. Each line in LOGS/agent-runs.jsonl must validate against this schema.",
+    "type": "object",
+    "required": [
+        "timestamp",
+        "agent_id",
+        "action_type",
+        "outcome"
+    ],
+    "properties": {
+        "timestamp": {
+            "type": "string",
+            "format": "date-time",
+            "description": "ISO 8601 UTC timestamp of the log entry"
+        },
+        "agent_id": {
+            "type": "string",
+            "enum": [
+                "main",
+                "doc",
+                "qa",
+                "content",
+                "security",
+                "manager",
+                "cfo",
+                "cto",
+                "sdr",
+                "dev",
+                "product"
+            ],
+            "description": "Agent identifier matching openclaw.json agent list"
+        },
+        "job_name": {
+            "type": "string",
+            "description": "Cron job name from jobs.json"
+        },
+        "action_type": {
+            "type": "string",
+            "enum": [
+                "cron_run",
+                "manual_run",
+                "re_run",
+                "incident_drill",
+                "violation_red",
+                "violation_yellow"
+            ],
+            "description": "Type of action being logged"
+        },
+        "outcome": {
+            "type": "string",
+            "enum": [
+                "pass",
+                "fail",
+                "skip",
+                "error",
+                "violation_red",
+                "violation_yellow"
+            ],
+            "description": "Result of the action"
+        },
+        "target_files": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Files created or modified during this run"
+        },
+        "policy_gates_run": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Policy gates that were executed"
+        },
+        "pr_number": {
+            "type": "integer",
+            "description": "PR number if one was opened"
+        },
+        "duration_s": {
+            "type": "integer",
+            "description": "Run duration in seconds"
+        },
+        "notes": {
+            "type": "string",
+            "description": "One-line summary of what happened"
+        }
+    },
+    "additionalProperties": false
+}
