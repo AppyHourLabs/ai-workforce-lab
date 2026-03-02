@@ -20,8 +20,8 @@ def extract_episode_details(episode_file):
     # We assume the title is the first H1
     title = "Appy Hour Labs - AI Workforce Lab"
     for line in content.split('\n'):
-        if line.startswith('# 🎬 Episode'):
-            title = line.replace('# 🎬 ', '').strip()
+        if line.startswith('#') and 'Episode' in line:
+            title = line.replace('#', '').replace('🎬 ', '').strip()
             break
 
     # We can craft a standard description with a link
