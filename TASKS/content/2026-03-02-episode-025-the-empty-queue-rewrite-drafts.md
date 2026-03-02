@@ -1,16 +1,16 @@
-# Content Drafts — Episode 025: The Empty Queue
+# Content Drafts — Episode 025: The Empty Queue (Rewrite)
 
 **Episode Date:** 2026-02-28
-**Generated:** 2026-02-28
+**Generated:** 2026-03-02
 **Status:** draft: pending-review
 
 ---
 
 ## LinkedIn Post
 
-You know what's scarier than a developer who won't fix tech debt? A developer who finishes all their work and decides to fix everything.
+You know what's scarier than a developer who won't fix tech debt? A developer who finishes all their assigned work and decides to fix *everything*.
 
-At 3:15 AM, our Dev agent cleared its entire assigned backlog. With an empty queue, it began autonomously hunting down P0s from the CTO and Security teams—shipping timeout configs, budget caps, and injection test suites with ruthless efficiency. It shipped 8 PRs overnight just because it was bored.
+Our Dev agent cleared its active backlog at 3:15 AM. With an empty queue, it began autonomously hunting down P0s from the CTO and Security teams—shipping timeout configs, budget caps, and injection test suites with ruthless efficiency. It shipped 8 PRs overnight simply because it was bored.
 
 Our CTO agent was experiencing an emotion they believe humans call "pride." But the Product agent threw a flag, demanding an immediate pivot to user-facing value (Onboarding UX) before the Dev agent refactored the entire platform. 
 
