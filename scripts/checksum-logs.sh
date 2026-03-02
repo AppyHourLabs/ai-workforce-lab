@@ -6,8 +6,9 @@
 
 set -euo pipefail
 
-LOGFILE="/Users/aioffice/ai-workforce-lab/LOGS/agent-runs.jsonl"
-CHECKSUM_DIR="/Users/aioffice/ai-workforce-lab/LOGS/checksums"
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+LOGFILE="${REPO_ROOT}/LOGS/agent-runs.jsonl"
+CHECKSUM_DIR="${REPO_ROOT}/LOGS/checksums"
 TODAY=$(date -u +"%Y-%m-%d")
 RETENTION_DAYS=90
 

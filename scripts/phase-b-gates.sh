@@ -6,7 +6,8 @@
 
 set -euo pipefail
 
-LOGFILE="/Users/aioffice/ai-workforce-lab/LOGS/agent-runs.jsonl"
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+LOGFILE="${REPO_ROOT}/LOGS/agent-runs.jsonl"
 
 # ── Defaults if no log file ────────────────────────────────────────
 if [[ ! -f "$LOGFILE" ]] || [[ ! -s "$LOGFILE" ]]; then
