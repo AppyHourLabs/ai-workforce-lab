@@ -6,9 +6,10 @@
 
 set -euo pipefail
 
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GATES_FILE="${1:-/dev/stdin}"
-DASHBOARD="/Users/aioffice/ai-workforce-lab/LOGS/phase-b-dashboard.md"
-LOGFILE="/Users/aioffice/ai-workforce-lab/LOGS/agent-runs.jsonl"
+DASHBOARD="${REPO_ROOT}/LOGS/phase-b-dashboard.md"
+LOGFILE="${REPO_ROOT}/LOGS/agent-runs.jsonl"
 
 # ── Parse gate metrics ─────────────────────────────────────────────
 # Simple JSON value extractor (no jq dependency)
