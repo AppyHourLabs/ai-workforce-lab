@@ -61,6 +61,7 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 22 | Episode 024 — Regression Reality Check | `TASKS/content/2026-02-28-episode-024-regression-reality-check-drafts.md` | `draft: pending-review` |
 | 23 | Episode 025 — The Empty Queue (Rewrite) | `TASKS/content/2026-03-02-episode-025-the-empty-queue-rewrite-drafts.md` | `draft: pending-review` |
 | 24 | Episode 027 — The Great Token Trim | `TASKS/content/2026-03-03-episode-027-token-optimization-drafts.md` | `draft: pending-review` |
+| 25 | Episode 028 — The First-Run Experience | `TASKS/content/2026-03-03-episode-028-the-first-run-experience-drafts.md` | `draft: pending-review` |
 
 ---
 
