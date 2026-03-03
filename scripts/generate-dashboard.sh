@@ -6,13 +6,14 @@
 
 set -euo pipefail
 
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 GATES_FILE="${1:-/dev/stdin}"
-DASHBOARD="/Users/aioffice/ai-workforce-lab/LOGS/phase-b-dashboard.md"
-LOGFILE="/Users/aioffice/ai-workforce-lab/LOGS/agent-runs.jsonl"
+DASHBOARD="${REPO_ROOT}/LOGS/phase-b-dashboard.md"
+LOGFILE="${REPO_ROOT}/LOGS/agent-runs.jsonl"
 
 # ── Parse gate metrics ─────────────────────────────────────────────
 # Simple JSON value extractor (no jq dependency)
-jval() { grep -oE "\"$1\":[^,}]*" "$GATES_FILE" | head -1 | cut -d: -f2 | tr -d ' "'; }
+jval() { local v; v=$(grep -oE "\"$1\":[^,}]*" "$GATES_FILE" 2>/dev/null | head -1 | cut -d: -f2 | tr -d ' "' || true); echo "${v:-0}"; }
 
 G1=$(jval gate_1_consecutive_publishes)
 G1T=$(jval gate_1_target)
