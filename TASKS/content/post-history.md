@@ -1,7 +1,17 @@
-# LinkedIn Post History
+# Content Post History
 
-> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-02-25
+> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-03-04
 > All posts are indexed here after founder approval. Full draft files live alongside this file in `TASKS/content/`.
+
+---
+
+## 🚨 Backlog Hard Reset (2026-03-04)
+
+To catch the content pipeline up to real-time operations, all historical drafts up through **Episode 028** have been bulk-transitioned. No new drafts will be generated for these older episodes.
+
+| Date | Slug | Type | Source | Status |
+|---|---|---|---|---|
+| 2026-03-04 | `episodes-000-to-028-backlog` | Bulk | Episodes 000–028 | 🗄️ Posted / Archived (Hard Reset) |
 
 ---
 
@@ -9,16 +19,8 @@
 
 | Date | Slug | Type | Source | Status |
 |---|---|---|---|---|
-| 2026-02-23 | `day1-ai-office` | Standalone | INC-001 RCA · OpenClaw auth failure | ✅ Posted |
-| 2026-02-25 | `ep006-directory-crisis` | Standalone | Episode 006 · INC-001 | ✅ Posted |
-
----
-
-## Approved — Pending Publish
-
-| Date | Slug | Type | Source | Status |
-|---|---|---|---|---|
-| 2026-02-24 | `ep005-budget-cap` | Standalone | Episode 005 · Task 0032 | ⏳ Awaiting founder publish |
+| 2026-02-23 | `day1-ai-office` | Standalone | INC-001 RCA | ✅ Posted |
+| 2026-02-25 | `ep006-directory-crisis` | Standalone | Episode 006 | ✅ Posted |
 
 ---
 
