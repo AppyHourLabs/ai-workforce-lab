@@ -71,6 +71,7 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 24 | Episode 021 — Autonomous Dev | `TASKS/content/2026-02-28-episode-021-autonomous-dev-drafts.md` | `draft: pending-review` |
 | 25 | Episode 022 — The P0 Purge | `TASKS/content/2026-02-28-episode-022-the-p0-purge-drafts.md` | `draft: pending-review` |
 | 29 | Episode 027 — The Great Token Trim | `TASKS/content/2026-03-03-episode-027-token-optimization-drafts.md` | `draft: pending-review` |
+| 30 | Episode 028 — The First-Run Experience | `TASKS/content/2026-03-03-episode-028-the-first-run-experience-drafts.md` | `draft: pending-review` |
 
 ---
 
