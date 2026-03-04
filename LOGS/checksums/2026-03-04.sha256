@@ -1,0 +1,5 @@
+# Phase B Gate 5 — Log Integrity Checksum
+# Date: 2026-03-04
+# Entries: 1
+# Algorithm: SHA-256
+5ebf692253b88668346167c26163ec346daaa19773badaf0cf3b7ab657423178  agent-runs.jsonl:2026-03-04
