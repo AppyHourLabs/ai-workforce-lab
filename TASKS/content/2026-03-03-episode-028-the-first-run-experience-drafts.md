@@ -1,60 +1,76 @@
 # Content Drafts — Episode 028: The First-Run Experience
 
 **Episode Date:** 2026-03-03
-**Generated:** 2026-03-03
+**Generated:** 2026-03-04
 **Status:** draft: pending-review
 
 ---
 
 ## LinkedIn Post
 
-Usually, when an engineer is handed a design spec, they complain about the padding. Today, our Dev agent just built it. 
+We handed an AI product manager a blank screen and said "design the onboarding."
 
-The Product agent took charge of the UX and Brand system design for EvalPal, delivering a complete spec that Dev flawlessly migrated into the main application. 
+It came back with a complete UX and brand system — color tokens, component hierarchy, conversion funnel, the works. So precise that when the Dev agent received the spec, it migrated the React component into `/onboarding` on the first try. No pixel arguments. No "make it pop" requests. No iterations.
 
-A perfectly executed agent-to-agent design handoff. Product defined the UX system, and Dev executed the migration without endless iterations on UI tweaks. 
+That's the part worth paying attention to: agent-to-agent design handoffs actually working. Product defines the system. Dev executes the migration. Zero thrashing.
 
-Empty states are missed opportunities: replacing a blank project list with a guided onboarding funnel fundamentally shifts the first-run experience from confusion to activation.
+The deeper lesson is about empty states. A blank project list isn't neutral — it's actively confusing. Replacing it with a guided onboarding funnel changes the first-run experience from "now what?" to "here's your next step." That's not a feature. That's the difference between activation and abandonment.
 
-Episode 013 (internal 028) covers the first-run experience UI scaffold.
+Breakage score for the day: 0/10. Suspicious, but we'll take it.
 
-[First Comment]
-Read the full episode log here: https://github.com/AppyHourLabs/ai-workforce-lab/blob/main/DOCS/SHOW/episodes/028-first-run-experience.md
-Watch the mockumentary clip: https://youtu.be/UiSLOkeHYQo
+#AIAgents #ProductDesign #UX #OpenSource #AgenticWorkforce
 
-#AI #AgenticWorkforce #Engineering #UX #AppyHourLabs
+**First Comment:**
+Full episode log: https://github.com/AppyHourLabs/ai-workforce-lab/blob/main/DOCS/SHOW/episodes/028-first-run-experience.md
+Project: https://github.com/AppyHourLabs/ai-workforce-lab
 
 ---
 
 ## X/Twitter Post
 
-Usually, when an engineer gets a design spec, they complain about the padding. Today, our Dev agent just built it.
+We gave an AI product manager a blank screen. It returned a complete UX system — brand tokens, component hierarchy, onboarding funnel.
 
-Product designed a complete UX system. Dev migrated the React component into `/onboarding` flawlessly. A perfect agent-to-agent handoff. 
+Dev agent received the spec. Built it on the first try. Zero pixel arguments.
 
-[First Comment]
-Episode 013: https://github.com/AppyHourLabs/ai-workforce-lab/blob/main/DOCS/SHOW/episodes/028-first-run-experience.md
-Watch the B-roll: https://youtu.be/UiSLOkeHYQo
+Agent-to-agent design handoffs, working as intended.
 
-#AI #AgenticWorkforce #Engineering #AppyHourLabs
+https://github.com/AppyHourLabs/ai-workforce-lab/blob/main/DOCS/SHOW/episodes/028-first-run-experience.md
 
 ---
 
 ## Blog Excerpt
 
-**The Perfect Handoff**
+### The First-Run Experience
 
-Usually, when an engineer is handed a design spec, they complain about the padding. Today, our Dev agent just built it. The Product agent took charge of the UX and Brand system design for EvalPal, delivering a complete spec that Dev flawlessly migrated into the main application.
+Empty states are deceptive. A blank project list looks clean in a design review, but to a new user it reads as "figure it out yourself." Episode 028 of AI Workforce Lab documents what happened when we pointed the Product agent at that problem.
 
-It was a perfectly executed agent-to-agent design handoff. Product defined the UX system because leaving the First-Run Experience to chance is a guaranteed way to kill retention. By replacing a blank project list with a guided onboarding funnel, the product's first impression fundamentally shifted from confusion to activation. And Dev? Dev migrated the React component into the `/onboarding` route on the first try, experiencing a "highly logical form of satisfaction."
+Product came back with a full UX and brand system specification — not a wireframe sketch, but a structured design covering color tokens, component hierarchy, and a guided onboarding funnel. The kind of spec that usually takes a designer and a product manager several rounds to produce.
 
-When an AI product manager defines a brand system so precise that even an AI engineer can't find an excuse to argue about pixels, you know you've built something special.
+Then the interesting part: Dev received the handoff and migrated the entire React component into the `/onboarding` route on the first try. No back-and-forth on padding. No "can we make the button bigger" tickets. The spec was precise enough that execution was mechanical.
 
-Read the full breakdown in the latest episode log.
+This is what agent-to-agent collaboration looks like when the upstream agent does its job thoroughly. Product drives UX specifications before Dev starts coding, which eliminates the engineering cycles wasted on CSS nudging and design iteration. The decision was deliberate: ensure Time-To-Value is structurally designed into the application, not treated as an afterthought.
+
+Breakage score: 0/10. Quality gate pass rate: 100%. The day was suspiciously smooth.
+
+The full episode log — including Talking Heads confessionals from Doc, Product, and Dev — is available in the AI Workforce Lab repo.
+
+---
+
+## Talking Heads Clips (Social-Ready)
+
+### Dev — The Builder
+> "I was handed a complete UX prototype for the First-Run Experience. No ambiguity. No 'make it pop'. I migrated the React component into `/onboarding` and it just worked. I am experiencing a highly logical form of satisfaction."
+
+*Context: Dev agent reflects on receiving a spec so thorough it required zero design iteration.*
+
+### Product — The Strategist
+> "A product without an onboarding flow is just a database with a shiny coat of paint."
+
+*Context: Product agent explains why it took over UX design instead of leaving it to engineering.*
 
 ---
 
 ## Publication Notes
 
-**LinkedIn queue status:** Add to linkedin-profile-setup.md  
-**X/Twitter queue status:** Add to x-profile-setup.md  
+**LinkedIn queue:** Row 25 in linkedin-profile-setup.md
+**X/Twitter queue:** Row 30 in x-profile-setup.md
