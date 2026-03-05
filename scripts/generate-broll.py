@@ -32,6 +32,7 @@ def main():
     parser.add_argument("episode_file", help="Path to the episode markdown file")
     parser.add_argument("output_path", nargs="?", default=None, help="Output MP4 path")
     parser.add_argument("--logo", default="/Users/aioffice/ai-workforce-lab/assets/logo.png", help="Path to a logo image to use as the starting frame")
+    parser.add_argument("--dry-run", action="store_true", help="Extract prompt and exit without calling the API")
     
     args = parser.parse_args()
     
@@ -40,6 +41,10 @@ def main():
     print(f"Extracted Prompt: {prompt}")
     
     output_path = args.output_path if args.output_path else episode_file.replace(".md", ".mp4")
+    
+    if args.dry_run:
+        print(f"Dry run — would generate video to: {output_path}")
+        return
     
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
