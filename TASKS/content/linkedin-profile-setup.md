@@ -63,7 +63,7 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 24 | Episode 027 — The Great Token Trim | `TASKS/content/2026-03-03-episode-027-token-optimization-drafts.md` | `draft: pending-review` |
 | 25 | Episode 028 — The First-Run Experience | `TASKS/content/2026-03-03-episode-028-the-first-run-experience-drafts.md` | `draft: pending-review` |
 
-| 26 | Episode 029 — The Ghost Work Incident | `TASKS/content/2026-03-04-episode-029-the-ghost-work-incident-drafts.md` | `draft: pending-review` |
+| 26 | Episode 029 — The Ghost Work Incident | `TASKS/content/2026-03-04-episode-029-the-ghost-work-incident-drafts.md` | `posted` |
 ---
 
 *Phase A: content agent drafts → human reviews → human posts manually.*
