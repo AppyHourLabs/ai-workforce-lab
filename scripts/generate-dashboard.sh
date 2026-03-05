@@ -11,9 +11,15 @@ GATES_FILE="${1:-/dev/stdin}"
 DASHBOARD="${REPO_ROOT}/LOGS/phase-b-dashboard.md"
 LOGFILE="${REPO_ROOT}/LOGS/agent-runs.jsonl"
 
+# ── Preflight ──────────────────────────────────────────────────────
+if ! command -v jq &>/dev/null; then
+  echo "ERROR: jq is required. Install with: brew install jq" >&2
+  exit 1
+fi
+
 # ── Parse gate metrics ─────────────────────────────────────────────
-# Simple JSON value extractor (no jq dependency)
-jval() { local v; v=$(grep -oE "\"$1\":[^,}]*" "$GATES_FILE" 2>/dev/null | head -1 | cut -d: -f2 | tr -d ' "' || true); echo "${v:-0}"; }
+jval() { jq -r ".$1 // 0" "$GATES_FILE"; }
+
 
 G1=$(jval gate_1_consecutive_publishes)
 G1T=$(jval gate_1_target)

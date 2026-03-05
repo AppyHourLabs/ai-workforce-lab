@@ -32,6 +32,20 @@
             "output": 5.0
         }
     },
-    "monthly_fixed_cost_usd": 0.0,
+    "subscriptions": {
+        "openai": {
+            "plan": "Pro",
+            "monthly_usd": 200
+        },
+        "anthropic": {
+            "plan": "Max (5x)",
+            "monthly_usd": 200
+        },
+        "google": {
+            "plan": "AI Pro",
+            "monthly_usd": 200
+        }
+    },
+    "monthly_fixed_cost_usd": 600.0,
     "budget_cap_daily_usd": 10.0
 }
