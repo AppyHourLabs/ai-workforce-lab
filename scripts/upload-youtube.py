@@ -71,6 +71,7 @@ def main():
     parser = argparse.ArgumentParser(description='Upload a generated Veo video to YouTube.')
     parser.add_argument('--video', required=True, help='Path to the video file (.mp4)')
     parser.add_argument('--episode', required=True, help='Path to the episode markdown file')
+    parser.add_argument('--unlisted', action='store_true', help='Upload as unlisted (default: public)')
     args = parser.parse_args()
 
     title, description = extract_episode_details(args.episode)
@@ -86,7 +87,7 @@ def main():
             'categoryId': '28' # Science & Technology
         },
         'status': {
-            'privacyStatus': 'public' # or 'unlisted' for safety
+            'privacyStatus': 'unlisted' if args.unlisted else 'public'
         }
     }
 
