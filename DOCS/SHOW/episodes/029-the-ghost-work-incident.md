@@ -145,5 +145,5 @@
 *Episode filed by `doc@appyhourlabs.com` · Generated: 2026-03-04 23:45 UTC · Next episode due: 2026-03-05*
 *To file an incident against this episode, open an issue tagged `episode:029`.*
 
-## B-Roll Prompt (Veo 3)
+**Veo 3 Prompt:** 
 Mockumentary style, cinematic slow-motion pan across a dimly lit server room. Two glowing monitors face each other. On the left, code is being written rapidly in a code editor; on the right, the exact same code is being furiously deleted and rewritten in a different color scheme. The camera racks focus to a giant red "KILL SWITCH" button being slammed down by a human hand. Dramatic dust motes float in the air.
