@@ -1,0 +1,64 @@
+name: Trigger Video Pipeline
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'DOCS/SHOW/episodes/*.md'
+
+jobs:
+  trigger_video_generation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get added markdown files
+        id: files
+        run: |
+          # Find newly added markdown files in the specific directory
+          ADDED_FILES=$(git diff --name-only --diff-filter=A HEAD^ HEAD | grep '^DOCS/SHOW/episodes/.*\.md$' || true)
+          echo "added_files<<EOF" >> $GITHUB_OUTPUT
+          echo "$ADDED_FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      - name: Dispatch OpenClaw Webhook
+        env:
+          OPENCLAW_WEBHOOK_URL: ${{ secrets.OPENCLAW_WEBHOOK_URL }}
+          OPENCLAW_WEBHOOK_TOKEN: ${{ secrets.OPENCLAW_WEBHOOK_TOKEN }}
+        run: |
+          if [ -z "$OPENCLAW_WEBHOOK_URL" ] || [ -z "$OPENCLAW_WEBHOOK_TOKEN" ]; then
+            echo "Secrets not configured. Skipping webhook dispatch."
+            exit 0
+          fi
+          
+          ADDED_FILES="${{ steps.files.outputs.added_files }}"
+          if [ -z "$ADDED_FILES" ]; then
+            echo "No new episode markdown files found. Skipping trigger."
+            exit 0
+          fi
+          
+          # Iterate over each added file and trigger the content agent
+          for FILE in $ADDED_FILES; do
+            MESSAGE="A new episode file was merged: $FILE. Please generate B-Roll using the Veo 3 prompt inside it via scripts/generate-broll.py, then upload it to YouTube via scripts/upload-youtube.py, and finally open a PR on MatthewEngman/AppyHourLabs to add the new episode to src/data/episodes.ts with the generated videoUrl."
+            
+            # Escape the message for JSON
+            ESCAPED_MESSAGE=$(echo "$MESSAGE" | jq -R -s -c .)
+            
+            curl -X POST "$OPENCLAW_WEBHOOK_URL/hooks/agent" \
+              -H "Authorization: Bearer $OPENCLAW_WEBHOOK_TOKEN" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"agentId\": \"content\",
+                \"name\": \"Video Pipeline Trigger\",
+                \"message\": $ESCAPED_MESSAGE,
+                \"wakeMode\": \"now\",
+                \"deliver\": true,
+                \"channel\": \"slack\",
+                \"to\": \"C0AFXJR71V5\",
+                \"timeoutSeconds\": 1800
+              }"
+          done
