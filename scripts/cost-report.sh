@@ -161,8 +161,9 @@ EOF
 
   cat <<EOF
 
-**Token usage at list rates: \$$(printf "%.2f" "$TOTAL_COST")**
-**Actual cost: \$${DAILY_FIXED}/day (subscription) | Token budget cap: \$$(printf "%.2f" "$BUDGET_CAP")/day**
+**Token usage at list rates: \$$(printf "%.2f" "$TOTAL_COST") / \$$(printf "%.2f" "$BUDGET_CAP") cap (${UTILIZATION}%)**
+
+> **Note:** The \$$(printf "%.2f" "$BUDGET_CAP")/day budget cap tracks **variable token spend only**. Fixed subscription costs (\$${DAILY_FIXED}/day) are tracked separately above and are not compared against this cap.
 
 ## Per-Agent Breakdown
 
