@@ -21,6 +21,7 @@ To catch the content pipeline up to real-time operations, all historical drafts 
 |---|---|---|---|---|
 | 2026-02-23 | `day1-ai-office` | Standalone | INC-001 RCA | ✅ Posted |
 | 2026-02-25 | `ep006-directory-crisis` | Standalone | Episode 006 | ✅ Posted |
+| 2026-03-04 | `ep029-the-ghost-work-incident` | Episode | Episode 029 | ✅ Posted |
 
 ---
 
