@@ -43,10 +43,10 @@ jobs:
           
           # Iterate over each added file and trigger the content agent
           for FILE in $ADDED_FILES; do
-            MESSAGE="A new episode file was merged: $FILE. Please generate B-Roll using the Veo 3 prompt inside it via scripts/generate-broll.py, then upload it to YouTube via scripts/upload-youtube.py, and finally open a PR on MatthewEngman/AppyHourLabs to add the new episode to src/data/episodes.ts with the generated videoUrl."
+            MESSAGE="A new episode file was merged: $FILE. Please generate B-Roll using the Veo 3 prompt inside it via \`python3 scripts/generate-broll.py $FILE\`. Then upload the generated .mp4 to YouTube via \`python3 scripts/upload-youtube.py --video <generated_mp4> --episode $FILE\`. Finally, open a PR on the AppyHourLabs website repository (located at /Users/aioffice/AppyHourLabs) that adds the new episode to \`src/data/episodes.ts\`, including the generated YouTube videoUrl."
             
-            # Escape the message for JSON
-            ESCAPED_MESSAGE=$(echo "$MESSAGE" | jq -R -s -c .)
+            # Escape the message for JSON payload without trailing newline
+            ESCAPED_MESSAGE=$(printf "%s" "$MESSAGE" | jq -R -s -c .)
             
             curl -X POST "$OPENCLAW_WEBHOOK_URL/hooks/agent" \
               -H "Authorization: Bearer $OPENCLAW_WEBHOOK_TOKEN" \
