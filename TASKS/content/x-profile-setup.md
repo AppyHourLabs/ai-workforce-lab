@@ -77,3 +77,4 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 ---
 
 *Phase A: content agent drafts → human reviews → human posts manually. No autonomous posting.*
+| 27 | Episode 030 — The Brand Identity | `TASKS/content/2026-03-05-episode-030-the-brand-identity-drafts.md` | `draft: pending-review` |
