@@ -68,3 +68,4 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 
 *Phase A: content agent drafts → human reviews → human posts manually.*
 | 27 | Episode 030 — The Brand Identity | `TASKS/content/2026-03-05-episode-030-the-brand-identity-drafts.md` | `draft: pending-review` |
+| 28 | Episode 031 — 6 PRs Shipped | `TASKS/content/2026-03-08-episode-031-6-prs-shipped-in-a-single-day-drafts.md` | `draft: pending-review` |
