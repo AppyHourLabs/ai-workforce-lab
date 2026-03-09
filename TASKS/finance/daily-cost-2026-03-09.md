@@ -17,9 +17,10 @@
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
 | anthropic | claude-opus-4-6 | 1 | 8 | 1632 | $0.0408 |
-| google | gemini-3.1-pro-preview | 1 | 67861 | 1248 | $0 |
+| google | gemini-2.5-flash | 1 | 112164 | 1778 | $0.0179 |
+| google | gemini-3.1-pro-preview | 5 | 689763 | 9335 | $0 |
 
-**Token usage at list rates: $0.04 / $10.00 cap (0%)**
+**Token usage at list rates: $0.06 / $10.00 cap (0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -27,13 +28,18 @@
 
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
+| cfo | google | gemini-2.5-flash | 112164 | 1778 | $0.0179 | 18.7s | ok |
+| content | google | gemini-3.1-pro-preview | 133572 | 2272 | $0 | 42.4s | ok |
 | cto | anthropic | claude-opus-4-6 | 8 | 1632 | $0.0408 | 35s | ok |
+| dev | google | gemini-3.1-pro-preview | 351806 | 3076 | $0 | 138.1s | ok |
 | product | google | gemini-3.1-pro-preview | 67861 | 1248 | $0 | 26.3s | ok |
+| qa | google | gemini-3.1-pro-preview | 84600 | 1088 | $0 | 22.8s | ok |
+| security | google | gemini-3.1-pro-preview | 51924 | 1651 | $0 | 28.4s | ok |
 
 ## Notes
 
 - Token counts sourced from `~/.openclaw/cron/runs/*.jsonl`
 - Pricing from `scripts/model-pricing.json` (last updated: 2026-03-04)
 - Runs with no `usage` field (auth errors, instant failures) are excluded
-- Total runs with token data: 2
+- Total runs with token data: 7
 - Per-token costs are list-rate estimates for relative comparison; actual billing is subscription-based
