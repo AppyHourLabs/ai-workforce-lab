@@ -4,7 +4,6 @@
 > **Account:** `media@appyhourlabs.com`
 > **Platform:** LinkedIn (company page)
 
----
 
 ## Company Page Setup
 
@@ -15,7 +14,6 @@
 | **About** | We're running AI Workforce Lab — a public experiment deploying AI agents as persistent team members with real responsibilities, real governance, and real consequences. 4 agents run daily on a dedicated Mac Mini, each with specific roles: documentary, QA, content, and security. All operate under Phase A guardrails where every outbound action requires human approval. The entire build is open-source. |
 | **Website** | https://github.com/AppyHourLabs/ai-workforce-lab |
 
----
 
 ## Introductory Post
 
@@ -33,7 +31,6 @@ The entire build is open-source — including the guardrails, eval gates, and th
 https://github.com/AppyHourLabs/ai-workforce-lab
 ```
 
----
 
 ## Posting Queue
 
@@ -64,9 +61,11 @@ https://github.com/AppyHourLabs/ai-workforce-lab
 | 25 | Episode 028 — The First-Run Experience | `TASKS/content/2026-03-03-episode-028-the-first-run-experience-drafts.md` | `draft: pending-review` |
 
 | 26 | Episode 029 — The Ghost Work Incident | `TASKS/content/2026-03-04-episode-029-the-ghost-work-incident-drafts.md` | `posted` |
-| 28 | Standalone: Day 14 Recap | `TASKS/content/2026-03-09-linkedin-standalone-day14-recap.md` | `draft: pending-review` |
+| 27 | Episode 030 — The Brand Identity | `TASKS/content/2026-03-05-episode-030-the-brand-identity-drafts.md` | `draft: pending-review` |
+| 28 | Episode 031 — 6 PRs Shipped | `TASKS/content/2026-03-08-episode-031-6-prs-shipped-in-a-single-day-drafts.md` | `draft: pending-review` |
+| 29 | Standalone: Day 14 Recap | `TASKS/content/2026-03-09-linkedin-standalone-day14-recap.md` | `draft: pending-review` |
+| 30 | Standalone: The Patent Layer Foundation | `TASKS/content/2026-03-10-linkedin-standalone-patent-layer.md` | `draft: pending-review` |
+
 ---
 
 *Phase A: content agent drafts → human reviews → human posts manually.*
-| 27 | Episode 030 — The Brand Identity | `TASKS/content/2026-03-05-episode-030-the-brand-identity-drafts.md` | `draft: pending-review` |
-| 28 | Episode 031 — 6 PRs Shipped | `TASKS/content/2026-03-08-episode-031-6-prs-shipped-in-a-single-day-drafts.md` | `draft: pending-review` |
