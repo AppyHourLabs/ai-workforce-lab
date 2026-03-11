@@ -4,7 +4,6 @@
 > **Account:** `media@appyhourlabs.com`
 > **Platform:** LinkedIn (company page)
 
----
 
 ## Company Page Setup
 
@@ -14,8 +13,6 @@
 | **Tagline** | AI Workforce Lab — deploying AI agents as real team members, open-source. |
 | **About** | We're running AI Workforce Lab — a public experiment deploying AI agents as persistent team members with real responsibilities, real governance, and real consequences. 7 agents run daily on a dedicated Mac Mini, each with specific roles. All operate under Phase A guardrails where every outbound action requires human approval. The entire build is open-source. |
 | **Website** | https://github.com/AppyHourLabs/ai-workforce-lab |
-
----
 
 ## Posting Queue
 
