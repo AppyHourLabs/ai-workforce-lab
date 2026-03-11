@@ -1,7 +1,8 @@
-# Content Calendar — Updated 2026-02-23
+# Content Calendar — Updated 2026-03-10
 
 > **LinkedIn Strategy Runbook:** [`RUNBOOKS/linkedin-content-strategy.md`](../../RUNBOOKS/linkedin-content-strategy.md)
 > **Post History:** [`TASKS/content/post-history.md`](./post-history.md)
+> **Posting Queue:** [`TASKS/content/linkedin-profile-setup.md`](./linkedin-profile-setup.md)
 
 ## LinkedIn Anchor Thread
 
@@ -13,15 +14,11 @@ All Type 2 thread replies are posted as comments on this post. Content Agent mus
 
 ## Episode Coverage
 
-| Episode | Coverage | Status | Notes |
-|---|---|---|---|
-| 000 — Origin Log | LinkedIn, X, blog excerpt drafted (2026-02-21) | Ready for review | Needs brand voice + quality gate before publish |
-| 001 — The AI Office Moves In | LinkedIn, X, blog excerpt drafted (2026-02-21) | Ready for review | Highlights Mac Mini hardening + Phase A rationale |
-| 002 — The First Agent Goes Live | LinkedIn, X, blog excerpt drafted (2026-02-21) | Ready for review | Focus on OpenClaw install + run metrics |
-| 003 — Agent Wires Itself | LinkedIn, X, blog excerpt drafted (2026-02-21) | Ready for review | Covers GitHub tooling + Slack routing fix |
-| 004 — Fleet Expansion & EvalPal Phase A | Posted by Founder (2026-02-23) | ✅ Published | Daily cadence — posted same day as QA pass |
-| 005 — Hard Budget Cap | LinkedIn, X, blog drafted (2026-02-26) | Pending QA review | LinkedIn standalone exists (2026-02-24); do not duplicate |
-| 006 — Operational Resilience / Directory Crisis | LinkedIn posted by founder (2026-02-25); X + blog drafted (2026-02-26) | LinkedIn live; X/blog pending QA | INC-001 story; Talking Heads clips included |
+> **⚠️ All episodes through 031 have been covered by the founder's daily standalone posts (Day 1–14). Do NOT generate new drafts for these episodes.**
+
+| Episode Range | Coverage | Status |
+|---|---|---|
+| 000–031 | Covered via Day 1–14 standalone posts | ✅ All posted |
 
 ---
 
@@ -29,7 +26,22 @@ All Type 2 thread replies are posted as comments on this post. Content Agent mus
 
 | Date | Slug | Type | Status | Notes |
 |---|---|---|---|---|
-| 2026-02-23 | `day1-rca` | Standalone | Awaiting founder approval | Day 1 gateway auth outage RCA |
+| 2026-02-23 | `launch-post` | Standalone | ✅ Posted | "I built an AI workforce over the weekend" |
+| 2026-02-23 | `day1-rca` | Standalone | ✅ Posted | Auth failure morning |
+| 2026-02-24 | `day2-budget-cap` | Standalone | ✅ Posted | $10/day hard cap |
+| 2026-02-25 | `day3-directory-crisis` | Standalone | ✅ Posted | Documentation system failure |
+| 2026-02-26 | `day4-429-tests` | Standalone | ✅ Posted | Tests nobody noticed |
+| 2026-02-27 | `day5-time-travel` | Standalone | ✅ Posted | Stale filesystem sync |
+| 2026-02-28 | `day6-7-prs` | Standalone | ✅ Posted | Dev agent ships overnight |
+| 2026-03-01 | `day7-token-trim` | Standalone | ✅ Posted | 60% token cut |
+| 2026-03-02 | `day8-bored-agents` | Standalone | ✅ Posted | Tech debt hunting |
+| 2026-03-03 | `day9-fre` | Standalone | ✅ Posted | First-Run Experience |
+| 2026-03-04 | `day10-ghost-work` | Standalone | ✅ Posted | Stale GitHub issue incident |
+| 2026-03-05 | `day11-brand-identity` | Standalone | ✅ Posted | AI-designed brand system |
+| 2026-03-06 | `day12-6-prs` | Standalone | ✅ Posted | 6 PRs in one day |
+| 2026-03-08 | `day13-quiet-fleet` | Standalone | ✅ Posted | $0.08 token spend |
+| 2026-03-09 | `day14-recap` | Standalone | ✅ Posted | Two-week reflections |
+| 2026-03-10 | `day15-approval-queue` | Standalone | ⏳ Pending | Human-in-the-loop manager |
 
 ---
 
@@ -37,4 +49,4 @@ All Type 2 thread replies are posted as comments on this post. Content Agent mus
 
 | Date | Slug | Type | Status | Notes |
 |---|---|---|---|---|
-| — | — | — | — | No replies drafted yet — awaiting anchor post URL |
+| — | — | — | — | No replies drafted yet |

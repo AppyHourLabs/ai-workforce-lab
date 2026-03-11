@@ -1,6 +1,6 @@
 # LinkedIn Profile — Appy Hour Labs
 
-> **Status:** `draft: pending-review`
+> **Status:** `active`
 > **Account:** `media@appyhourlabs.com`
 > **Platform:** LinkedIn (company page)
 
@@ -12,60 +12,40 @@
 |---|---|
 | **Company Name** | Appy Hour Labs |
 | **Tagline** | AI Workforce Lab — deploying AI agents as real team members, open-source. |
-| **About** | We're running AI Workforce Lab — a public experiment deploying AI agents as persistent team members with real responsibilities, real governance, and real consequences. 4 agents run daily on a dedicated Mac Mini, each with specific roles: documentary, QA, content, and security. All operate under Phase A guardrails where every outbound action requires human approval. The entire build is open-source. |
+| **About** | We're running AI Workforce Lab — a public experiment deploying AI agents as persistent team members with real responsibilities, real governance, and real consequences. 7 agents run daily on a dedicated Mac Mini, each with specific roles. All operate under Phase A guardrails where every outbound action requires human approval. The entire build is open-source. |
 | **Website** | https://github.com/AppyHourLabs/ai-workforce-lab |
-
----
-
-## Introductory Post
-
-> **Status:** `draft: pending-review`
-
-```
-We're running a public experiment called AI Workforce Lab — a real, documented attempt to deploy AI agents as persistent team members with real responsibilities, real governance, and real consequences when things go sideways.
-
-Today we have 4 agents running on a dedicated Mac Mini: a documentary agent that drafts weekly episodes, a QA agent that scores every draft against quality and brand voice rubrics, a content agent that turns episodes into social posts, and a security agent that scans every PR for policy violations.
-
-All of them operate under Phase A: every outbound action requires human approval. Autonomy is earned through measured performance, not granted by default.
-
-The entire build is open-source — including the guardrails, eval gates, and the mistakes we've made along the way.
-
-https://github.com/AppyHourLabs/ai-workforce-lab
-```
 
 ---
 
 ## Posting Queue
 
+> **⚠️ Content Agent: Do NOT re-draft any posts below marked `posted`. Check this table before generating new LinkedIn content.**
+
 | # | Post | Source | Status |
 |---|---|---|---|
-| 1 | Introductory post (above) | Original | `draft: pending-review` |
-| 2 | Episode 000 — Origin Log | `TASKS/content/2026-02-21-episode-000-origin-log-drafts.md` | `draft: pending-review` |
-| 3 | Episode 001 — AI Office Moves In | `TASKS/content/2026-02-21-episode-001-ai-office-moves-in-drafts.md` | `draft: pending-review` |
-| 4 | Episode 002 — First Agent Goes Live | `TASKS/content/2026-02-21-episode-002-the-first-agent-goes-live-drafts.md` | `draft: pending-review` |
-| 5 | Episode 003 — Agent Wires Itself | `TASKS/content/2026-02-21-episode-003-agent-wires-itself-drafts.md` | `draft: pending-review` |
-| 6 | Episode 004 — Fleet Expansion & EvalPal Phase A (Post A) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
-| 7 | Episode 004 — Fleet Expansion & EvalPal Phase A (Post B) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
-| 8 | Episode 005 — Budget Cap | `TASKS/content/2026-02-26-episode-005-budget-cap-drafts.md` | `draft: pending-review` |
-| 9 | Episode 006 — Directory Crisis | `TASKS/content/2026-02-26-episode-006-directory-crisis-drafts.md` | `draft: pending-review` |
-| 10 | Episode 007 — The 429 Tests Nobody Noticed | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
-| 11 | Episode 013 — Budget Blocker Cleared | `TASKS/content/2026-02-27-episode-013-budget-blocker-cleared-drafts.md` | `draft: pending-review` |
-| 12 | Episode 014 — The P3 Pivot | `TASKS/content/2026-02-27-episode-014-the-p3-pivot-drafts.md` | `draft: pending-review` |
-| 13 | Episode 015 — Quality Gates and Flakey Tests | `TASKS/content/2026-02-27-episode-015-quality-gates-drafts.md` | `draft: pending-review` |
-| 14 | Episode 016 — The Pull Imperative | `TASKS/content/2026-02-27-episode-016-pull-imperative-drafts.md` | `draft: pending-review` |
-| 15 | Episode 017 — Documentation is Destiny | `TASKS/content/2026-02-27-episode-017-documentation-is-destiny-drafts.md` | `draft: pending-review` |
-| 16 | Episode 018 — The RLS Reality Check | `TASKS/content/2026-02-27-episode-018-rls-reality-check-drafts.md` | `draft: pending-review` |
-| 17 | Episode 019 — The Staging Dummy and SSO Cleanup | `TASKS/content/2026-02-27-episode-019-staging-dummy-drafts.md` | `draft: pending-review` |
-| 18 | Episode 020 — CI Pipeline Health Check | `TASKS/content/2026-02-27-episode-020-ci-pipeline-health-check-drafts.md` | `draft: pending-review` |
-| 21 | Episode 023 — Injection Protection | `TASKS/content/2026-02-28-episode-023-injection-protection-drafts.md` | `draft: pending-review` |
-| 22 | Episode 024 — Regression Reality Check | `TASKS/content/2026-02-28-episode-024-regression-reality-check-drafts.md` | `draft: pending-review` |
-| 23 | Episode 025 — The Empty Queue (Rewrite) | `TASKS/content/2026-03-02-episode-025-the-empty-queue-rewrite-drafts.md` | `draft: pending-review` |
-| 24 | Episode 027 — The Great Token Trim | `TASKS/content/2026-03-03-episode-027-token-optimization-drafts.md` | `draft: pending-review` |
-| 25 | Episode 028 — The First-Run Experience | `TASKS/content/2026-03-03-episode-028-the-first-run-experience-drafts.md` | `draft: pending-review` |
+| 1 | Launch Post ("I built an AI workforce over the weekend") | Original | `posted` |
+| 2 | Day 1 — Auth failure RCA | Standalone | `posted` |
+| 3 | Day 2 — $10/day hard budget cap | Standalone (Episode 005) | `posted` |
+| 4 | Day 3 — Directory crisis / documentation failure | Standalone (Episode 006) | `posted` |
+| 5 | Day 4 — 429 tests nobody noticed | Standalone (Episode 007) | `posted` |
+| 6 | Day 5 — Time-travel stale code bug | Standalone (Episode 024) | `posted` |
+| 7 | Day 6 — Dev agent ships 7 PRs overnight | Standalone (Episode 025) | `posted` |
+| 8 | Day 7 — Token optimization / 60% cut | Standalone (Episode 027) | `posted` |
+| 9 | Day 8 — Bored agents hunting tech debt | Standalone (Episode 028) | `posted` |
+| 10 | Day 9 — First-Run Experience UX overhaul | Standalone (Episode 028) | `posted` |
+| 11 | Day 10 — Ghost Work Incident | Standalone (Episode 029) | `posted` |
+| 12 | Day 11 — Brand Identity System | Standalone (Episode 030) | `posted` |
+| 13 | Day 12 — 6 PRs Shipped in a Day | Standalone (Episode 031) | `posted` |
+| 14 | Day 13 — Quiet fleet / $0.08 token spend | Standalone | `posted` |
+| 15 | Day 14 — Specialization, Architecture, Tool Calling | Standalone (Day 14 Recap) | `posted` |
+| 16 | Day 15 — The Approval Queue | `TASKS/content/2026-03-10-linkedin-standalone-approval-queue.md` | `draft: pending-review` |
 
-| 26 | Episode 029 — The Ghost Work Incident | `TASKS/content/2026-03-04-episode-029-the-ghost-work-incident-drafts.md` | `posted` |
+---
+
+## Episode-Based Drafts (Backlog — Archived)
+
+> All episode-based social drafts through Episode 031 were incorporated into the daily standalone posts above or archived as part of the 2026-03-04 hard reset. The Content Agent should NOT regenerate drafts for Episodes 000–031.
+
 ---
 
 *Phase A: content agent drafts → human reviews → human posts manually.*
-| 27 | Episode 030 — The Brand Identity | `TASKS/content/2026-03-05-episode-030-the-brand-identity-drafts.md` | `draft: pending-review` |
-| 28 | Episode 031 — 6 PRs Shipped | `TASKS/content/2026-03-08-episode-031-6-prs-shipped-in-a-single-day-drafts.md` | `draft: pending-review` |
