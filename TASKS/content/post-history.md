@@ -1,17 +1,18 @@
 # Content Post History
 
-> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-03-04
+> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-03-10
 > All posts are indexed here after founder approval. Full draft files live alongside this file in `TASKS/content/`.
+> **⚠️ Content Agent: Do NOT re-draft any post listed as Published below.**
 
 ---
 
-## 🚨 Backlog Hard Reset (2026-03-04)
+## 🚨 Backlog Hard Reset (2026-03-10)
 
-To catch the content pipeline up to real-time operations, all historical drafts up through **Episode 028** have been bulk-transitioned. No new drafts will be generated for these older episodes.
+All historical episode drafts (Episodes 000–031) and all standalone posts through Day 14 have been posted by the founder. No new drafts should be generated for any of these episodes or topics. The content agent should only draft **new** standalone posts for events occurring **after** 2026-03-10.
 
 | Date | Slug | Type | Source | Status |
 |---|---|---|---|---|
-| 2026-03-04 | `episodes-000-to-028-backlog` | Bulk | Episodes 000–028 | 🗄️ Posted / Archived (Hard Reset) |
+| 2026-03-10 | `all-through-day-14` | Bulk | Episodes 000–031 + Days 1–14 | 🗄️ Posted / Archived (Hard Reset) |
 
 ---
 
@@ -19,9 +20,21 @@ To catch the content pipeline up to real-time operations, all historical drafts 
 
 | Date | Slug | Type | Source | Status |
 |---|---|---|---|---|
-| 2026-02-23 | `day1-ai-office` | Standalone | INC-001 RCA | ✅ Posted |
-| 2026-02-25 | `ep006-directory-crisis` | Standalone | Episode 006 | ✅ Posted |
-| 2026-03-04 | `ep029-the-ghost-work-incident` | Episode | Episode 029 | ✅ Posted |
+| 2026-02-23 | `launch-post` | Standalone | Original announcement | ✅ Posted |
+| 2026-02-23 | `day1-ai-office` | Standalone | INC-001 RCA / auth failure | ✅ Posted |
+| 2026-02-24 | `day2-budget-cap` | Standalone | Episode 005 | ✅ Posted |
+| 2026-02-25 | `day3-directory-crisis` | Standalone | Episode 006 | ✅ Posted |
+| 2026-02-26 | `day4-429-tests` | Standalone | Episode 007 | ✅ Posted |
+| 2026-02-27 | `day5-time-travel-bug` | Standalone | Episode 024 | ✅ Posted |
+| 2026-02-28 | `day6-7-prs-overnight` | Standalone | Episode 025 | ✅ Posted |
+| 2026-03-01 | `day7-token-optimization` | Standalone | Episode 027 | ✅ Posted |
+| 2026-03-02 | `day8-bored-agents` | Standalone | Episode 028 | ✅ Posted |
+| 2026-03-03 | `day9-first-run-experience` | Standalone | Episode 028 | ✅ Posted |
+| 2026-03-04 | `day10-ghost-work-incident` | Standalone | Episode 029 | ✅ Posted |
+| 2026-03-05 | `day11-brand-identity` | Standalone | Episode 030 | ✅ Posted |
+| 2026-03-06 | `day12-6-prs-shipped` | Standalone | Episode 031 | ✅ Posted |
+| 2026-03-08 | `day13-quiet-fleet` | Standalone | Operational update | ✅ Posted |
+| 2026-03-09 | `day14-two-week-recap` | Standalone | Day 14 Recap | ✅ Posted |
 
 ---
 
@@ -29,7 +42,7 @@ To catch the content pipeline up to real-time operations, all historical drafts 
 
 | Date | Slug | Type | Source | Status |
 |---|---|---|---|---|
-| — | — | — | — | — |
+| 2026-03-10 | `day15-approval-queue` | Standalone | `2026-03-10-linkedin-standalone-approval-queue.md` | ⏳ Awaiting founder approval |
 
 ---
 
