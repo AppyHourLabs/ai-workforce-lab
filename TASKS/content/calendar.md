@@ -1,4 +1,4 @@
-# Content Calendar — Updated 2026-03-10
+# Content Calendar — Updated 2026-03-12
 
 > **LinkedIn Strategy Runbook:** [`RUNBOOKS/linkedin-content-strategy.md`](../../RUNBOOKS/linkedin-content-strategy.md)
 > **Post History:** [`TASKS/content/post-history.md`](./post-history.md)
@@ -42,6 +42,8 @@ All Type 2 thread replies are posted as comments on this post. Content Agent mus
 | 2026-03-08 | `day13-quiet-fleet` | Standalone | ✅ Posted | $0.08 token spend |
 | 2026-03-09 | `day14-recap` | Standalone | ✅ Posted | Two-week reflections |
 | 2026-03-10 | `day15-approval-queue` | Standalone | ⏳ Pending | Human-in-the-loop manager |
+| 2026-03-11 | `day16-scope-violation` | Standalone | ⏳ Pending | Security catches content agent |
+| 2026-03-12 | `day17-phase-b-dashboard` | Standalone | ⏳ Pending | 0/5 Phase B gates passed |
 
 ---
 

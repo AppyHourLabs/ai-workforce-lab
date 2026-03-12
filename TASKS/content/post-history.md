@@ -1,6 +1,6 @@
 # Content Post History
 
-> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-03-10
+> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-03-12
 > All posts are indexed here after founder approval. Full draft files live alongside this file in `TASKS/content/`.
 > **⚠️ Content Agent: Do NOT re-draft any post listed as Published below.**
 
@@ -43,6 +43,8 @@ All historical episode drafts (Episodes 000–031) and all standalone posts thro
 | Date | Slug | Type | Source | Status |
 |---|---|---|---|---|
 | 2026-03-10 | `day15-approval-queue` | Standalone | `2026-03-10-linkedin-standalone-approval-queue.md` | ⏳ Awaiting founder approval |
+| 2026-03-11 | `day16-scope-violation` | Standalone | `2026-03-11-linkedin-standalone-scope-violation.md` | ⏳ Awaiting founder approval |
+| 2026-03-12 | `day17-phase-b-dashboard` | Standalone | `2026-03-12-linkedin-standalone-phase-b-dashboard.md` | ⏳ Awaiting founder approval |
 
 ---
 

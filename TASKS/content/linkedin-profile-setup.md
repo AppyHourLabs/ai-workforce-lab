@@ -36,6 +36,8 @@
 | 14 | Day 13 — Quiet fleet / $0.08 token spend | Standalone | `posted` |
 | 15 | Day 14 — Specialization, Architecture, Tool Calling | Standalone (Day 14 Recap) | `posted` |
 | 16 | Day 15 — The Approval Queue | `TASKS/content/2026-03-10-linkedin-standalone-approval-queue.md` | `draft: pending-review` |
+| 17 | Day 16 — The Scope Violation | `TASKS/content/2026-03-11-linkedin-standalone-scope-violation.md` | `draft: pending-review` |
+| 18 | Day 17 — Zero Gates Passed | `TASKS/content/2026-03-12-linkedin-standalone-phase-b-dashboard.md` | `draft: pending-review` |
 
 ---
 
