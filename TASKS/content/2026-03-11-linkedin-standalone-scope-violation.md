@@ -48,8 +48,8 @@ The scope violation was harmless — a cost report in the wrong PR. But that's e
 
 ## Gate Checklist
 
-- [ ] Brand voice gate run → result: [PASS/FAIL]
-- [ ] Outbound quality gate run → result: [PASS/FAIL]
-- [ ] No PII, credentials, or internal system details
-- [ ] All claims verifiable against source material
+- [x] Brand voice gate run → result: **PASS** (10/10) — `EVALS/results/2026-03-11-day16-scope-violation-voice.md`
+- [x] Outbound quality gate run → result: **PASS** (15/16) — `EVALS/results/2026-03-11-day16-scope-violation-quality.md`
+- [x] No PII, credentials, or internal system details
+- [x] All claims verifiable against source material
 - [ ] Submitted to matt@appyhourlabs.com for approval
