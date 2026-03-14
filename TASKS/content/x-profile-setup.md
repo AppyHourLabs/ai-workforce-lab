@@ -48,7 +48,7 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 7 | Episode 004 — Meta Angle (Tweet B) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
 | 8 | Episode 004 — Transparency Hook (Tweet C) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
 | 9 | Episode 004 — Infrastructure Insight (Tweet D) | `TASKS/content/2026-02-24-episode-004-fleet-expansion-evalpal-phase-a-drafts.md` | `draft: pending-review` |
-| 10 | Episode 005 — Budget Cap (from 2026-02-26 drafts) | `TASKS/content/2026-02-26-episode-005-budget-cap-drafts.md` | `draft: pending-review` |
+| 10 | Episode 005 — Budget Cap | `TASKS/content/2026-02-26-episode-005-budget-cap-drafts.md` | `posted` |
 | 11 | Episode 006 — Directory Crisis (from 2026-02-26 drafts) | `TASKS/content/2026-02-26-episode-006-directory-crisis-drafts.md` | `draft: pending-review` |
 | 12 | Episode 007 — The 429 Tests Nobody Noticed (Hook) | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
 | 13 | Episode 007 — QA Meta Angle | `TASKS/content/2026-02-26-episode-007-tests-pass-drafts.md` | `draft: pending-review` |
@@ -65,7 +65,7 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 24 | Episode 021 — Autonomous Dev | `TASKS/content/2026-02-28-episode-021-autonomous-dev-drafts.md` | `draft: pending-review` |
 | 25 | Episode 022 — The P0 Purge | `TASKS/content/2026-02-28-episode-022-the-p0-purge-drafts.md` | `draft: pending-review` |
 | 26 | Episode 023 — Injection Protection | `TASKS/content/2026-02-28-episode-023-injection-protection-drafts.md` | `draft: pending-review` |
-| 27 | Episode 024 — Regression Reality Check | `TASKS/content/2026-02-28-episode-024-regression-reality-check-drafts.md` | `draft: pending-review` |
+| 27 | Episode 024 — Regression Reality Check | `TASKS/content/2026-02-28-episode-024-regression-reality-check-drafts.md` | `posted` |
 | 28 | Episode 025 — The Empty Queue (Rewrite) | `TASKS/content/2026-03-02-episode-025-the-empty-queue-rewrite-drafts.md` | `draft: pending-review` |
 | 22 | Episode 023 — Injection Protection | `TASKS/content/2026-02-28-episode-023-injection-protection-drafts.md` | `draft: pending-review` |
 | 24 | Episode 021 — Autonomous Dev | `TASKS/content/2026-02-28-episode-021-autonomous-dev-drafts.md` | `draft: pending-review` |
@@ -74,8 +74,10 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 30 | Episode 028 — The First-Run Experience | `TASKS/content/2026-03-03-episode-028-the-first-run-experience-drafts.md` | `draft: pending-review` |
 
 | 31 | Episode 029 — The Ghost Work Incident | `TASKS/content/2026-03-04-episode-029-the-ghost-work-incident-drafts.md` | `posted` |
+| 34 | Episode 2026-03-13 — CI Glitches | `TASKS/content/2026-03-14-episode-2026-03-13-drafts.md` | `draft: pending-review` |
 ---
 
-*Phase A: content agent drafts → human reviews → human posts manually. No autonomous posting.*
 | 27 | Episode 030 — The Brand Identity | `TASKS/content/2026-03-05-episode-030-the-brand-identity-drafts.md` | `draft: pending-review` |
 | 28 | Episode 031 — 6 PRs Shipped | `TASKS/content/2026-03-08-episode-031-6-prs-shipped-in-a-single-day-drafts.md` | `draft: pending-review` |
+
+*Phase A: content agent drafts → human reviews → human posts manually. No autonomous posting.*
