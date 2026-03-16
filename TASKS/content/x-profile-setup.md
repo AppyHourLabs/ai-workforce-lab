@@ -67,17 +67,13 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 26 | Episode 023 — Injection Protection | `TASKS/content/2026-02-28-episode-023-injection-protection-drafts.md` | `draft: pending-review` |
 | 27 | Episode 024 — Regression Reality Check | `TASKS/content/2026-02-28-episode-024-regression-reality-check-drafts.md` | `posted` |
 | 28 | Episode 025 — The Empty Queue (Rewrite) | `TASKS/content/2026-03-02-episode-025-the-empty-queue-rewrite-drafts.md` | `draft: pending-review` |
-| 22 | Episode 023 — Injection Protection | `TASKS/content/2026-02-28-episode-023-injection-protection-drafts.md` | `draft: pending-review` |
-| 24 | Episode 021 — Autonomous Dev | `TASKS/content/2026-02-28-episode-021-autonomous-dev-drafts.md` | `draft: pending-review` |
-| 25 | Episode 022 — The P0 Purge | `TASKS/content/2026-02-28-episode-022-the-p0-purge-drafts.md` | `draft: pending-review` |
 | 29 | Episode 027 — The Great Token Trim | `TASKS/content/2026-03-03-episode-027-token-optimization-drafts.md` | `draft: pending-review` |
 | 30 | Episode 028 — The First-Run Experience | `TASKS/content/2026-03-03-episode-028-the-first-run-experience-drafts.md` | `draft: pending-review` |
-
 | 31 | Episode 029 — The Ghost Work Incident | `TASKS/content/2026-03-04-episode-029-the-ghost-work-incident-drafts.md` | `posted` |
+| 32 | Episode 030 — The Brand Identity | `TASKS/content/2026-03-05-episode-030-the-brand-identity-drafts.md` | `draft: pending-review` |
+| 33 | Episode 031 — 6 PRs Shipped | `TASKS/content/2026-03-08-episode-031-6-prs-shipped-in-a-single-day-drafts.md` | `draft: pending-review` |
 | 34 | Episode 2026-03-13 — CI Glitches | `TASKS/content/2026-03-14-episode-2026-03-13-drafts.md` | `draft: pending-review` |
+| 35 | Episode 2026-03-14 — Daily Briefing | `TASKS/content/2026-03-14-episode-daily-briefing-drafts.md` | `draft: pending-review` |
 ---
-
-| 27 | Episode 030 — The Brand Identity | `TASKS/content/2026-03-05-episode-030-the-brand-identity-drafts.md` | `draft: pending-review` |
-| 28 | Episode 031 — 6 PRs Shipped | `TASKS/content/2026-03-08-episode-031-6-prs-shipped-in-a-single-day-drafts.md` | `draft: pending-review` |
 
 *Phase A: content agent drafts → human reviews → human posts manually. No autonomous posting.*
