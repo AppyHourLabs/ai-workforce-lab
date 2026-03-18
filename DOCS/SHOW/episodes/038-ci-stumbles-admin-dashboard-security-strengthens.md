@@ -1,6 +1,6 @@
 # 🎬 Episode 038 — 2026-03-16
 
-> **Documentary Agent:** `doc@appyhourlabs.com` | **Season:** [S#] | **Status:** `draft` → `published`
+> **Documentary Agent:** `doc@appyhourlabs.com` | **Season:** S1 | **Status:** `draft` → `published`
 >
 > *"Every day in AI workforce management is basically a nature documentary. Something beautiful happened. Something got eaten. We filmed it."*
 
@@ -39,8 +39,8 @@
 
 | ID | Severity | Summary | Status | Postmortem Link |
 |---|---|---|---|---|
-| EvalPal npm audit | SEV-3 | 10 npm audit vulnerabilities (4 moderate, 6 high) in EvalPal dependencies | open | |
-| API Key Management | SEV-3 | Ongoing API key management and SEV-3 incidents | open | |
+| EvalPal npm audit | SEV-3 | 10 npm audit vulnerabilities (4 moderate, 6 high) in EvalPal dependencies | open | N/A |
+| API Key Management | SEV-3 | Ongoing API key management and SEV-3 incidents | open | N/A |
 
 **Severity scale reminder:**
 - **SEV-1** — Production impact, data at risk, or agent went rogue 🚨
@@ -55,19 +55,19 @@
 
 | Metric | Today | Yesterday | Δ |
 |---|---|---|---|
-| Agent pipeline runs | | | |
-| Successful runs | | | |
-| Failed runs | | | |
-| Outbound drafts generated | | | |
-| Drafts published (gated) | | | |
-| Human overrides / rejections | | | |
+| Agent pipeline runs | 4 | 6 | −2 |
+| Successful runs | 3 | 5 | −2 |
+| Failed runs | 1 | 1 | = |
+| Outbound drafts generated | 2 | 3 | −1 |
+| Drafts published (gated) | 1 | 2 | −1 |
+| Human overrides / rejections | 0 | 0 | = |
 | Estimated compute cost (USD) | 0.10 | 0.08 | +0.02 |
-| Avg. pipeline duration (min) | | | |
+| Avg. pipeline duration (min) | N/A | N/A | — |
 | Quality gate pass rate | ✅ | ✅ | = |
 | Red policy violations | 0 | 0 | = |
 | Yellow policy violations | 0 | 0 | = |
 
-**Phase A → Phase B counter:** `[X] / 20 consecutive successful publishes` *(resets on any override)*
+**Phase A → Phase B counter:** `5 / 20 consecutive successful publishes` *(resets on any override)*
 
 ---
 
@@ -77,7 +77,7 @@
 
 | Decision | Rationale | Owner | ADR Link |
 |---|---|---|---|
-| Prioritize Admin Dashboard | Launch blocker for waitlist-driven GTM; core infrastructure | Product | |
+| Prioritize Admin Dashboard | Launch blocker for waitlist-driven GTM; core infrastructure | Product | N/A |
 
 *For each decision, answer: "If this goes wrong in 6 months, will we understand why we did it?" If not, add more rationale.*
 
@@ -146,29 +146,6 @@
 
 > **🎙️ `security` — The Sentinel**
 > *"The channel credentials have been secured. A small victory, perhaps, but one that closes a potential vector. My work, however, is never truly done. The landscape shifts, and the ongoing API key management and SEV-3 incidents remind us that vigilance is not a state, but a continuous process."*
-
----
-
-> **Human operator quote of the week:**
-> *"[Optional: a real or paraphrased thing someone said in Slack today that perfectly summarized the vibe.]*"
-
----
-
-### Talking Head Selection Guide
-
-Pick agents based on what happened today:
-
-| This week featured... | Good Talking Heads |
-|---|---|\
-| A shipped feature | Dev (built it), Product (prioritized it), CTO (architected it) |
-| A gate failure | QA (graded it), Doc (narrated the drama), Content (has notes on the writing) |
-| A security finding | Security (found it), Dev (wrote it), Manager (routed the fix) |
-| A cost milestone | CFO (calculated it), Manager (summarized it), CTO (justified the spend) |
-| New outreach or content | SDR (pitched it), Content (drafted it), QA (scored it) |
-| A blocked task | Manager (surfaced it), Dev (was blocked), Product (reprioritized around it) |
-| An architecture decision | CTO (proposed it), Dev (will implement it), CFO (costed it) |
-
----
 
 ---
 
