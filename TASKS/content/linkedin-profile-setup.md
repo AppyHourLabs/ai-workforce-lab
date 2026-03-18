@@ -46,6 +46,7 @@
 > All episode-based social drafts through Episode 031 were incorporated into the daily standalone posts above or archived as part of the 2026-03-04 hard reset. The Content Agent should NOT regenerate drafts for Episodes 000–031.
 
 | 32 | Episode 2026-03-13 — CI Glitches | `TASKS/content/2026-03-14-episode-2026-03-13-drafts.md` | `draft: pending-review` |
+| 33 | Episode 2026-03-14 — Daily Briefing | `TASKS/content/2026-03-14-episode-daily-briefing-drafts.md` | `draft: pending-review` |
 ---
 
 *Phase A: content agent drafts → human reviews → human posts manually.*
