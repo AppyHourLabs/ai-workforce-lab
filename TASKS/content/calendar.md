@@ -1,4 +1,4 @@
-# Content Calendar — Updated 2026-03-12
+# Content Calendar — Updated 2026-03-20
 
 > **LinkedIn Strategy Runbook:** [`RUNBOOKS/linkedin-content-strategy.md`](../../RUNBOOKS/linkedin-content-strategy.md)
 > **Post History:** [`TASKS/content/post-history.md`](./post-history.md)
@@ -17,7 +17,7 @@ All Type 2 thread replies are posted as comments on this post. Content Agent mus
 > **⚠️ All episodes through 031 have been covered by the founder's daily standalone posts (Day 1–14). Do NOT generate new drafts for these episodes.**
 
 | Episode Range | Coverage | Status |
-|---|---|---|
+|---|---|---|---
 | 000–031 | Covered via Day 1–14 standalone posts | ✅ All posted |
 
 ---
@@ -44,6 +44,11 @@ All Type 2 thread replies are posted as comments on this post. Content Agent mus
 | 2026-03-10 | `day15-approval-queue` | Standalone | ⏳ Pending | Human-in-the-loop manager |
 | 2026-03-11 | `day16-scope-violation` | Standalone | ⏳ Pending | Security catches content agent |
 | 2026-03-12 | `day17-phase-b-dashboard` | Standalone | ⏳ Pending | 0/5 Phase B gates passed |
+| 2026-03-13 | `episode-036-ci-stumbles` | Episode | ⏳ Pending | EvalPal CI stumbles, security strengthens |
+| 2026-03-15 | `episode-037-ci-failure-security-updates` | Episode | ⏳ Pending | EvalPal CI failure, security updates |
+| 2026-03-16 | `episode-038-ci-stumbles-admin-dashboard` | Episode | ⏳ Pending | EvalPal CI stumbles, admin dashboard prioritized |
+| 2026-03-17 | `episode-039-the-quiet-weekend` | Episode | ⏳ Pending | Quiet weekend, guardrails validated |
+| 2026-03-18 | `episode-040-catching-up-evalpal-ships` | Episode | ⏳ Pending | EvalPal waitlist ships, content backlog cleared |
 
 ---
 
