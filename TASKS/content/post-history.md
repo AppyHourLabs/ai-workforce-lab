@@ -1,6 +1,6 @@
 # Content Post History
 
-> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-03-12
+> **Owner:** Content Agent (`media@appyhourlabs.com`) · **Updated:** 2026-03-20
 > All posts are indexed here after founder approval. Full draft files live alongside this file in `TASKS/content/`.
 > **⚠️ Content Agent: Do NOT re-draft any post listed as Published below.**
 
@@ -19,6 +19,7 @@ All historical episode drafts (Episodes 000–031) and all standalone posts thro
 ## Published Posts
 
 | Date | Slug | Type | Source | Status |
+
 |---|---|---|---|---|
 | 2026-02-23 | `launch-post` | Standalone | Original announcement | ✅ Posted |
 | 2026-02-23 | `day1-ai-office` | Standalone | INC-001 RCA / auth failure | ✅ Posted |
@@ -35,6 +36,10 @@ All historical episode drafts (Episodes 000–031) and all standalone posts thro
 | 2026-03-06 | `day12-6-prs-shipped` | Standalone | Episode 031 | ✅ Posted |
 | 2026-03-08 | `day13-quiet-fleet` | Standalone | Operational update | ✅ Posted |
 | 2026-03-09 | `day14-two-week-recap` | Standalone | Day 14 Recap | ✅ Posted |
+| 2026-03-10 | `day15-approval-queue` | Standalone | Episode 032 / Phase A ops | ✅ Posted |
+| 2026-03-11 | `day16-scope-violation` | Standalone | Security scan / scope violation | ✅ Posted |
+| 2026-03-12 | `day17-phase-b-dashboard` | Standalone | Phase B dashboard 0/5 | ✅ Posted |
+| 2026-03-13 | `day18-supply-chain-attack` | Standalone | npm supply chain intercept | ✅ Posted |
 
 ---
 
@@ -42,9 +47,11 @@ All historical episode drafts (Episodes 000–031) and all standalone posts thro
 
 | Date | Slug | Type | Source | Status |
 |---|---|---|---|---|
-| 2026-03-10 | `day15-approval-queue` | Standalone | `2026-03-10-linkedin-standalone-approval-queue.md` | ⏳ Awaiting founder approval |
-| 2026-03-11 | `day16-scope-violation` | Standalone | `2026-03-11-linkedin-standalone-scope-violation.md` | ⏳ Awaiting founder approval |
-| 2026-03-12 | `day17-phase-b-dashboard` | Standalone | `2026-03-12-linkedin-standalone-phase-b-dashboard.md` | ⏳ Awaiting founder approval |
+| 2026-03-20 | `episode-036-ci-stumbles` | Episode | `TASKS/content/2026-03-20-episode-036-drafts.md` | `draft: pending-review` |
+| 2026-03-20 | `episode-037-ci-failure-security-updates` | Episode | `TASKS/content/2026-03-20-episode-037-drafts.md` | `draft: pending-review` |
+| 2026-03-20 | `episode-038-ci-stumbles-admin-dashboard` | Episode | `TASKS/content/2026-03-20-episode-038-drafts.md` | `draft: pending-review` |
+| 2026-03-20 | `episode-039-the-quiet-weekend` | Episode | `TASKS/content/2026-03-20-episode-039-drafts.md` | `draft: pending-review` |
+| 2026-03-20 | `episode-040-catching-up-evalpal-ships` | Episode | `TASKS/content/2026-03-20-episode-040-drafts.md` | `draft: pending-review` |
 
 ---
 
