@@ -16,9 +16,9 @@
 
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
-| openai | gpt-5.4 | 3 | 81425 | 7323 | $0.2768 |
+| openai | gpt-5.4 | 7 | 231094 | 19460 | $0.7723 |
 
-**Token usage at list rates: $0.28 / $10.00 cap (0%)**
+**Token usage at list rates: $0.77 / $10.00 cap (0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -27,8 +27,12 @@
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
 | cfo | openai | gpt-5.4 | 40177 | 2715 | $0.1276 | 85.1s | ok |
+| content | openai | gpt-5.4 | 18238 | 2280 | $0.0684 | 60.4s | ok |
 | cto | openai | gpt-5.4 | 22964 | 2887 | $0.0863 | 84s | ok |
+| dev | openai | gpt-5.4 | 36078 | 2634 | $0.1165 | 116.3s | ok |
 | product | openai | gpt-5.4 | 18284 | 1721 | $0.0629 | 41.8s | ok |
+| qa | openai | gpt-5.4 | 12166 | 1015 | $0.0406 | 32.8s | ok |
+| security | openai | gpt-5.4 | 83187 | 6208 | $0.27 | 160.3s | ok |
 
 ## Notes
 
@@ -37,5 +41,5 @@
 - Provider aliases normalize provider variants (for example, `openai-codex` → `openai`)
 - Model aliases allow proxy pricing for new model IDs until explicit list rates are added (for example, `gpt-5.4` → `gpt-5.1-codex`)
 - Runs with no `usage` field (auth errors, instant failures) are excluded
-- Total runs with token data: 3
+- Total runs with token data: 7
 - Per-token costs are list-rate estimates for relative comparison; actual billing is subscription-based
