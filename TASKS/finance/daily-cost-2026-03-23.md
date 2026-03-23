@@ -16,9 +16,9 @@
 
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
-| openai-codex | gpt-5.4 | 3 | 81425 | 7323 | $0 |
+| openai | gpt-5.4 | 3 | 81425 | 7323 | $0.2768 |
 
-**Token usage at list rates: $0.00 / $10.00 cap (0%)**
+**Token usage at list rates: $0.28 / $10.00 cap (0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -26,9 +26,9 @@
 
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
-| cfo | openai-codex | gpt-5.4 | 40177 | 2715 | $0 | 85.1s | ok |
-| cto | openai-codex | gpt-5.4 | 22964 | 2887 | $0 | 84s | ok |
-| product | openai-codex | gpt-5.4 | 18284 | 1721 | $0 | 41.8s | ok |
+| cfo | openai | gpt-5.4 | 40177 | 2715 | $0.1276 | 85.1s | ok |
+| cto | openai | gpt-5.4 | 22964 | 2887 | $0.0863 | 84s | ok |
+| product | openai | gpt-5.4 | 18284 | 1721 | $0.0629 | 41.8s | ok |
 
 ## Notes
 
