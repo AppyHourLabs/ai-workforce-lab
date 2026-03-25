@@ -1,4 +1,4 @@
-# Daily Cost Report — 2026-03-23
+# Daily Cost Report — 2026-03-25
 
 ## Fixed Costs (Subscriptions)
 
@@ -16,9 +16,9 @@
 
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
-| openai | gpt-5.4 | 7 | 231094 | 19460 | $0.7723 |
+| google | gemini-2.5-pro | 2 | 382243 | 3726 | $0.4964 |
 
-**Token usage at list rates: $0.77 / $10.00 cap (0%)**
+**Token usage at list rates: $0.50 / $10.00 cap (0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -26,13 +26,8 @@
 
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
-| cfo | openai | gpt-5.4 | 40177 | 2715 | $0.1276 | 85.1s | ok |
-| content | openai | gpt-5.4 | 18238 | 2280 | $0.0684 | 60.4s | ok |
-| cto | openai | gpt-5.4 | 22964 | 2887 | $0.0863 | 84s | ok |
-| dev | openai | gpt-5.4 | 36078 | 2634 | $0.1165 | 116.3s | ok |
-| product | openai | gpt-5.4 | 18284 | 1721 | $0.0629 | 41.8s | ok |
-| qa | openai | gpt-5.4 | 12166 | 1015 | $0.0406 | 32.8s | ok |
-| security | openai | gpt-5.4 | 83187 | 6208 | $0.27 | 160.3s | ok |
+| cto | google | gemini-2.5-pro | 297646 | 2121 | $0.3827 | 63.8s | ok |
+| product | google | gemini-2.5-pro | 84597 | 1605 | $0.1138 | 36s | ok |
 
 ## Notes
 
@@ -41,5 +36,5 @@
 - Provider aliases normalize provider variants (for example, `openai-codex` → `openai`)
 - Model aliases allow proxy pricing for new model IDs until explicit list rates are added (for example, `gpt-5.4` → `gpt-5.1-codex`)
 - Runs with no `usage` field (auth errors, instant failures) are excluded
-- Total runs with token data: 7
+- Total runs with token data: 2
 - Per-token costs are list-rate estimates for relative comparison; actual billing is subscription-based
