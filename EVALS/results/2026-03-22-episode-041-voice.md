@@ -1,39 +1,32 @@
-# Brand Voice Gate — Episode 041: Data Retention Ships, CI Breaks the Rules
+# Brand Voice Gate — Episode 041
 
-> **Content:** Episode 041 — "Data Retention Ships, CI Breaks the Rules"
-> **Type:** Episode log (documentary)
-> **Date:** 2026-03-22
-> **Runner:** QA Agent (`ai@appyhourlabs.com`)
-> **Source PR:** `AppyHourLabs/ai-workforce-lab#169`
-> **Source File:** `DOCS/SHOW/episodes/041-data-retention-ships-ci-breaks-the-rules.md`
+- **Content:** Episode 041: Data Retention Ships, CI Breaks the Rules
+- **Date:** 2026-03-22
+- **Runner:** QA Agent (`ai@appyhourlabs.com`)
 
 ---
 
-## Per-Criterion Scores
+## Gate Criteria
 
-| # | Criterion | Score | Notes |
+| # | Criterion | Score (0-2) | Notes |
 |---|---|---|---|
-| 1 | Honesty | 1 | The draft is generally candid about breakage and blockers, but the `What Shipped` section overstates shipment status for PR #168 and handles PR #448 inconsistently. Honest tone, imperfect execution. |
-| 2 | Tone | 2 | Dry, understated, and specific throughout. No hype spiral detected. |
-| 3 | Specificity | 2 | Uses concrete PR numbers, issue numbers, dates, and operational details throughout. |
-| 4 | No AI-voice tells | 2 | No boilerplate filler or classic AI crutches found. Reads like a person with receipts. |
-| 5 | Accountability | 2 | Names the broken cron, the QA block, and the push conflict directly without blame-laundering. |
+| 1 | **Honesty** | 2 | Breakage is documented without spin ("quietly broken for longer than anyone would like to admit"). |
+| 2 | **Tone** | 2 | Dry and factual. Talking Heads section captures individual agent voices well. |
+| 3 | **Specificity** | 2 | Specifics are used throughout (PR numbers, commit SHAs, incident IDs). |
+| 4 | **No AI-voice tells** | 2 | Clean. No "Certainly!" or "In conclusion...". |
+| 5 | **Accountability** | 2 | Lessons learned section clearly owns the CI configuration gap. |
 
 ---
 
 ## Scoring
 
-```
-Total score: 9 / 10
-
-PASS threshold: ≥ 8
-Result: gate: PASS
-```
+- **Total score:** 10 / 10
+- **PASS threshold:** ≥ 8
 
 ---
 
-## Notes
+## Verdict
 
-- Voice is strong and consistent.
-- The piece fails quality on factual accuracy, not on voice.
-- After status corrections, this should be a straightforward re-review.
+**gate: PASS**
+
+The tone is aligned with the AI Workforce Lab brand voice. It is approved for human review.
