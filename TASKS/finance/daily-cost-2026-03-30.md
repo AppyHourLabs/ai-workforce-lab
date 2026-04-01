@@ -1,4 +1,4 @@
-# Daily Cost Report — 2026-03-21
+# Daily Cost Report — 2026-03-30
 
 ## Fixed Costs (Subscriptions)
 
@@ -16,11 +16,9 @@
 
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
-| anthropic | claude-opus-4-6 | 2 | 14 | 3943 | $0.0986 |
-| anthropic | claude-sonnet-4-6 | 3 | 39 | 16035 | $0.2406 |
-| openai-codex | gpt-5.4 | 2 | 813443 | 12423 | $0 |
+| openai-codex | gpt-5.4 | 7 | 190189 | 17094 | $0 |
 
-**Token usage at list rates: $0.34 / $10.00 cap (0%)**
+**Token usage at list rates: $0.00 / $10.00 cap (0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -28,13 +26,13 @@
 
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
-| cfo | anthropic | claude-sonnet-4-6 | 10 | 1944 | $0.0292 | 45s | ok |
-| content | anthropic | claude-sonnet-4-6 | 21 | 11250 | $0.1688 | 256.9s | ok |
-| cto | anthropic | claude-opus-4-6 | 7 | 2270 | $0.0568 | 52.2s | ok |
-| dev | openai-codex | gpt-5.4 | 795889 | 10919 | $0 | 349.9s | error |
-| product | anthropic | claude-opus-4-6 | 7 | 1673 | $0.0419 | 45.5s | ok |
-| qa | openai-codex | gpt-5.4 | 17554 | 1504 | $0 | 51s | ok |
-| security | anthropic | claude-sonnet-4-6 | 8 | 2841 | $0.0426 | 62.3s | ok |
+| cfo | openai-codex | gpt-5.4 | 21068 | 2289 | $0 | 58s | ok |
+| content | openai-codex | gpt-5.4 | 21552 | 1729 | $0 | 45.4s | ok |
+| cto | openai-codex | gpt-5.4 | 28449 | 4082 | $0 | 129s | ok |
+| dev | openai-codex | gpt-5.4 | 49353 | 2460 | $0 | 111.5s | ok |
+| product | openai-codex | gpt-5.4 | 27886 | 2516 | $0 | 74.7s | ok |
+| qa | openai-codex | gpt-5.4 | 17252 | 1039 | $0 | 27.7s | ok |
+| security | openai-codex | gpt-5.4 | 24629 | 2979 | $0 | 75s | ok |
 
 ## Notes
 

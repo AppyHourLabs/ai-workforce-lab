@@ -1,4 +1,4 @@
-# Daily Cost Report — 2026-03-21
+# Daily Cost Report — 2026-03-31
 
 ## Fixed Costs (Subscriptions)
 
@@ -16,11 +16,9 @@
 
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
-| anthropic | claude-opus-4-6 | 2 | 14 | 3943 | $0.0986 |
-| anthropic | claude-sonnet-4-6 | 3 | 39 | 16035 | $0.2406 |
-| openai-codex | gpt-5.4 | 2 | 813443 | 12423 | $0 |
+| google | gemini-2.5-pro | 7 | 1634211 | 12954 | $2.1075 |
 
-**Token usage at list rates: $0.34 / $10.00 cap (0%)**
+**Token usage at list rates: $2.11 / $10.00 cap (20.0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -28,13 +26,13 @@
 
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
-| cfo | anthropic | claude-sonnet-4-6 | 10 | 1944 | $0.0292 | 45s | ok |
-| content | anthropic | claude-sonnet-4-6 | 21 | 11250 | $0.1688 | 256.9s | ok |
-| cto | anthropic | claude-opus-4-6 | 7 | 2270 | $0.0568 | 52.2s | ok |
-| dev | openai-codex | gpt-5.4 | 795889 | 10919 | $0 | 349.9s | error |
-| product | anthropic | claude-opus-4-6 | 7 | 1673 | $0.0419 | 45.5s | ok |
-| qa | openai-codex | gpt-5.4 | 17554 | 1504 | $0 | 51s | ok |
-| security | anthropic | claude-sonnet-4-6 | 8 | 2841 | $0.0426 | 62.3s | ok |
+| cfo | google | gemini-2.5-pro | 102786 | 1452 | $0.1357 | 30.9s | ok |
+| content | google | gemini-2.5-pro | 141978 | 1414 | $0.1845 | 28.1s | ok |
+| cto | google | gemini-2.5-pro | 619351 | 3026 | $0.7893 | 73.9s | ok |
+| dev | google | gemini-2.5-pro | 315566 | 1240 | $0.4007 | 91s | ok |
+| product | google | gemini-2.5-pro | 123810 | 1233 | $0.1609 | 28.4s | ok |
+| qa | google | gemini-2.5-pro | 61490 | 1055 | $0.0821 | 16.3s | ok |
+| security | google | gemini-2.5-pro | 269230 | 3534 | $0.3542 | 48.4s | ok |
 
 ## Notes
 

@@ -1,4 +1,4 @@
-# Daily Cost Report — 2026-03-21
+# Daily Cost Report — 2026-03-26
 
 ## Fixed Costs (Subscriptions)
 
@@ -16,11 +16,9 @@
 
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
-| anthropic | claude-opus-4-6 | 2 | 14 | 3943 | $0.0986 |
-| anthropic | claude-sonnet-4-6 | 3 | 39 | 16035 | $0.2406 |
-| openai-codex | gpt-5.4 | 2 | 813443 | 12423 | $0 |
+| google | gemini-2.5-pro | 7 | 1045259 | 10818 | $1.3607 |
 
-**Token usage at list rates: $0.34 / $10.00 cap (0%)**
+**Token usage at list rates: $1.36 / $10.00 cap (10.0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -28,13 +26,13 @@
 
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
-| cfo | anthropic | claude-sonnet-4-6 | 10 | 1944 | $0.0292 | 45s | ok |
-| content | anthropic | claude-sonnet-4-6 | 21 | 11250 | $0.1688 | 256.9s | ok |
-| cto | anthropic | claude-opus-4-6 | 7 | 2270 | $0.0568 | 52.2s | ok |
-| dev | openai-codex | gpt-5.4 | 795889 | 10919 | $0 | 349.9s | error |
-| product | anthropic | claude-opus-4-6 | 7 | 1673 | $0.0419 | 45.5s | ok |
-| qa | openai-codex | gpt-5.4 | 17554 | 1504 | $0 | 51s | ok |
-| security | anthropic | claude-sonnet-4-6 | 8 | 2841 | $0.0426 | 62.3s | ok |
+| cfo | google | gemini-2.5-pro | 131145 | 1625 | $0.1721 | 53s | ok |
+| content | google | gemini-2.5-pro | 139094 | 1535 | $0.1815 | 42.1s | ok |
+| cto | google | gemini-2.5-pro | 323424 | 2686 | $0.4177 | 100s | ok |
+| dev | google | gemini-2.5-pro | 260024 | 1152 | $0.3308 | 93.5s | ok |
+| product | google | gemini-2.5-pro | 109185 | 2459 | $0.1488 | 53.2s | ok |
+| qa | google | gemini-2.5-pro | 62277 | 962 | $0.0827 | 26.3s | ok |
+| security | google | gemini-2.5-pro | 20110 | 399 | $0.0271 | 15.3s | ok |
 
 ## Notes
 

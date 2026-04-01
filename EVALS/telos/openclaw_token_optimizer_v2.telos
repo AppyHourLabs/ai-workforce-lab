@@ -1,0 +1,67 @@
+# openclaw_token_optimizer_v2.telos — Minimize cost, maximize quality
+#
+# v2 adds quality-weighted routing: the solver now considers per-provider
+# quality scores from EvalPal when allocating traffic. The objective becomes
+# a trade-off between cost and quality.
+#
+# Variables: alloc_* = fraction of fleet runs per provider
+# Parameters: cost, availability, budget, AND quality scores
+# Objective: minimize cost - quality_weight * weighted_quality
+#
+# Part of the Telos OS experiment in AI Workforce Lab.
+# See: EVALS/telos/README.md
+
+ontology:
+  variables:
+    - name: alloc_anthropic
+      type: float
+      bounds: [0.0, 1.0]
+    - name: alloc_openai
+      type: float
+      bounds: [0.0, 1.0]
+    - name: alloc_google
+      type: float
+      bounds: [0.0, 1.0]
+  parameters:
+    # Cost parameters (from harvest_params.py)
+    - cost_per_run_anthropic
+    - cost_per_run_openai
+    - cost_per_run_google
+    - daily_runs
+    - daily_budget
+    # Availability parameters (from harvest_params.py)
+    - anthropic_remaining_pct
+    - openai_available
+    - google_available
+    # Quality parameters (from evalpal_quality.py)
+    - quality_anthropic
+    - quality_openai
+    - quality_google
+    - quality_weight
+
+teleology:
+  direction: minimize
+  # Multi-objective: cost - quality_weight * quality_score
+  # quality_weight controls the trade-off (0 = pure cost, 1 = balanced)
+  # Negative quality term means we WANT higher quality (minimizing the negative)
+  objective: "cost_per_run_anthropic * alloc_anthropic * daily_runs + cost_per_run_openai * alloc_openai * daily_runs + cost_per_run_google * alloc_google * daily_runs - quality_weight * (quality_anthropic * alloc_anthropic + quality_openai * alloc_openai + quality_google * alloc_google)"
+
+invariants:
+  # All traffic must be allocated (fractions sum to 1)
+  - type: eq
+    expression: "alloc_anthropic + alloc_openai + alloc_google - 1.0"
+
+  # Stay within daily variable token budget
+  - type: ineq
+    expression: "daily_budget - (cost_per_run_anthropic * alloc_anthropic + cost_per_run_openai * alloc_openai + cost_per_run_google * alloc_google) * daily_runs"
+
+  # Don't over-allocate to Anthropic when monthly quota is low
+  - type: ineq
+    expression: "anthropic_remaining_pct * 0.01 - alloc_anthropic"
+
+  # Can't route to a provider that is down
+  - type: ineq
+    expression: "openai_available - alloc_openai"
+
+  - type: ineq
+    expression: "google_available - alloc_google"

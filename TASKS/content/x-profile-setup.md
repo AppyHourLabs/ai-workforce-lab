@@ -74,6 +74,7 @@ Posts are listed in order. Each must be approved by `matt@appyhourlabs.com` befo
 | 33 | Episode 031 — 6 PRs Shipped | `TASKS/content/2026-03-08-episode-031-6-prs-shipped-in-a-single-day-drafts.md` | `draft: pending-review` |
 | 34 | Episode 2026-03-13 — CI Glitches | `TASKS/content/2026-03-14-episode-2026-03-13-drafts.md` | `draft: pending-review` |
 | 35 | Episode 2026-03-14 — Daily Briefing | `TASKS/content/2026-03-14-episode-daily-briefing-drafts.md` | `draft: pending-review` |
+| 36 | Episode 041 — Data Retention, Quiet Fixes, and a Cron That Never Had a Chance | `TASKS/content/2026-03-22-episode-041-data-retention-ci-rules-drafts.md` | `draft: pending-review` |
 ---
 
 *Phase A: content agent drafts → human reviews → human posts manually. No autonomous posting.*

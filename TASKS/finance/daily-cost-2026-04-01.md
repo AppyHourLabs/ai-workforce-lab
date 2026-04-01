@@ -1,4 +1,4 @@
-# Daily Cost Report — 2026-03-21
+# Daily Cost Report — 2026-04-01
 
 ## Fixed Costs (Subscriptions)
 
@@ -16,11 +16,9 @@
 
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
-| anthropic | claude-opus-4-6 | 2 | 14 | 3943 | $0.0986 |
-| anthropic | claude-sonnet-4-6 | 3 | 39 | 16035 | $0.2406 |
-| openai-codex | gpt-5.4 | 2 | 813443 | 12423 | $0 |
+| anthropic | claude-sonnet-4-6 | 3 | 33 | 9011 | $0.1353 |
 
-**Token usage at list rates: $0.34 / $10.00 cap (0%)**
+**Token usage at list rates: $0.14 / $10.00 cap (0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -28,18 +26,14 @@
 
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
-| cfo | anthropic | claude-sonnet-4-6 | 10 | 1944 | $0.0292 | 45s | ok |
-| content | anthropic | claude-sonnet-4-6 | 21 | 11250 | $0.1688 | 256.9s | ok |
-| cto | anthropic | claude-opus-4-6 | 7 | 2270 | $0.0568 | 52.2s | ok |
-| dev | openai-codex | gpt-5.4 | 795889 | 10919 | $0 | 349.9s | error |
-| product | anthropic | claude-opus-4-6 | 7 | 1673 | $0.0419 | 45.5s | ok |
-| qa | openai-codex | gpt-5.4 | 17554 | 1504 | $0 | 51s | ok |
-| security | anthropic | claude-sonnet-4-6 | 8 | 2841 | $0.0426 | 62.3s | ok |
+| cfo | anthropic | claude-sonnet-4-6 | 11 | 2367 | $0.0355 | 59.8s | ok |
+| content | anthropic | claude-sonnet-4-6 | 11 | 2128 | $0.032 | 54.9s | ok |
+| security | anthropic | claude-sonnet-4-6 | 11 | 4516 | $0.0678 | 102.6s | ok |
 
 ## Notes
 
 - Token counts sourced from `~/.openclaw/cron/runs/*.jsonl`
 - Pricing from `scripts/model-pricing.json` (last updated: 2026-03-04)
 - Runs with no `usage` field (auth errors, instant failures) are excluded
-- Total runs with token data: 7
+- Total runs with token data: 3
 - Per-token costs are list-rate estimates for relative comparison; actual billing is subscription-based
