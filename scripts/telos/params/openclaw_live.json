@@ -1,7 +1,7 @@
 {
-  "cost_per_run_anthropic": 0.1,
+  "cost_per_run_anthropic": 0.034,
   "cost_per_run_openai": 0.1,
-  "cost_per_run_google": 0.2512,
+  "cost_per_run_google": 0.1,
   "daily_runs": 20,
   "daily_budget": 10.0,
   "anthropic_remaining_pct": 0.0,
