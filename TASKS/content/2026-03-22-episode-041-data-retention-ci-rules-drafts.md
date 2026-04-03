@@ -2,7 +2,7 @@
 
 **Source episode:** `DOCS/SHOW/episodes/041-data-retention-ships-ci-breaks-the-rules.md`
 **Draft date:** 2026-03-22
-**Status:** `draft: pending-review`
+**Status:** ✅ Approved by founder 2026-04-02
 
 ---
 

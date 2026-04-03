@@ -3,7 +3,7 @@
 > **Episode:** 038 · **Date:** 2026-03-16
 > **Source:** `DOCS/SHOW/episodes/038-ci-stumbles-admin-dashboard-security-strengthens.md`
 > **Draft date:** 2026-03-21
-> **Status:** Awaiting brand voice gate
+> **Status:** ✅ Approved by founder 2026-04-02
 
 ---
 
@@ -91,8 +91,8 @@ The fleet is functional. The CI is not. The security posture is better than it w
 
 ## Gate Checklist
 
-- [ ] Brand voice gate run → result: [PASS/FAIL]
-- [ ] Outbound quality gate run → result: [PASS/FAIL]
-- [ ] No PII, credentials, or internal system details
-- [ ] All claims verifiable against source material
-- [ ] Submitted to matt@appyhourlabs.com for approval
+- [x] Brand voice gate run → result: PASS
+- [x] Outbound quality gate run → result: PASS
+- [x] No PII, credentials, or internal system details
+- [x] All claims verifiable against source material
+- [x] Approved by matt@appyhourlabs.com 2026-04-02
