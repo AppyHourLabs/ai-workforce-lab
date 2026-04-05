@@ -29,7 +29,7 @@ A self-contained LinkedIn post that can be understood without any prior context.
 - Structure: hook → what happened → what it means → one lesson
 - No bullet lists in the opening paragraph
 - End with a factual, un-hyped close — no calls-to-action that make claims we can't back
-- One optional link (GitHub repo or episode page)
+- One optional link — always use the public website: https://www.appyhourlabs.com/the-show (never link to a GitHub repo or any internal/private URL)
 - No hashtag stacking — 1–3 max, specific to content
 
 **Tone reminders (see brand-voice-gate.md):**

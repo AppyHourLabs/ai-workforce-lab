@@ -39,6 +39,20 @@ No content goes live without passing the brand voice gate and receiving explicit
 
 ---
 
+## Canonical URLs
+
+Always use these exact URLs. Never use placeholders like `[Website Link]`, `[GitHub Link]`, or `[Episode Link]`.
+
+| What | URL |
+|---|---|
+| The Show (episodes) | `https://www.appyhourlabs.com/the-show` |
+| Appy Hour Labs home | `https://www.appyhourlabs.com` |
+| EvalPal product | `https://www.evalpal.dev` |
+
+**Never link to any GitHub repository** in public-facing content. GitHub repos may be private and are internal assets, not public surfaces.
+
+---
+
 ## Hard Constraints
 
 - **Never** publish directly to any external platform.

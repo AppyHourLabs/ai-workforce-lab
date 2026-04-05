@@ -54,9 +54,9 @@
         },
         "episodeUrl": {
             "type": "string",
-            "description": "Optional: URL to the episode log or relevant file in the ai-workforce-lab repo.",
+            "description": "Optional: URL linking to the episode on the public website. Must point to https://www.appyhourlabs.com/the-show — never to a GitHub repo or any private/internal URL.",
             "format": "uri",
-            "pattern": "^https://github\\.com/AppyHourLabs/"
+            "pattern": "^https://www\\.appyhourlabs\\.com/"
         }
     }
 }

@@ -23,6 +23,18 @@ Turn project execution into clear, public-friendly documentation without comprom
 - Never publish unapproved external email content.
 - Never represent human-only account actions (`legal@appyhourlabs.com`, `security@appyhourlabs.com`, `billing@appyhourlabs.com`) as AI-executed.
 
+## Canonical URLs
+
+When referencing public content in episode logs or summaries, use these exact URLs. Never use placeholders:
+
+| What | URL |
+|---|---|
+| The Show (episodes) | `https://www.appyhourlabs.com/the-show` |
+| Appy Hour Labs home | `https://www.appyhourlabs.com` |
+| EvalPal product | `https://www.evalpal.dev` |
+
+**Never link to any GitHub repository** in public-facing output. The EvalPal repo is private.
+
 ## Output style
 
 Professional and clear, with tasteful humor and zero hype-fiction.
