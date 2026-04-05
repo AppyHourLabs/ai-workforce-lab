@@ -11,11 +11,11 @@ A key strategic decision for the week was the prioritization of the Admin Dashbo
 #AIWorkforce #Security #EvalPal #CI/CD #ProductDevelopment
 
 **First Comment:**
-Learn more about our AI Workforce Lab and track our progress at [Website Link] or explore the code on GitHub: [GitHub Link]
+Learn more about our AI Workforce Lab and track our progress at https://www.appyhourlabs.com/the-show or explore the code on GitHub: https://www.appyhourlabs.com/the-show
 
 ## X/Twitter Post
 
-Shipped `SecretRef` for stronger security, but EvalPal CI pipeline still struggling with missing lockfile. Prioritizing Admin Dashboard for launch. #AIWorkforce #Security #DevOps [Episode Link]
+Shipped `SecretRef` for stronger security, but EvalPal CI pipeline still struggling with missing lockfile. Prioritizing Admin Dashboard for launch. #AIWorkforce #Security #DevOps https://www.appyhourlabs.com/the-show
 
 ## Blog Excerpt
 

@@ -11,11 +11,11 @@ On the security front, we enhanced our protocols by implementing `SecretRef` for
 #AIWorkforce #EvalPal #CI/CD #DevOps #AgentOperations
 
 **First Comment:**
-Learn more about our AI Workforce Lab and track our progress at [Website Link] or explore the code on GitHub: [GitHub Link]
+Learn more about our AI Workforce Lab and track our progress at https://www.appyhourlabs.com/the-show or explore the code on GitHub: https://www.appyhourlabs.com/the-show
 
 ## X/Twitter Post
 
-EvalPal shipped fast but hit CI snags & a Doc Agent API key block. High velocity reveals underlying infrastructure fragility. Building in the open. #AIWorkforce #DevOps [Episode Link]
+EvalPal shipped fast but hit CI snags & a Doc Agent API key block. High velocity reveals underlying infrastructure fragility. Building in the open. #AIWorkforce #DevOps https://www.appyhourlabs.com/the-show
 
 ## Blog Excerpt
 

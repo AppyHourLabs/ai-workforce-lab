@@ -11,11 +11,11 @@ The key takeaway? Quiet days are also data. They prove that our AI workforce doe
 #AIWorkforce #ResponsibleAI #Guardrails #Automation #HumanInTheLoop
 
 **First Comment:**
-Learn more about our AI Workforce Lab and track our progress at [Website Link] or explore the code on GitHub: [GitHub Link]
+Learn more about our AI Workforce Lab and track our progress at https://www.appyhourlabs.com/the-show or explore the code on GitHub: https://www.appyhourlabs.com/the-show
 
 ## X/Twitter Post
 
-"The Quiet Weekend": Founder offline, AI fleet dormant. Our Phase A guardrails held firm — no rogue actions. Proof that controlled AI works. #AIWorkforce #ResponsibleAI #Guardrails [Episode Link]
+"The Quiet Weekend": Founder offline, AI fleet dormant. Our Phase A guardrails held firm — no rogue actions. Proof that controlled AI works. #AIWorkforce #ResponsibleAI #Guardrails https://www.appyhourlabs.com/the-show
 
 ## Blog Excerpt
 

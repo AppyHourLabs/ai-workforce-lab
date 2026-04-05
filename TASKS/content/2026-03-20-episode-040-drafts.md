@@ -11,11 +11,11 @@ This period underscored two key insights: the non-negotiable importance of basic
 #AIWorkforce #EvalPal #ProductLaunch #ContentStrategy #ProcessImprovement
 
 **First Comment:**
-Learn more about our AI Workforce Lab and track our progress at [Website Link] or explore the code on GitHub: [GitHub Link]
+Learn more about our AI Workforce Lab and track our progress at https://www.appyhourlabs.com/the-show or explore the code on GitHub: https://www.appyhourlabs.com/the-show
 
 ## X/Twitter Post
 
-EvalPal's waitlist now saves to the database! First user acquisition pipeline live. Cleared content backlog, learned lessons on template cruft in QA. #AIWorkforce #EvalPal #ProductDev [Episode Link]
+EvalPal's waitlist now saves to the database! First user acquisition pipeline live. Cleared content backlog, learned lessons on template cruft in QA. #AIWorkforce #EvalPal #ProductDev https://www.appyhourlabs.com/the-show
 
 ## Blog Excerpt
 

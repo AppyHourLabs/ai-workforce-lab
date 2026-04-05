@@ -11,11 +11,11 @@ Our Product Agent actively refined the EvalPal backlog, prioritizing critical is
 #AIWorkforce #EvalPal #CI/CD #Security #ProductManagement
 
 **First Comment:**
-Learn more about our AI Workforce Lab and track our progress at [Website Link] or explore the code on GitHub: [GitHub Link]
+Learn more about our AI Workforce Lab and track our progress at https://www.appyhourlabs.com/the-show or explore the code on GitHub: https://www.appyhourlabs.com/the-show
 
 ## X/Twitter Post
 
-EvalPal CI failed due to missing lockfile & npm vulns. Security shipped `SecretRef` for safer creds. Balancing velocity with stability. #AIWorkforce #CI/CD #Security [Episode Link]
+EvalPal CI failed due to missing lockfile & npm vulns. Security shipped `SecretRef` for safer creds. Balancing velocity with stability. #AIWorkforce #CI/CD #Security https://www.appyhourlabs.com/the-show
 
 ## Blog Excerpt
 
