@@ -53,6 +53,7 @@ All historical episode drafts (Episodes 000–031) and all standalone posts thro
 | 2026-03-20 | `episode-039-the-quiet-weekend` | Episode | `TASKS/content/2026-03-20-episode-039-drafts.md` | `draft: pending-review` |
 | 2026-03-20 | `episode-040-catching-up-evalpal-ships` | Episode | `TASKS/content/2026-03-20-episode-040-drafts.md` | `draft: pending-review` |
 | 2026-03-22 | `episode-041-data-retention-ci-rules` | Episode | `TASKS/content/2026-03-22-episode-041-data-retention-ci-rules-drafts.md` | `draft: pending-review` |
+| 2026-04-04 | `episode-042-the-solver-has-opinions` | Episode | `TASKS/content/2026-04-04-episode-042-the-solver-has-opinions-drafts.md` | `draft: pending-review` |
 
 ---
 
