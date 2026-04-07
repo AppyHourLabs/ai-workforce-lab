@@ -40,6 +40,8 @@
 | 18 | Day 17 — Zero Gates Passed | `TASKS/content/2026-03-12-linkedin-standalone-phase-b-dashboard.md` | `draft: pending-review` |
 | 19 | Episode 041 — Data Retention, Quiet Fixes, and a Cron That Never Had a Chance | `TASKS/content/2026-03-22-episode-041-data-retention-ci-rules-drafts.md` | `draft: pending-review` |
 
+| — | Episode 042 — The Solver Has Opinions | `TASKS/content/2026-04-04-episode-042-the-solver-has-opinions-drafts.md` | `draft: pending-review` |
+| — | Episode 043 — The Fleet Comes Back Online | `TASKS/content/2026-04-05-episode-043-the-fleet-comes-back-online-drafts.md` | `draft: pending-review` |
 ---
 
 ## Episode-Based Drafts (Backlog — Archived)
