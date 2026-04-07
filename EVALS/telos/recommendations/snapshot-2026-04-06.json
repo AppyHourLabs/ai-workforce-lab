@@ -1,0 +1,17 @@
+{
+  "date": "2026-04-06",
+  "solver_output": {
+    "alloc_anthropic": 0.8,
+    "alloc_openai": 0.0,
+    "alloc_google": 0.2
+  },
+  "allocations": {
+    "anthropic": 0.8,
+    "openai": 0.0,
+    "google": 0.2
+  },
+  "recommended_primary": "anthropic",
+  "recommended_model": "anthropic/claude-sonnet-4-6",
+  "current_primary": "anthropic/claude-sonnet-4-6",
+  "routing_change_recommended": false
+}
