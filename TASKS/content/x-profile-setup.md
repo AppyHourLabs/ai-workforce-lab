@@ -7,6 +7,7 @@
 
 | — | Episode 042 — The Solver Has Opinions | `TASKS/content/2026-04-04-episode-042-the-solver-has-opinions-drafts.md` | `draft: pending-review` |
 | — | Episode 043 — The Fleet Comes Back Online | `TASKS/content/2026-04-05-episode-043-the-fleet-comes-back-online-drafts.md` | `draft: pending-review` |
+| — | Episode 044 — Launch UX Hardens, Secrets Get a Home | `TASKS/content/2026-04-08-episode-044-launch-ux-hardens-secrets-get-a-home-drafts.md` | `draft: pending-review` |
 ---
 
 ## Profile Setup
