@@ -16,10 +16,11 @@
 
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
-| google | gemini-2.5-pro | 1 | 28633 | 1503 | $0.0433 |
-| openai-codex | gpt-5.4 | 1 | 54378 | 3298 | $0.1854 |
+| anthropic | claude-sonnet-4-6 | 1 | 12 | 4036 | $0.0606 |
+| google | gemini-2.5-pro | 2 | 62082 | 2481 | $0.09 |
+| openai-codex | gpt-5.4 | 4 | 185096 | 8800 | $0.5947 |
 
-**Token usage at list rates: $0.23 / $10.00 cap (0%)**
+**Token usage at list rates: $0.75 / $10.00 cap (0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -27,13 +28,18 @@
 
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
+| cfo | google | gemini-2.5-pro | 33449 | 978 | $0.0467 | 201s | ok |
+| content | openai-codex | gpt-5.4 | 23061 | 1784 | $0.0844 | 118.4s | ok |
 | cto | openai-codex | gpt-5.4 | 54378 | 3298 | $0.1854 | 198s | ok |
+| dev | openai-codex | gpt-5.4 | 90845 | 2444 | $0.2638 | 196.3s | ok |
 | product | google | gemini-2.5-pro | 28633 | 1503 | $0.0433 | 126.2s | ok |
+| qa | openai-codex | gpt-5.4 | 16812 | 1274 | $0.0611 | 46.9s | ok |
+| security | anthropic | claude-sonnet-4-6 | 12 | 4036 | $0.0606 | 81s | ok |
 
 ## Notes
 
 - Token counts sourced from `~/.openclaw/cron/runs/*.jsonl`
 - Pricing from `scripts/model-pricing.json` (last updated: 2026-04-02)
 - Runs with no `usage` field (auth errors, instant failures) are excluded
-- Total runs with token data: 2
+- Total runs with token data: 7
 - Per-token costs are list-rate estimates for relative comparison; actual billing is subscription-based
