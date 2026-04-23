@@ -53,3 +53,6 @@ scripts/youtube_token.json
 # AI Office local logs (never commit — may contain operational data)
 ai-office-logs/
 *.mp4
+
+# Telos OS auto-generated recommendations and snapshots
+EVALS/telos/recommendations/
