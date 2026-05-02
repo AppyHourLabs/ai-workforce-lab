@@ -1,7 +1,7 @@
 # Runbook — Cron Job Troubleshooting
 
 > **Audience:** Anyone debugging OpenClaw cron jobs that fail to run or deliver.
-> **Last updated:** 2026-02-22
+> **Last updated:** 2026-04-28
 
 ---
 
@@ -173,6 +173,58 @@ for job in jobs['jobs']:
 print('Check complete.')
 "
 ```
+
+---
+
+## Plist Secrets Check (post-install / post-repair)
+
+Any `openclaw gateway install` or `openclaw gateway install --force`
+will rewrite `~/Library/LaunchAgents/ai.openclaw.gateway.plist` and
+re-embed the env vars listed in `OPENCLAW_SERVICE_MANAGED_ENV_KEYS`
+(Slack tokens, Anthropic / OpenAI / Gemini API keys, the gateway
+token, and more) in plaintext. The plist defaults to mode `0644`,
+which is readable by any process running as the same user — including
+malicious npm packages (see
+[`POLICIES/package-deny-list.md`](../POLICIES/package-deny-list.md) and
+[`TASKS/2026-03-13-security-incident-lancedb-pro.md`](../TASKS/2026-03-13-security-incident-lancedb-pro.md)).
+
+**Run this every time** you reinstall, repair, or `--force` the gateway
+service:
+
+```bash
+PLIST=~/Library/LaunchAgents/ai.openclaw.gateway.plist
+
+stat -f '%Sp %Su:%Sg %N' "$PLIST"
+chmod 600 "$PLIST"
+
+grep -c OPENCLAW_GATEWAY_TOKEN "$PLIST" || true
+plutil -p "$PLIST" | sed -n '/EnvironmentVariables/,/^    }/p' \
+  | grep -E '^\s*"' | awk -F\" '{print $2}' | sort -u
+```
+
+The first command should report `-rw-------` after the `chmod`. The
+last line lists the managed env-var keys currently embedded — verify
+the set against your expectations from the
+[migration plan](../DOCS/openclaw-secrets-migration-plan.md).
+
+If you're investigating a suspected exposure incident:
+
+```bash
+openclaw secrets audit --check
+openclaw security audit --json | python3 -c "import json,sys; d=json.loads(sys.stdin.read()); print(json.dumps(d['summary'], indent=2))"
+```
+
+`secrets audit --check` exits non-zero on any plaintext finding;
+treat that as a SEV-3 incident and follow
+[`DOCS/incidents/2026-04-27-launchagent-plist-secret-exposure.md`](../DOCS/incidents/2026-04-27-launchagent-plist-secret-exposure.md)
+as a template.
+
+> ⚠️ **Known upstream defect (2026.4.25):** `openclaw doctor`
+> recommends `openclaw gateway install --force` to "remove embedded
+> service token", but the install command does **not** strip
+> `OPENCLAW_GATEWAY_TOKEN` from the regenerated plist. The doctor
+> finding will persist after running the recommended fix. See
+> [`DOCS/openclaw-issue-gateway-install-token-embed.md`](../DOCS/openclaw-issue-gateway-install-token-embed.md).
 
 ---
 
