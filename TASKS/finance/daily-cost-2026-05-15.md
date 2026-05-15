@@ -16,9 +16,9 @@
 
 | Provider | Model | Runs | Input Tokens | Output Tokens | List Rate Est. |
 |----------|-------|------|-------------|---------------|----------------|
-| openai-codex | gpt-5.4 | 1 | 48125 | 3430 | $0.1718 |
+| openai-codex | gpt-5.4 | 2 | 123572 | 5945 | $0.3981 |
 
-**Token usage at list rates: $0.17 / $10.00 cap (0%)**
+**Token usage at list rates: $0.40 / $10.00 cap (0%)**
 
 > **Note:** The $10.00/day budget cap tracks **variable token spend only**. Fixed subscription costs ($20.00/day) are tracked separately above and are not compared against this cap.
 
@@ -27,11 +27,12 @@
 | Agent | Provider | Model | Input Tokens | Output Tokens | List Rate Est. | Duration | Status |
 |-------|----------|-------|-------------|---------------|----------------|----------|--------|
 | cto | openai-codex | gpt-5.4 | 48125 | 3430 | $0.1718 | 111.6s | ok |
+| dev | openai-codex | gpt-5.4 | 75447 | 2515 | $0.2263 | 129s | ok |
 
 ## Notes
 
 - Token counts sourced from `~/.openclaw/cron/runs/*.jsonl`
 - Pricing from `scripts/model-pricing.json` (last updated: 2026-04-02)
 - Runs with no `usage` field (auth errors, instant failures) are excluded
-- Total runs with token data: 1
+- Total runs with token data: 2
 - Per-token costs are list-rate estimates for relative comparison; actual billing is subscription-based
